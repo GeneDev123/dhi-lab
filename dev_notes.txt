@@ -1,0 +1,9 @@
+October 1, 2023
+
+Completed:
+- Setup SASS : For Web app styling
+
+Todo: 
+- Setup Database
+- Add initial API for saving data and retrieving.
+- Initialize the Frontend 
