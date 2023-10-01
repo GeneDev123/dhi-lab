@@ -2,4 +2,4 @@
 dhiLab/db.sqlite3
 
 # Ignore compressed css, this is auto generated.
-static/CACHE/css/
+dhiLab/static/CACHE/css/
