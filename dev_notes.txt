@@ -12,6 +12,9 @@ Completed:
         pasword: testing321 (Use this for all accounts for easy access for demo)
     - Used Django's built-in ORM (Object Relational Mapper)
 
+- Admin dashboard
+    - Add/edit/delete users and user details
+    
 Inprogress: 
 - Add initial API for saving and retrieving data.
 - Initialize the Frontend 
