@@ -2,8 +2,22 @@ October 1, 2023
 
 Completed:
 - Setup SASS : For Web app styling
+    - Used django-compressor and django-libsass
 
-Todo: 
-- Setup Database
-- Add initial API for saving data and retrieving.
+- Initiated the database: 
+    - Used sqlite3 built-in Django
+    - Superuser:
+        username: admin
+        email address: admin123@gmail.com
+        pasword: testing321 (Use this for all accounts for easy access for demo)
+    - Used Django's built-in ORM (Object Relational Mapper)
+
+Inprogress: 
+- Add initial API for saving and retrieving data.
 - Initialize the Frontend 
+- user details input (frontend)
+- Chatbot
+    - Currently implementing
+
+Todo:
+- Deployment

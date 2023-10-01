@@ -2,22 +2,73 @@
 <html lang="en">
 <head>
 	
+  {% load static %}
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   
-  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  {% load static %}
+  <script>
+    var path = window.location.pathname;
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    for (var i = 0; i < navLinks.length; i++) {
+      if (navLinks[i].getAttribute("href") === path) {
+        navLinks[i].parentElement.classList.add("active");
+      }
+    }
+  </script>
 
   {% load compress %}
-
   {% compress css %}
     <link type="text/x-scss" href="{% static 'main/sass/base.scss' %}" rel="stylesheet" media="screen">
   {% endcompress %}
 
+  <title>Home Page</title>
+
 </head>
 <body>
-  <h1>Welcome to the Home Page!</h1>
-  <p>This is a simple home page created using Django templates.</p>
+  <main class="main-container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/home/">Home</a>
+            </li>
+            {% if not user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login/">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register/">register</a>
+            </li>
+            {% endif %}
+          </ul>
+          <span><img class="logo" src="{% static 'main/assets/logo.svg' %}"></span>
+          <span class="navbar-text">DHI LAB</span>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="page-header-container">
+      {% block page_header %}
+      {% endblock %}  
+    </div>
+
+    <div class="page-content-container">
+      {% block page_content %}
+        <h1>404</h1>
+      {% endblock %}  
+    </div>
+  </main>
+  
 </body>
 </html>
