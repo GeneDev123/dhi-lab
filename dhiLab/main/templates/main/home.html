@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block page_content %}
+  <div class="user-information-page">
+    {% if user.is_authenticated %}
+    <p>Welcome, {{ user.username }} ({{ user.email }})!</p>
+    <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+      <p>You are not logged in.</p>
+    {% endif %}
+  </div>
+{% endblock %}

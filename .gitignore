@@ -1,2 +1,5 @@
 # Ignore database files
 dhiLab/db.sqlite3
+
+# Ignore compressed css, this is auto generated.
+dhiLab/static/CACHE/css/
