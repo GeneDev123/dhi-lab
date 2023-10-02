@@ -24,3 +24,22 @@ Inprogress:
 
 Todo:
 - Deployment
+
+----------------------------
+
+October 2, 2023
+
+Completed:
+- Created an email for the app  
+    - first name: dhilab
+    - birthday: january 1, 2000 
+    - gender: rather not say
+    - email: dhilab112@gmail.com
+    - password: testing321
+
+- Dhilab Personal Access Token: saved online
+
+- Deployed the project in pythonanywhere.com free tier
+    - limit to 500mb
+    - in the configured wsgi file, must activate the environment
+    - Add allowed_hosts
