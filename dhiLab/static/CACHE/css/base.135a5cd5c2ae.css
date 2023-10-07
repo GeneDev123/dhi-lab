@@ -1,0 +1,68 @@
+/* line 1, main/static/main/sass/main.scss */
+#dhi-lab-main-container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  /* line 22, main/static/main/sass/main.scss */
+  #dhi-lab-main-container header nav {
+    background-color: #005ea2;
+    margin: 0px 0px 20px 0px; }
+    /* line 26, main/static/main/sass/main.scss */
+    #dhi-lab-main-container header nav .nav-item {
+      margin: 10px 0px; }
+      /* line 30, main/static/main/sass/main.scss */
+      #dhi-lab-main-container header nav .nav-item .btn {
+        color: rgba(255, 255, 255, 0.5); }
+    /* line 35, main/static/main/sass/main.scss */
+    #dhi-lab-main-container header nav img.logo {
+      width: 50px;
+      height: auto;
+      object-fit: contain;
+      margin: 0px 5px; }
+    /* line 42, main/static/main/sass/main.scss */
+    #dhi-lab-main-container header nav .navbar-text {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem; }
+    /* line 47, main/static/main/sass/main.scss */
+    #dhi-lab-main-container header nav .site-name-container {
+      background-color: white;
+      padding: 5px;
+      border-radius: 10px;
+      text-align: center; }
+  /* line 57, main/static/main/sass/main.scss */
+  #dhi-lab-main-container .page-header-container {
+    margin-top: 100px;
+    margin-bottom: 40px; }
+  /* line 62, main/static/main/sass/main.scss */
+  #dhi-lab-main-container .page-content-container {
+    margin: auto;
+    width: 70%; }
+  /* line 67, main/static/main/sass/main.scss */
+  #dhi-lab-main-container footer {
+    width: 100%; }
+    /* line 70, main/static/main/sass/main.scss */
+    #dhi-lab-main-container footer .footer-container {
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+      background-color: #005ea2; }
+
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+  /* line 85, main/static/main/sass/main.scss */
+  #dhi-lab-main-container header nav .logo {
+    display: none; }
+  /* line 91, main/static/main/sass/main.scss */
+  #dhi-lab-main-container .page-content-container {
+    width: 90%; } }
+
+@media only screen and (max-width: 600px) {
+  /* line 102, main/static/main/sass/main.scss */
+  #dhi-lab-main-container header nav .logo {
+    display: none; }
+  /* line 108, main/static/main/sass/main.scss */
+  #dhi-lab-main-container .page-content-container {
+    width: 100%; } }
