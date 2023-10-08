@@ -8,6 +8,6 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('', views.home, name='home'), 
 
-    path('api/items/', views.CustomUserList.as_view(), name='user-list'),
-    path('api/items/<int:pk>/', views.CustomUserDetail.as_view(), name='user-detail'),
+    # path('api/items/', views.CustomUserList.as_view(), name='user-list'),
+    # path('api/items/<int:pk>/', views.CustomUserDetail.as_view(), name='user-detail'),
 ]
