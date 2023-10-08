@@ -6,7 +6,10 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  
+
+  <link rel="icon" href="{% static 'main/assets/logo.svg' %}" type="image/x-icon">
+
+  <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -32,62 +35,65 @@
 </head>
 <body>
   <div id="dhi-lab-main-container">
-    <main>
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
           
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
             
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                
-                <button class="btn bg-transparent dropdown-toggle" id="home-dropdown-menu" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Home</button>
-                
-                <div class="dropdown-menu" aria-labelledby="home-dropdown-menu">
-                  {% if not user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              
+              <button class="btn bg-transparent dropdown-toggle" id="account-dropdown-menu" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Account</button>
+              
+              <div class="dropdown-menu" aria-labelledby="account-dropdown-menu">
+                {% if not user.is_authenticated %}
                   <a class="dropdown-item" href="{% url 'login-register' 'login' %}">Login</a>
                   <a class="dropdown-item" href="{% url 'login-register' 'register' %}">Register</a>
-                  {% else %}
-                    <a class="dropdown-item" href="{% url 'logout' %}">logout</a>
-                  {% endif %}
-                </div>
+                {% else %}
+                  <a class="dropdown-item" href="{% url 'user-profile' %}">Profile</a>
+                  <a class="dropdown-item" href="{% url 'logout' %}">logout</a>
+                {% endif %}
+              </div>
 
-              </li>
-      
-            </ul>
+            </li>
+    
+          </ul>
 
-            <span class="navbar-text font-weight-bold">{% if user.is_authenticated %} Welcome, {{ user.username }}! {% else %} Welcome, Guest!{% endif %}</span>
-            <div class="site-name-container">
-              <span class="navbar-text text-dark font-weight-bold">DHI LAB</span>
-              <span><img class="logo" src="{% static 'main/assets/logo.svg' %}"></span>
-            </div>
+          <span class="navbar-text font-weight-bold">{% if user.is_authenticated %} Welcome, {{ user.username }}! {% else %} Welcome, Guest!{% endif %}</span>
+          <div class="site-name-container">
+            <span class="navbar-text text-dark font-weight-bold">DHI LAB</span>
+            <span><img class="logo" src="{% static 'main/assets/logo.svg' %}"></span>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-      </header>
+    </header>
 
-      <div class="page-header-container">
-        {% block page_header %}
-        {% endblock %}  
-      </div>
 
-      <div class="page-content-container">
-        {% block page_content %}
-          <h1>404</h1>
-        {% endblock %}  
-      </div>
-    </main>
+    <div class="page-content-container">
+      {% block page_content %}
+        <h1>404</h1>
+      {% endblock %}  
+    </div>
 
     <footer>
       <div class="footer-container">    
         <p>Copyright &copy; 2023</p>
       </div>
     </footer>
+
   </div>
   
+  <script type="module" src="{% static 'main/js/vueApp.js' %}"></script>
+  <script type="module" src="{% static 'main/js/main.js' %}"></script>
 </body>
 </html>

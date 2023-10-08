@@ -1,9 +1,26 @@
 {% extends 'main/base.html' %}
 
+{% load static %}
+
 {% block page_content %}
 
-  <div class="login-and-register-container">
-    Home Page
+  <div id="home-page-container">
+    <div class="chatbot-label-container">
+      <div><img class="logo" src="{% static 'main/assets/logo.svg' %}"></div>
+      <div class="text-container">
+        Symptoms Checker
+      </div>
+    </div>
+    
+    <div class="chatbot-main-container">
+      <div class="message-display-container"></div>
+      
+      <div class="user-options-container">
+        <textarea  class="user-input-container" placeholder="Type your message"></textarea >
+        <button class="user-message-send-btn">Send</button>
+      </div>
+    </div>
+
   </div>
   
 {% endblock %}
