@@ -43,3 +43,21 @@ Completed:
     - limit to 500mb
     - in the configured wsgi file, must activate the environment
     - Add allowed_hosts
+
+-----------------------------
+
+October 7-8, 2023
+
+Completed:
+- Added frontend functionalities
+    - Added requirement to be login to access the home and profile page.
+    - Added responsive styling for Home, Profile, login/Registration pages.
+
+Inprogress: 
+- the backend and the frontend for the profile page.
+- Import the chatbot created.
+- import the symptom checker analysis algorithm.
+
+Todo:
+- Google maps API implementation
+
