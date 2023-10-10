@@ -61,3 +61,19 @@ Inprogress:
 Todo:
 - Google maps API implementation
 
+-----------------------------
+
+October 10, 2023
+
+Completed: 
+- Installed tensorflow
+- Installed nltk
+- Added the chatbot resources
+- Added initial chatbot model (Buggy)
+- Added the symptoms dataset and its classifier code
+
+-----------------------------
+
+Website:
+http://dhilab.pythonanywhere.com/
+http://dhilab.pythonanywhere.com/admin
