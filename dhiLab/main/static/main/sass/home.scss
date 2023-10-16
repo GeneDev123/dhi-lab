@@ -43,23 +43,51 @@
       margin-bottom: 20px;
       color: black;
       overflow-y: auto;
+
+      .chatbot-bubble-container, .user-bubble-container{
+        padding: 10px;
+        background-color: #efefef;
+        border-radius: 10px;
+        margin: 10px 0px;
+        
+        .chatbot-name, .chatbot-message{
+          text-align: left;
+          color: black;
+        }
+
+        .user-name, .user-message{
+          text-align: right;
+          color: white;
+        }
+
+        .chatbot-name, .user-name{
+          font-size: 12px;
+          text-decoration: underline;
+        }
+      }
+      
+      .user-bubble-container{
+        background-color:#005ea2;
+
+      }
     }
 
     .user-options-container{
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: space-around;
-
-      .user-input-container{
+      #user-input-message-form{
+        display: flex;
         width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-        margin-right: 10px;
-      }
+        align-items: center;
+        justify-content: space-around;
+
+        .user-input-container{
+          width: 100%;
+          padding: 5px;
+          margin-right: 10px;
+        }
+      } 
     }
-   
   }
+
   .display-flex{
     display: flex;
     justify-content: space-between;

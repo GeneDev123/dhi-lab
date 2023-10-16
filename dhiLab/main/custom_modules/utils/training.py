@@ -20,7 +20,7 @@ def training_chatbot_new():
   nltk.download("wordnet")
 
   # Load and preprocess intents.json data
-  with open("intents.json") as file:
+  with open("../json/intents.json") as file:
     data = json.load(file)
 
   words = []
@@ -82,7 +82,7 @@ def training_chatbot_new():
   model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 
   # Train the model
-  model.fit(np.array(X_train), np.array(y_train), epochs=1000, batch_size=10, verbose=1)
+  model.fit(np.array(X_train), np.array(y_train), epochs=2000, batch_size=10, verbose=1)
 
   # Save the model
   model.save("model_2.h5")
