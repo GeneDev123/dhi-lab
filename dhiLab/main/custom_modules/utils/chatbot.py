@@ -6,7 +6,7 @@ from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
 # Load the preprocessed data
-with open("../json/intents.json") as file:
+with open("../json/intents2.json") as file:
   data = json.load(file)
 
 words = []
@@ -28,7 +28,7 @@ words = sorted(list(set(words)))
 classes = sorted(list(set(classes)))
 
 # Load the trained model
-model = load_model("../machine-learning-models/model_2.h5")
+model = load_model("../model_2_1.h5")
 
 # Define functions for text preprocessing and getting the predicted class
 def clean_up_sentence(sentence):
@@ -50,7 +50,7 @@ def bow(sentence, words, show_details=True):
 def predict_class(sentence, model):
   p = bow(sentence, words, show_details=False)
   res = model.predict(np.array([p]))[0]
-  ERROR_THRESHOLD = 0.25
+  ERROR_THRESHOLD = 0.45
   results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
   results.sort(key=lambda x: x[1], reverse=True)
   return_list = []
@@ -59,13 +59,18 @@ def predict_class(sentence, model):
   return return_list
 
 def get_response(intents_list, intents_json):
-  tag = intents_list[0]["intent"]
-  list_of_intents = intents_json["intents"]
-  for i in list_of_intents:
-    if i["tag"] == tag:
-      result = random.choice(i["responses"])
-      break
-  return result
+		no_answer = ["Sorry, I do not understand", "Sorry, can you elaborate?", "Sorry, can you give more information?"]
+		try:
+			tag = intents_list[0]['intent']
+			list_of_intents = intents_json['intents']
+			for i in list_of_intents:
+				if i ['tag'] == tag:
+					result = random.choice(i['responses'])
+					break
+			return result
+		except:
+			result = random.choice(no_answer)
+			return result
 
 # Interactive chat
 print("Chatbot: Hi! How can I assist you today? (type 'exit' to end the conversation)")
