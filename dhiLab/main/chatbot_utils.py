@@ -4,9 +4,13 @@ import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
+from tensorflow.keras.optimizers import SGD
 
 def initialize_static_chatbot_requirements(model_dir, intents_dir):
-  model = load_model(model_dir)
+  model = load_model(model_dir, compile=False)
+  sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
+  model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
+  
   with open(intents_dir) as file:
     data = json.load(file)
 
