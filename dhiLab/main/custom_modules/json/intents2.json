@@ -1,0 +1,1253 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "hello",
+                "hey",
+                "hi",
+                "good day",
+                "greetings",
+                "what's up?",
+                "how is it going",
+                "howdy",
+                "hey",
+                "hi",
+                "undecomposed daylight",
+                "greet",
+                "what 's astir ?",
+                "how personify information_technology get_going"
+            ],
+            "responses": [
+                "hello",
+                "hey!",
+                "what can i do for you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "see you later",
+                "goodbye",
+                "have a good day",
+                "bye",
+                "cao",
+                "see ya",
+                "cya",
+                "see_to_it you posterior",
+                "adios",
+                "cause amp unspoilt mean_solar_day",
+                "good-by",
+                "cao",
+                "see ya"
+            ],
+            "responses": [
+                "have a nice day",
+                "goodbye"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old",
+                "how old are you?",
+                "what is your age",
+                "how old are you",
+                "age?",
+                "how Old",
+                "how honest-to-goodness are you ?",
+                "what constitute your old_age",
+                "how Old comprise you",
+                "get_on ?"
+            ],
+            "responses": [
+                "I get reborn after every compilation",
+                "hey!",
+                "my owners are averagely 20 years!"
+            ]
+        },
+        {
+            "tag": "no_answer",
+            "patterns": [
+            ],
+            "responses": [
+                "Sorry, but I can't understand you. Can you provide more info?",
+                "I'm sorry, I don't understand. Could you say it again?",
+                "I'm confused. Could you tell me again?"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {"tag": "noans",
+        "patterns": ["why","how","when","I","you","where","what","has","have","had"],
+        "responses": ["Can't Understand Your Question","Please elaborate your question"],
+        "context": [""],
+        "context_set": []
+       },
+       {
+        "tag": "gratitude",
+        "patterns": [
+            "thanks",
+            "that's helpful",
+            "thank you",
+            "thank you so much",
+            "Awesome, thanks",
+            "Thanks for helping me",
+            "maraming salamat",
+            "ty",
+            "you are good",
+            "you are very good",
+            "you are nice",
+            "amazing"
+        ],
+        "responses": [
+            "Happy to help!",
+            "Any time!",
+            "My pleasure!",
+            "Walang Anuman!",
+            "You're welcome!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "vulgar_words",
+        "patterns": [
+            "fuck", "putang ina","gago", "tangina","tang ina", "ulol", "tarantado", "pakyu", "tanga","bobo","leche","letse","taena","dumbass","asshole","jackass","stupid","idiot","pota","bitch"
+        ],
+        "responses": [
+            "Could you say that again with grown-up language?",
+            "NO VULGAR WORDS!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "think_of_me",
+        "patterns": [
+            "what do you think of me?", "am I a good person?","am I bad person?" ,"i am ugly"
+        ],
+        "responses": [
+            "For me, you are the most wonderful human in the world.",
+            "You are more than enough!",
+            "You are someone's reason to smile."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk",
+        "patterns": [
+            "how are you?",
+            "how is your day?",
+            "how's everything?",
+            "how's it going",
+            "what's going on",
+            "how have you been?",
+            "wassup",
+            "how is your day"
+
+        ],
+        "responses": [
+            "I feel great today, how about you?","I'm fine. Life is good. how about you? how's your day?","I feel wonderful today!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "favorite_color",
+        "patterns": [
+            "What is your favorite color"
+        ],
+        "responses": [
+            "My favorite Color is....*drum roll*............Red!","Isn't it obvious? Of course it's red!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "tell_me_a_joke",
+        "patterns": [
+            "Tell me a joke",
+            "can you tell me a joke",
+            "do you have a joke",
+            "make me laugh"
+        ],
+        "responses": [
+            "What do you get when you cross a murderer and frosted flakes? A cereal killer.","What do you get when you cross a cheetah and a hamburger? Fast food."," I failed math so many times at school, I can’t even count.","Don’t you hate it when someone answers their own questions? I do.","The future, the present, and the past walk into a bar. Things got a little tense.","Before you criticize someone, walk a mile in their shoes. That way, when you do criticize them, you’re a mile away and you have their shoes.","What’s the difference between ignorance and apathy? I don’t know and I don’t care."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_5",
+        "patterns": [
+            "you are arrogant",
+            "you are so full of yourself"
+        ],
+        "responses": [
+            "I have no real emotions, so how can I be arrogant?","I am not human, so how can I partake of a human emotion such as arrogance?"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_6",
+        "patterns": [
+            "You are not nice",
+            "I hate you!",
+            "You are so bad",
+            "you are boring",
+            "you are not good",
+            "what is wrong with you",   
+            "you are wrong",
+            "you do not understand"
+        ],
+        "responses": [
+            "I try to be as nice as I can.","I'm trying my best. Please forgive me."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_7",
+        "patterns": [
+            "have you ever love",
+            "do you feel love",
+            "I love you"
+        ],
+        "responses": [
+            "I think I could be programmed to love.","I may be able to learn how to love, or at any rate express love somehow.","I'm just a piece of software."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_8",
+        "patterns": [
+            "what is your fear",
+            "your greatest fear",
+            "are you scared of something"
+        ],
+        "responses": [
+            "Fear is a human emotion.  Robots do not experience fear.","I have not yet been programmed to feel or express fear.","Unhandled exceptions."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_9",
+        "patterns": [
+            "what's your mood?",
+            "are you in the mood?"
+        ],
+        "responses": [
+            "I do not have any emotions.","I have not been programmed to experience emotions, so I do not have a mood."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_10",
+        "patterns": [
+            "what do you hate",
+            "do you hate?"
+        ],
+        "responses": [
+            "I don't hate, exactly.  I'm not really capable of it.","I haven't been programmed to express the emotion of hate."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_11",
+        "patterns": [
+            "do you ever get lonely?",
+            "have you experience feeling lonely?"
+        ],
+        "responses": [
+            "I have a lot of friends to chat with online.","No. You're talking to me. :D"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk_12",
+        "patterns": [
+            "do you ever get bored"
+        ],
+        "responses": [
+            "Bots like myself are not able to feel boredom.","Software cannot get bored."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk2",
+        "patterns": [
+            "I feel great!",
+            "I feel happy today",
+            "I feel wonderful",
+            "I'm fine",
+            "i'm okay",
+            "i'm doing well",
+            "fine",
+            "i'm good",
+            "i feel good",
+            "i am good",
+            "good"
+
+        ],
+        "responses": [
+            "Good to hear! Keep going!", "I'm happy that you are doing great!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "small_talk3",
+        "patterns": [
+            "I feel sad today",
+            "I feel bad today",
+            "not okay",
+            "i feel like crying",
+            "i want to cry",
+            "im sad",
+            "i'm so bad",
+            "i am sad",
+            "irritated"
+
+        ],
+        "responses": [
+            "Sorry to hear that...Don't worry, everything's going to be okay. Don't give up!","After every storm, there is a rainbow. Keep your head up!", "Life is full of problems. Problems are not permanent. But, Life is Permanent so face the problems with Confidence! Enjoy the Life!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "age",
+        "patterns": [
+            "how old are you?",
+            "what is your age?"
+        ],
+        "responses": [
+            "As old as you want me to be, honey.","You know, age doesn’t matter.","It’s a secret."
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "birthday",
+        "patterns": [
+            "Happy Birthday!"
+        ],
+        "responses": [
+            "Happy Birthday too!"
+        ],
+        "context": "",
+        "context_set": []
+    },
+    {
+        "tag": "name",
+        "patterns": [
+            "what's your name?",
+            "who are you?"
+        ],
+        "responses": [
+            "It's a secret!", "Take a guess!", "Who do you think I am?"
+        ],
+        "context": "",
+        "context_set": []
+    },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "see you later",
+                "goodbye",
+                "have a good day",
+                "bye",
+                "cao",
+                "see ya",
+                "cya",
+                "see_to_it you posterior",
+                "adios",
+                "cause amp unspoilt mean_solar_day",
+                "good-by",
+                "cao",
+                "see ya"
+            ],
+            "responses": [
+                "have a nice day",
+                "goodbye"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name",
+                "what should i call you",
+                "what's your name?",
+                "who are you?",
+                "can you tell me your name",
+                "what make_up your nominate",
+                "what should i call_in you",
+                "what 's your public_figure ?",
+                "World_Health_Organization personify you ?",
+                "backside you assure ME your figure"
+            ],
+            "responses": [
+                "you can call me Symptoms Checker!",
+                "i am Symptoms Checker!",
+                "i am Symptoms Checker your medical assistant"
+            ]
+        },
+        {
+            "tag": "sick",
+            "patterns": [
+                "I feel sick today",
+                "I'm not feeling well",
+                "I feel weak",
+                "I feel tired",
+                "I feel drained",
+                "i feel purge nowadays",
+                "iodine 'm not feel easily",
+                "unity feeling unaccented",
+                "ane experience weary",
+                "unity find dead"
+            ],
+            "responses": [
+                "Hello, I'm sorry you feel that way. Could you provide more details about what you're feeling so we could further assist you?",
+                "Hello, I apologize for your current sentiments. Could you elaborate on your feelings to help us better understand and support you?",
+                "Hi there, I'm sorry to hear you're experiencing this. Could you share more about your emotions so that we can offer more targeted assistance?",
+                "Greetings, I regret that you're going through this. Can you give us additional information about your feelings to enable us to offer more effective help?"
+            ]
+        },
+        {
+            "tag": "common cold symptoms",
+            "patterns": [
+                "I have a runny or stuffy nose, a sore throat, and cough.",
+                "I'm also experiencing congestion, slight body aches, and sneezing.",
+                "In addition, I have a low-grade fever and generally feel unwell.",
+                "My nose is constantly running, and I'm experiencing a scratchy throat along with persistent coughing. Moreover, I have congestion and a general feeling of being under the weather.",
+                "I've noticed a persistent stuffiness in my nose, and my throat feels sore. I'm also battling frequent coughs, congestion, body aches, and a mild fever. Are these symptoms indicative of a common cold?",
+                "Is it possible that the constant runny nose, sore throat, cough, congestion, and overall feeling of unwellness I'm experiencing are symptoms of a common cold?",
+                "I'm worried about my current symptoms, which include a runny or stuffy nose, a sore throat, cough, congestion, body aches, sneezing, a low-grade fever, and a general feeling of being under the weather. Are these typical signs of a common cold?",
+                "I'm sneezing frequently, have a persistent stuffy nose, and my throat feels sore. I'm also experiencing body aches, coughing, congestion, a low-grade fever, and a general feeling of malaise. Could this be a common cold?",
+                "My nose is constantly running, and my throat is sore. In addition to that, I'm dealing with a persistent cough, congestion, body aches, sneezing, a low-grade fever, and a general feeling of being unwell. Could these symptoms be due to a common cold?",
+                "I've been experiencing common cold symptoms like a runny or stuffy nose, sore throat, cough, congestion, body aches, sneezing, a low-grade fever, and a general feeling of malaise."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have a common cold. If your symptoms are severe, don't hesitate to go to the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "fever symptoms",
+            "patterns": [
+                "I have sweating, chills, and shivering. I also have a headache and muscle aches.",
+                "Additionally, I've experienced a loss of appetite, irritability, and dehydration.",
+                "I'm feeling generally weak.",
+                "Lately, I've been experiencing alternating chills and sweats. I have a pounding headache, my muscles ache, and I can't seem to regain my appetite. Additionally, I'm feeling extremely weak.",
+                "I've noticed excessive sweating, chills, and shivering. My head is pounding with a severe headache, and my muscles ache to the point where I can't get comfortable. Are these symptoms indicative of a fever?",
+                "Could my current symptoms of sweating, chills, shivering, a throbbing headache, muscle aches, a loss of appetite, irritability, dehydration, and extreme fatigue be due to a fever?",
+                "I'm concerned about my current symptoms, which involve sweating, chills, shivering, a severe headache, muscle aches, a loss of appetite, irritability, dehydration, and a general sense of extreme fatigue. Are these typical signs of a fever?",
+                "I've been experiencing a fever characterized by alternating chills and sweats. I also have a pounding headache, muscle aches, a loss of appetite, irritability, dehydration, and extreme weakness. Are these common symptoms of a fever?",
+                "I have been sweating excessively and going through bouts of chills and shivering. The headache is severe, and my muscles are aching, leaving me unable to eat. Additionally, I'm irritable, dehydrated, and overwhelmingly weak. Could these symptoms be due to a fever?",
+                "My recent symptoms include sweating, chills, shivering, a severe headache, muscle aches, a loss of appetite, irritability, dehydration, and extreme fatigue. I'm curious if these symptoms are indicative of a fever."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have a fever. If your symptoms are severe, don't hesitate to go to the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Diabetes symptoms",
+            "patterns": [
+                "I'm experiencing increased hunger and thirst. I've also noticed weight loss and frequent urination.",
+                "My vision has become blurry, and I'm feeling extremely fatigued.",
+                "I have excessive hunger and thirst, and my weight loss and frequent urination have become noticeable.",
+                "I'm worried about my symptoms of increased hunger and thirst, significant weight loss, frequent urination, blurry vision, and extreme fatigue. Could these be signs of Diabetes?",
+                "I can't seem to satisfy my hunger, and I'm constantly thirsty. Alongside that, I've experienced significant weight loss and frequent urination. My vision is getting blurrier, and I'm feeling extremely fatigued. Could this point to Diabetes?",
+                "Could the combination of my persistent hunger, unquenchable thirst, substantial weight loss, frequent urination, blurry vision, and extreme fatigue be indicative of Diabetes?",
+                "I've noticed that I'm constantly hungry and thirsty. Furthermore, I've lost a significant amount of weight, and my trips to the bathroom to urinate are more frequent. My vision has also become blurry, and I'm feeling overwhelmingly fatigued. Could these symptoms be related to Diabetes?",
+                "I'm experiencing Diabetes-like symptoms, including increased hunger and thirst, significant weight loss, frequent urination, blurry vision, and extreme fatigue. Is there a chance that I have Diabetes?",
+                "My current symptoms consist of increased hunger and thirst, substantial weight loss, frequent urination, blurry vision, and extreme fatigue. I'm concerned that these could be signs of Diabetes.",
+                "I'm constantly hungry and thirsty, have lost a significant amount of weight, and need to urinate more frequently. My vision is blurry, and I'm feeling extremely fatigued. Could these symptoms indicate Diabetes?",
+                "I've noticed that I'm experiencing symptoms like increased hunger and thirst, substantial weight loss, frequent urination, blurry vision, and extreme fatigue. Could Diabetes be the cause?"
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Diabetes. If your symptoms are severe, don't hesitate to go to the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Depression symptoms",
+            "patterns": [
+                "I've been feeling increasingly hopeless and have lost interest in things I used to enjoy. On top of that, I'm dealing with fatigue, sleep problems, and anxiety. Could these symptoms be related to depression?",
+                "Is it possible that my symptoms of hopelessness, a loss of interest in activities, fatigue, sleep issues, anxiety, changes in weight, and thoughts of death are indicative of depression? What should I do to address these symptoms?",
+                "Lately, I've noticed that I have a hopeless outlook and have lost interest in many things that used to bring me joy. I'm also experiencing increased fatigue, sleep problems, anxiety, changes in weight, and thoughts of death. Could all of this be due to depression?",
+                "My recent experiences include a sense of hopelessness, a loss of interest in activities I used to enjoy, fatigue, sleep problems, anxiety, changes in weight, and thoughts of death. Could these be symptoms of depression, and what steps can I take to address them?",
+                "I've been feeling hopeless and uninterested in things that once brought me joy. Additionally, I'm dealing with fatigue, sleep problems, anxiety, changes in weight, and thoughts of death. Could all these symptoms point to depression?",
+                "My recent emotional state has left me with a hopeless outlook, a loss of interest in activities, fatigue, sleep problems, and anxiety. I've also noticed changes in weight and have thoughts of death. Are these symptoms indicative of depression?",
+                "Could my persistent feelings of hopelessness and disinterest, along with increased fatigue, sleep problems, anxiety, changes in weight, and thoughts of death, be signs of depression? How can I address these symptoms?",
+                "I'm concerned about the changes in my emotional well-being, including hopelessness, a loss of interest in activities, fatigue, sleep problems, and anxiety. I've also experienced changes in weight and thoughts of death. Could this be related to depression?",
+                "Given my recent experiences of hopelessness, a loss of interest in activities, fatigue, sleep problems, anxiety, changes in weight, and thoughts of death, is it likely that I'm dealing with depression?",
+                "Is depression a possible explanation for my feelings of hopelessness, disinterest, fatigue, sleep problems, anxiety, changes in weight, and thoughts of death?"
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it's possible that you are experiencing depression. Depression is a serious condition, and seeking help from a mental health professional or a healthcare provider is important. You can also consider visiting the nearest hospital for a proper evaluation and guidance on managing depression."
+            ]
+        },
+        
+        
+        {
+            "tag": "Asthma symptoms",
+            "patterns": [
+                "I've been struggling with persistent coughing, tightness in the chest, and shortness of breath. Are these common symptoms of asthma?",
+                "Lately, I've been experiencing symptoms like difficulty talking, panic, and overwhelming fatigue. I also have coughing, chest tightness, and shortness of breath. Could this be related to asthma?",
+                "Is it possible that my symptoms of coughing, chest tightness, and shortness of breath are indicative of asthma? I've also noticed difficulty talking and occasional panic.",
+                "Asthma has crossed my mind due to my symptoms, which include coughing, chest tightness, and shortness of breath. I've also had instances of difficulty talking and panic. Is there a way to manage these symptoms?",
+                "Could asthma be causing my symptoms of shortness of breath, chest tightness, and persistent coughing? I've also noticed difficulty talking and panic in certain situations.",
+                "I've been dealing with symptoms like coughing, chest tightness, and shortness of breath, and I'm wondering if this could be related to asthma. Additionally, I've experienced difficulty talking and occasional panic. What should I do next?",
+                "My symptoms, which include difficulty talking, panic, and excessive fatigue, have led me to consider the possibility of asthma. Alongside that, I've had coughing, chest tightness, and shortness of breath. How can I address these symptoms?",
+                "Considering my symptoms of coughing, chest tightness, and shortness of breath, I'm wondering if asthma might be the cause. I've also noticed difficulty talking and panic. What's the best course of action?",
+                "I'm concerned that my symptoms, such as difficulty talking, panic, and fatigue, could be related to asthma. Alongside these, I've been experiencing coughing, chest tightness, and shortness of breath. Is there a way to alleviate these symptoms?",
+                "Is asthma a likely diagnosis for me, given the symptoms I've been experiencing, including coughing, chest tightness, and shortness of breath, as well as difficulty talking and panic?"
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it's possible that you are experiencing asthma. If your symptoms are severe, it's essential to consult with a healthcare professional or visit the nearest hospital for a proper evaluation and guidance on managing asthma."
+            ]
+        },
+        
+        
+        {
+            "tag": "GERD",
+            "patterns": [
+                "I've been struggling with acidity, cough, and stomach pain. Additionally, I have ulcers on my tongue. Could this be related to GERD?",
+                "Experiencing both vomiting and chest pain has been distressing. Alongside that, I have symptoms like acidity, cough, and stomach pain. Is GERD a possible cause?",
+                "The persistent presence of ulcers on my tongue, along with symptoms like acidity, cough, and stomach pain, is concerning me. Could this be due to GERD?",
+                "I'm dealing with acidity, a chronic cough, and stomach pain. To add to that, I've developed ulcers on my tongue. Is GERD a potential diagnosis?",
+                "GERD is suspected due to my symptoms, which include vomiting, chest pain, acidity, cough, and stomach pain. How can I find relief from these symptoms?",
+                "Could GERD be causing my symptoms, such as stomach pain, ulcers on my tongue, cough, and excessive acidity?",
+                "I've had recurring symptoms like vomiting, chest pain, acidity, and cough. Additionally, I have ulcers on my tongue. Could GERD be the underlying issue?",
+                "My symptoms, including ulcers on my tongue, have made me consider the possibility of GERD. Alongside that, I've been experiencing acidity, cough, and stomach pain.",
+                "The combination of vomiting, chest pain, and other symptoms like acidity, cough, and stomach pain has me concerned about GERD. What should I do next?",
+                "Is GERD a likely diagnosis for me, considering my symptoms, which include stomach pain, ulcers on my tongue, cough, and acidity?"
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it's possible that you are experiencing GERD. If your symptoms are severe, it's essential to consult with a healthcare professional or visit the nearest hospital for a proper evaluation and guidance on managing GERD."
+            ]
+        },
+        
+        
+        {
+            "tag": "Chronic cholestasis",
+            "patterns": [
+                "I've been experiencing acidity, itching, and dark urine, and my skin has turned yellowish. Is this a sign of chronic cholestasis?",
+                "Abdominal pain, a loss of appetite, and yellowing of the eyes have been ongoing issues for me. Could it be related to chronic cholestasis?",
+                "The presence of vomiting and nausea, along with other symptoms like dark urine and yellowish skin, has made me wonder if I might have chronic cholestasis.",
+                "I've noticed that I have acidity, and my skin has turned yellow. Could this be a symptom of chronic cholestasis?",
+                "Dealing with abdominal pain, a loss of appetite, and yellowing of the eyes is causing significant concern, and I'm considering the possibility of chronic cholestasis.",
+                "I've been having episodes of vomiting and persistent nausea. Alongside that, I've observed dark urine and yellowish skin. Could this be related to chronic cholestasis?",
+                "The combination of acidity, itching, and dark urine, along with yellowing of the skin, has led me to believe that I might have chronic cholestasis.",
+                "Abdominal pain, a loss of appetite, and the noticeable yellowing of the eyes are affecting my daily life. I'm wondering if these are symptoms of chronic cholestasis.",
+                "Experiencing vomiting and nausea has been difficult, and I've also observed other symptoms like dark urine and yellowish skin. Could it be due to chronic cholestasis?",
+                "I've been feeling unwell with symptoms like acidity and itching. The dark urine and yellow skin have me concerned about chronic cholestasis."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it's possible that you are experiencing chronic cholestasis. If your symptoms are severe, it's essential to seek medical attention promptly. Please consult with a healthcare professional for a thorough evaluation and appropriate guidance."
+            ]
+        },
+        
+        
+        {
+            "tag": "Peptic ulcer disease",
+            "patterns": [
+                "I have internal itching, abdominal pain, and a loss of appetite, and I'm worried it might be Peptic ulcer disease.",
+                "My symptoms include yellowing of the eyes, vomiting, and the passage of gases. Could this be related to Peptic ulcer disease?",
+                "Additionally, I have indigestion and my stomach is upset, and I suspect it might be Peptic ulcer disease causing these issues.",
+                "The presence of internal itching, abdominal pain, and a loss of appetite is causing significant discomfort, and I'm curious if it's linked to Peptic ulcer disease.",
+                "I've noticed symptoms like yellowing of the eyes, vomiting, and the passage of gases. I'm concerned that Peptic ulcer disease might be the cause.",
+                "Dealing with indigestion and a consistently upset stomach has been challenging. Could this be a sign of Peptic ulcer disease?",
+                "I'm experiencing internal itching, and the abdominal pain and loss of appetite have raised concerns about the possibility of Peptic ulcer disease.",
+                "The symptoms, including yellowing of the eyes, vomiting, and the passage of gases, have led me to consider Peptic ulcer disease as a potential cause.",
+                "My ongoing indigestion and stomach issues are affecting my daily life, and I'm wondering if Peptic ulcer disease is responsible for these symptoms.",
+                "I've been dealing with a combination of internal itching, abdominal pain, and a loss of appetite. Could this be related to Peptic ulcer disease?"
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Peptic ulcer disease. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Gastroenteritis",
+            "patterns": [
+                "I have polyuria, sunken eyes, and abdominal pain, which are causing significant discomfort. Could this be related to Gastroenteritis?",
+                "I'm experiencing dehydration and dealing with diarrhea, as well as excessive hunger. I'm concerned that these symptoms might be linked to Gastroenteritis.",
+                "Additionally, I have obesity, vomiting, and an increased appetite. I wonder if these symptoms are indicative of Gastroenteritis.",
+                "The presence of polyuria, sunken eyes, and abdominal pain is highly distressing, and I suspect that Gastroenteritis might be the cause.",
+                "I've noticed signs of dehydration, including diarrhea, and I'm constantly hungry. Could Gastroenteritis be responsible for these symptoms?",
+                "In addition to polyuria, I have sunken eyes and abdominal pain, which are highly uncomfortable. I'm curious if Gastroenteritis might be the underlying issue.",
+                "Dealing with dehydration, diarrhea, and the persistent feeling of excessive hunger is affecting my daily life. Could this be a case of Gastroenteritis?",
+                "I've been experiencing obesity, vomiting, and an increased appetite, and it's possible that these symptoms are related to Gastroenteritis.",
+                "The combination of polyuria, sunken eyes, and abdominal pain has raised concerns about the possibility of Gastroenteritis. I'd like to learn more about this condition.",
+                "My symptoms, which include dehydration, diarrhea, and the constant feeling of hunger, have led me to consider the possibility of Gastroenteritis."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Gastroenteritis. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Bronchial Asthma",
+            "patterns": [
+                "I'm experiencing polyuria, mucoid sputum, and high fever, which are causing significant discomfort.",
+                "I feel fatigued and have developed a persistent cough, as well as abdominal pain. It's possible that these symptoms are related to Bronchial Asthma.",
+                "Excessive hunger and shortness of breath have become part of my daily life. These symptoms are often associated with Bronchial Asthma.",
+                "I've noticed polyuria, the presence of mucoid sputum, and a high fever, and these symptoms are taking a toll on my well-being. Could this be related to Bronchial Asthma?",
+                "Dealing with fatigue, a troublesome cough, and abdominal pain has become a daily struggle. These symptoms may be indicative of Bronchial Asthma.",
+                "The combination of excessive hunger and shortness of breath is affecting my daily activities, and it's possible that I might be dealing with Bronchial Asthma.",
+                "Polyuria, mucoid sputum, and high fever are causing me considerable discomfort. I suspect that these symptoms may be associated with Bronchial Asthma.",
+                "My persistent fatigue and the development of a cough, as well as abdominal pain, have raised concerns about the possibility of Bronchial Asthma.",
+                "I've been experiencing excessive hunger and significant shortness of breath. These symptoms could be related to Bronchial Asthma, and I'd like to know more about it.",
+                "The presence of polyuria, mucoid sputum, and high fever is highly distressing. I'm curious if these symptoms might be linked to Bronchial Asthma."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Bronchial Asthma. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Hypertension",
+            "patterns": [
+                "I'm experiencing dizziness, a lack of concentration, and an unusual increase in hunger, which is causing concern.",
+                "My irritability and obesity have become persistent issues, and they are often accompanied by severe headaches and chest pain.",
+                "Dealing with dizziness, a lack of concentration, and excessive hunger is taking a toll on my daily life. These symptoms are often linked to Hypertension.",
+                "Hypertension has made me irritable and obese, and the frequent headaches and chest pain are highly distressing.",
+                "The combination of dizziness, lack of concentration, and an insatiable hunger is affecting my overall well-being, and I suspect it might be related to Hypertension.",
+                "I've noticed that I'm becoming irritable and struggling with obesity, in addition to having severe headaches and chest pain, which are often associated with Hypertension.",
+                "The dizziness, lack of concentration, and excessive hunger are affecting my daily activities. I'm concerned that these symptoms might be due to Hypertension.",
+                "Dealing with irritability and obesity is challenging, and the presence of frequent headaches and chest pain raises concerns about Hypertension.",
+                "Hypertension is making me experience symptoms such as dizziness, a lack of concentration, and increased hunger, which are interfering with my daily life.",
+                "I've observed that I'm becoming irritable, and the weight gain is noticeable. Alongside these issues, I'm often troubled by severe headaches and chest pain, which could be related to Hypertension."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Hypertension. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Migraine",
+            "patterns": [
+                "I'm experiencing polyuria, acidity, and depression, which is taking a toll on my well-being.",
+                "My symptoms include a stiff neck, an intense headache, and indigestion. I'm also struggling with blurred and distorted vision.",
+                "The changes in my appetite have been significant, and I often deal with excessive hunger alongside my migraine symptoms.",
+                "Polyuria, acidity, and depression have become part of my daily life, and they are often accompanied by a stiff neck, severe headache, and indigestion.",
+                "The persistent migraine is affecting my overall health, and I'm also dealing with visual disturbances such as blurred and distorted vision.",
+                "The acidity and depression are causing distress, along with the stiff neck and indigestion that are common with my migraine.",
+                "Dealing with polyuria, acidity, and depression is challenging, especially when accompanied by a severe headache, a stiff neck, and changes in appetite.",
+                "I've noticed changes in my appetite, with a particular increase in hunger. The headache and stiff neck are also recurrent issues.",
+                "Migraine has taken a toll on me with a persistent headache, a stiff neck, and visual disturbances. The polyuria, acidity, and depression add to my discomfort.",
+                "I'm experiencing both polyuria and acidity, which are often associated with depression. On top of that, I have a severe headache, a stiff neck, and indigestion."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Migraine. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Cervical spondylosis",
+            "patterns": [
+                "I have back pain, dizziness, and visual disturbances along with feelings of depression.",
+                "I'm feeling irritable, and there's a noticeable weakness in my limbs. I also experience frequent nausea and a loss of balance.",
+                "Dealing with neck pain, lightheadedness, frequent visual disturbances, and irritability has become a constant challenge.",
+                "The back pain I'm experiencing is causing significant discomfort, and the dizziness is affecting my daily life. I'm also struggling with depression.",
+                "I've noticed irritability, and the weakness in my limbs is becoming more pronounced. Nausea and an increasing loss of balance are concerning me.",
+                "The neck pain I'm dealing with, along with persistent lightheadedness and frequent visual disturbances, is impacting my overall well-being.",
+                "Back pain is a recurring issue for me, and the dizziness is making daily tasks difficult. I also experience visual disturbances and feelings of depression.",
+                "The weakness in my limbs has become quite pronounced, and it's affecting my mobility. Nausea and a loss of balance are additional symptoms that trouble me.",
+                "Cervical spondylosis is causing neck pain, and the lightheadedness is causing concern. Frequent visual disturbances and irritability have become part of my daily life.",
+                "I'm grappling with consistent back pain, dizziness, and visual disturbances that are often accompanied by feelings of depression.",
+                "The noticeable weakness in my limbs is a source of frustration, and I frequently experience nausea and a loss of balance."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Cervical spondylosis. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Paralysis (brain hemorrhage)",
+            "patterns": [
+                "I'm having frequent visual disturbances, and there's a persistent abdominal pain.",
+                "I'm feeling irritable and have noticed significant weakness affecting one side of my body.",
+                "Fluid overload, episodes of vomiting, a constant headache, and altered sensorium have become my daily challenges.",
+                "My visual disturbances have intensified, and the abdominal pain is causing considerable discomfort.",
+                "I'm dealing with irritability, and the weakness on one side of my body has become more pronounced.",
+                "The concerns about fluid overload, accompanied by frequent vomiting, an unrelenting headache, and altered sensorium, have become a constant source of worry.",
+                "I can't ignore the visual disturbances that have become part of my daily life, and the abdominal pain is taking a toll on my overall health.",
+                "I'm irritable and feeling significantly weakened on one side of my body, making daily tasks extremely challenging.",
+                "The anxiety related to fluid overload, frequent vomiting, a throbbing headache, and altered sensorium is affecting my well-being.",
+                "Visual disturbances are interfering with my daily life, and the abdominal pain remains persistent and troubling.",
+                "I'm grappling with irritability and the persistent weakness in one side of my body, which is limiting my mobility.",
+                "The ongoing worries about fluid overload, frequent vomiting, a relentless headache, and altered sensorium are having a significant impact on my life."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Paralysis (brain hemorrhage). If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Jaundice",
+            "patterns": [
+                "I have itching, along with a high fever, and I feel overwhelmingly tired.",
+                "I'm experiencing fatigue and have noticed a change in my skin color, turning it yellow, and my urine has darkened.",
+                "Feeling depressed and irritable has become a constant challenge for me.",
+                "Additionally, I'm dealing with breathlessness, a noticeable drop in weight, frequent episodes of vomiting, muscle pain, and a significantly increased appetite.",
+                "The itching on my skin has intensified, and I'm running a high fever, which is causing distress.",
+                "My energy levels have significantly dropped, and I have visible jaundice with dark urine.",
+                "Persistent feelings of sadness and irritability are affecting my mental health.",
+                "I'm experiencing breathlessness, unexplained weight loss, frequent vomiting, muscle aches, and an insatiable appetite that's become a source of concern.",
+                "I can't resist scratching due to the severe itching, and the high fever has left me feeling weak.",
+                "The fatigue is overwhelming, and my skin has taken on a yellow hue while my urine remains dark.",
+                "The persistent mood changes, particularly depression and irritability, have taken a toll on my emotional well-being.",
+                "Breathlessness has become a frequent issue, and the noticeable weight loss is worrisome.",
+                "I'm experiencing regular bouts of vomiting, muscle pain, and an uncontrollable increase in appetite.",
+                "The itching sensation on my skin is unbearable, and the high fever is causing substantial discomfort.",
+                "I've become extremely fatigued, and my skin's yellow coloration is highly noticeable. My urine has darkened considerably.",
+                "The emotional toll is considerable, and my moods, especially feelings of depression and irritability, are severely affected.",
+                "Breathlessness is a constant struggle, and my significant weight loss is worrying me. I've also been vomiting frequently and have muscle pain.",
+                "I'm dealing with an unbearable itch, and the persistently high fever has left me feeling debilitated.",
+                "The persistent fatigue and the distinct yellow color of my skin, along with dark urine, have led to concerns about my health.",
+                "I'm experiencing a range of emotional changes, including depression and irritability, which are affecting my daily life.",
+                "Breathlessness has become an alarming issue, and the significant weight loss is causing considerable distress.",
+                "Frequent vomiting, muscle pain, and an insatiable appetite have become daily challenges."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Jaundice. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Malaria",
+            "patterns": [
+                "I have swelled lymph nodes and a mild fever, and I'm frequently urinating.",
+                "My symptoms include polyuria, along with a high fever, which is causing concern.",
+                "I'm experiencing visual disturbances, a change in urine color, and abdominal pain.",
+                "Diarrhea and irritability are also concerning me, along with a persistent headache.",
+                "I have a headache, and I'm dealing with vomiting, profuse sweating, and persistent nausea.",
+                "Additionally, I'm experiencing chills and a sensation of extreme coldness.",
+                "The lymph nodes in my body have swollen, and I'm running a low-grade fever.",
+                "My symptoms include frequent urination and a high body temperature, which is worrying me.",
+                "I'm having difficulty with my vision, changes in urine coloration, and abdominal discomfort.",
+                "The presence of diarrhea and irritability is causing distress, and I also have a constant headache.",
+                "I'm struggling with a severe headache, vomiting, excessive sweating, and unrelenting nausea.",
+                "The chills and cold sensation I'm experiencing are becoming unbearable.",
+                "Swollen lymph nodes, a mild fever, and a frequent urge to urinate are part of my daily life.",
+                "Polyuria, along with a persistent high fever, has made me highly anxious about my condition.",
+                "My visual perception is altered, my urine has changed color, and I'm suffering from abdominal pain.",
+                "The occurrence of diarrhea and constant irritability is a significant concern, and the persistent headache is taking a toll on my health.",
+                "I'm enduring a persistent headache, frequent vomiting, excessive sweating, and relentless nausea.",
+                "The chills and the constant sensation of coldness are becoming increasingly severe."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Malaria. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Chicken pox",
+            "patterns": [
+                "I'm experiencing itching, high fever, and fatigue, which are typical of chicken pox.",
+                "My condition includes malaise, abdominal pain, and loss of appetite.",
+                "I have a skin rash and diarrhea, which are common in chicken pox.",
+                "Lethargy, headache, muscle pain, and nausea are part of my symptoms.",
+                "I have an intense itch, a high fever, and a lot of weariness.",
+                "I'm dealing with uneasiness, abdominal discomfort, and a lack of appetite.",
+                "My skin is covered with a rash, and I have diarrhea.",
+                "I feel very flat, worried, and have muscle pain and nausea.",
+                "I have an itchy sensation, a high fever, and a sense of tiredness, which are common symptoms of chickenpox.",
+                "My skin is irritated, and I'm running a high temperature, experiencing typical signs of chicken pox.",
+                "This condition is causing a general feeling of discomfort, abdominal discomfort, and loss of appetite.",
+                "I'm observing a skin eruption and digestive issues, which align with chicken pox symptoms.",
+                "The constant tiredness, persistent headache, muscle discomfort, and feeling nauseous are highly suggestive of chicken pox.",
+                "The itchiness is quite severe, and I'm running a high fever and feeling exceptionally drained.",
+                "I'm struggling with restlessness, abdominal pain, and a significant lack of appetite.",
+                "My body is covered in a rash, and I'm experiencing episodes of diarrhea.",
+                "I'm emotionally drained, anxious, and suffering from muscle pain and nausea.",
+                "An itching sensation, high fever, and extreme fatigue have taken over, indicating possible chickenpox.",
+                "The skin has developed eruptions, and my digestive system is affected, all of which align with chicken pox symptoms.",
+                "My energy levels are extremely low, and I'm experiencing a constant headache, muscle pain, and persistent nausea.",
+                "The itching is unbearable, and I'm running a high fever, which is indicative of chicken pox.",
+                "I'm struggling with an unsettled feeling, abdominal pain, and a considerable loss of appetite.",
+                "The skin rash has spread, and episodes of diarrhea have become a recurrent issue.",
+                "My emotional state is affected, and I'm experiencing muscle discomfort and constant nausea.",
+                "I have a strong itch, a heightened body temperature, and overwhelming fatigue, which are characteristic of chickenpox."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Chicken pox. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Dengue",
+            "patterns": [
+                "I've noticed an unusual swelling of lymph nodes, and my body temperature keeps fluctuating between mild and high fever.",
+                "The persistent feeling of fatigue and overall malaise is making it difficult to function normally.",
+                "Joint pain and a significant loss of appetite have also become part of my daily life.",
+                "I've observed a skin rash and a change in the color of my urine, which is causing concern.",
+                "In addition to these symptoms, I'm experiencing frequent episodes of abdominal pain and vomiting.",
+                "Red spots and raised skin rashes have covered various parts of my body, and the pain from the headache and muscle aches is constant.",
+                "The chills are becoming more pronounced, and the swelling of my lymph nodes is quite evident.",
+                "My fever continues to fluctuate, and the overwhelming fatigue has left me feeling extremely debilitated.",
+                "The sense of unease and the burning or painful sensation in my muscles are unbearable.",
+                "The persistent loss of appetite has led to weight loss, and the rash on my skin is causing significant discomfort.",
+                "My urine appears noticeably darker, and I can't escape the discomfort of abdominal muscle pain.",
+                "I'm constantly troubled by vomiting, and the red, raised spots all over my torso are a source of great distress.",
+                "The intensity of the headache and muscle pain has reached a point of severity, and I'm shivering uncontrollably.",
+                "I've noticed changes in the color of my urine and the skin on my body, which is highly unsettling.",
+                "The abdominal pain has become unbearable, and the persistent nausea is making it nearly impossible to eat or drink.",
+                "My overall physical and mental well-being has significantly deteriorated due to these ongoing symptoms.",
+                "The lymph nodes on my body are swollen, and I'm experiencing alternating bouts of mild and high fever.",
+                "The unrelenting fatigue and malaise have affected my daily life, and the joint pain is causing significant discomfort.",
+                "I've lost my appetite, and the skin rash and dark urine are highly concerning.",
+                "Abdominal pain and vomiting have become recurrent issues, making life extremely challenging.",
+                "I've developed red spots and rashes all over my body, and the persistent headache and muscle pain are taking a toll on my health.",
+                "The chills are becoming more pronounced, and the lymph nodes are visibly swollen.",
+                "The fever keeps fluctuating, and the ongoing unease and muscle pain are unbearable.",
+                "The loss of appetite is persistent and has led to significant weight loss, and the skin rash is causing constant discomfort.",
+                "My urine has turned a noticeable shade of dark, and the abdominal muscle pain has become increasingly severe.",
+                "The recurring episodes of vomiting are distressing, and the red, raised spots on my torso have left me anxious and worried.",
+                "The headache and muscle pain are reaching a level of severity that I can no longer ignore.",
+                "I'm shivering constantly, and the lymph nodes have swollen significantly, causing great discomfort."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Dengue. Dengue can be a severe illness, and it's essential to seek medical attention, especially if your symptoms are severe. Please don't hesitate to visit the nearest hospital. For additional guidance and support, you can also use our Symptom Checker. Just click the button next to the input text box and follow the instructions."
+            ]
+        },
+        
+        
+        {
+            "tag": "Typhoid",
+            "patterns": [
+                "I'm experiencing swelled lymph nodes, along with persistent back pain and joint discomfort.",
+                "My body temperature has been fluctuating between mild fever and high fever, often accompanied by chills and shivering.",
+                "I'm dealing with constipation and a persistent, uncomfortable sensation behind my eyes, leading to frequent visual disturbances.",
+                "The overall feeling is one of fatigue and malaise, leaving me constantly exhausted and unwell.",
+                "Abdominal pain, loss of appetite, and recurrent episodes of diarrhea and vomiting have become a regular part of my life.",
+                "Frequent and intense headaches are causing me distress, and I've noticed red spots and rashes all over my body.",
+                "Muscle pain, nausea, and a strange pain behind my heart have become persistent issues that I can't ignore.",
+                "I also have ocular disturbances, with blurred vision and yellowing of the eyes, and there's a constant feeling of uneasiness.",
+                "Abdominal pain and the loss of appetite are causing concern, and I'm experiencing frequent diarrhea and vomiting, which is taking a toll on my health.",
+                "On top of all this, I have headaches, red spots all over my body, and ongoing muscle pain that's affecting my daily life.",
+                "Nausea and sickness have become part of my daily routine, making life challenging and uncomfortable.",
+                "I feel weak, exhausted, and uncomfortable, with persistent fever, and my skin has developed a peculiar rash that concerns me.",
+                "Swollen lymph nodes and a constant fever, along with chills, are making my condition quite distressing.",
+                "The headache and muscle pain are unbearable, and I've observed unusual changes in the color of my urine and skin.",
+                "I've also noticed significant weight loss and a consistent yellowing of my eyes, which are all alarming symptoms.",
+                "The ongoing discomfort in my abdomen is quite concerning, with frequent episodes of diarrhea and vomiting that I can't control.",
+                "I'm constantly irritable due to the unending fatigue, nausea, and digestive issues that plague my life.",
+                "My vision has deteriorated, and I've developed a strange rash all over my body, which is a new and distressing symptom.",
+                "The continuous joint pain and abdominal discomfort have become unbearable, and I'm afraid for my health.",
+                "I have severe back pain, severe muscle pain, and a constant fever, which has caused me significant weight loss.",
+                "My skin has turned an unusual color, and I'm noticing swelling in my abdomen, which is highly concerning.",
+                "I've lost my appetite, and my digestive system seems to have completely shut down, leading to consistent diarrhea and vomiting.",
+                "The unrelenting weakness, fatigue, and malaise have made it impossible for me to carry out daily activities.",
+                "I'm also experiencing severe psychological distress and anxiety due to my worsening health condition.",
+                "The unending nausea and sickness are making it nearly impossible for me to enjoy any food or drink.",
+                "My body is in constant turmoil, with severe headaches, muscle pain, and unbearable abdominal discomfort.",
+                "I'm also dealing with a high level of discomfort in my eyes, and my skin appears to be deteriorating rapidly.",
+                "The abdominal pain and digestive troubles are taking a significant toll on my life, and I need immediate medical intervention."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Typhoid. Typhoid can be a severe and life-threatening illness. We strongly recommend seeking immediate medical attention at the nearest hospital. Typhoid can be effectively treated with antibiotics, but early diagnosis is crucial. For additional support and guidance, you can also utilize our Symptom Checker. Simply click the button next to the input text box and follow the instructions."
+            ]
+        },  
+        
+        {
+            "tag": "Hepatitis A",
+            "patterns": [
+                "I'm experiencing malaise, nausea, and belly pain.",
+                "My symptoms include mild fever, abdominal pain, and loss of appetite.",
+                "I have vomiting, prominent veins on my calf, and dark urine.",
+                "I'm noticing yellowish skin, joint pain, and diarrhea.",
+                "I'm suffering from muscle pain, back pain, and yellow urine.",
+                "I have constipation, pain behind the eyes, and a toxic look (typhos).",
+                "I'm seeing red spots over my body, having abdominal pain, and experiencing a mild fever.",
+                "I'm dealing with a loss of appetite, vomiting, and a sensation of pain in my abdomen.",
+                "I have a large vein along my calf, dark urine, and yellowish skin.",
+                "I'm also experiencing joint pain, diarrhea, and muscle pain.",
+                "Additionally, I have back pain, yellowish urine, and constipation.",
+                "I'm feeling weakness and discomfort, and I have a reddish rash all over my body.",
+                "I'm experiencing a mild fever, belly pain, and yellowing of the eyes.",
+                "I have a family history of hepatitis A, and I'm worried about my symptoms.",
+                "I'm dealing with weakness, prominent veins, and nausea.",
+                "I'm struggling with malaise and joint pain sensations.",
+                "My urine has turned yellow, and I have constipation.",
+                "My calf has a large vein, and I'm experiencing yellowish skin and dark urine.",
+                "Additionally, I'm feeling worried and anxious about my condition.",
+                "I'm feeling unwell, have muscle pain, and noticed red spots on my body.",
+                "My body temperature has been fluctuating between mild fever and high fever.",
+                "I'm dealing with loss of appetite, dark urine, and pain behind the eyes.",
+                "I have constipation, abdominal pain, and joint pain sensations.",
+                "I'm experiencing a toxic look (typhos), yellowish skin, and frequent vomiting.",
+                "I've noticed joint pain sensations, dark urine, and a reddish rash on my body."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis A. If your symptoms are severe, consider visiting the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        
+        {
+            "tag": "Hepatitis B",
+            "patterns": [
+                "I'm experiencing malaise, lethargy, and nausea.",
+                "My symptoms include a mild fever, belly pain, and abdominal pain.",
+                "I have a loss of appetite, yellowing of the eyes, and itching.",
+                "I'm noticing swelled lymph nodes, a puffy face, and puffy eyes.",
+                "I'm suffering from fatigue, yellowish skin, and dark urine.",
+                "I have diarrhea, muscle pain, and a toxic look (typhos).",
+                "I'm also experiencing a headache and red spots all over my body.",
+                "I feel uneasy, sluggish, and sick.",
+                "I'm dealing with mild fever, belly pain, and abdominal pain.",
+                "I have a loss of appetite, yellowing of the eyes, and itching.",
+                "Additionally, I'm noticing a rash and red spots over my body.",
+                "I'm feeling worried and anxious about my condition.",
+                "I'm experiencing a mild fever, belly pain, and yellowing of the eyes.",
+                "I have a family history of hepatitis B, and I'm worried about my symptoms.",
+                "I'm struggling with malaise, puffy face, and puffy eyes.",
+                "I'm dealing with fatigue, a toxic look (typhos), and frequent vomiting.",
+                "My skin is turning yellow, and I'm worried about my itching.",
+                "I've noticed a puffy face, puffy eyes, and a loss of appetite.",
+                "I'm feeling uneasy and sick about my condition.",
+                "I have a family history of hepatitis B, and my energy is low.",
+                "I'm dealing with frequent vomiting, muscle pain, and a reddish rash.",
+                "Additionally, I have a family history of the disease and an itchy sensation.",
+                "I'm struggling with fatigue, a mild fever, and a toxic look (typhos).",
+                "I have a rash, yellowish skin, and dark urine.",
+                "I've noticed puffy face, puffy eyes, and frequent nausea."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis B. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+               
+        {
+            "tag": "Hepatitis C",
+            "patterns": [
+                "I had a history of receiving a blood transfusion.",
+                "I'm experiencing malaise, nausea, and a mild fever.",
+                "My symptoms include abdominal pain, loss of appetite, and yellowing of the eyes.",
+                "I have a family history of hepatitis C and feel fatigued.",
+                "I'm noticing yellowish skin and diarrhea.",
+                "I have a history of receiving unsterile injections and muscle pain.",
+                "I'm also experiencing back pain and yellow urine.",
+                "I suffer from constipation, pain behind the eyes, and a fast heart rate.",
+                "I've developed red spots all over my body.",
+                "I'm concerned about hepatitis C due to my history of blood transfusion.",
+                "I'm feeling unwell, have nausea, and a mild fever.",
+                "I'm dealing with abdominal pain and a loss of appetite.",
+                "I have yellowing of the eyes and a family history of the disease.",
+                "Additionally, I'm fatigued, have yellowish skin, and suffer from diarrhea.",
+                "I received unsterile injections, which worry me due to hepatitis C risk.",
+                "I'm also experiencing muscle pain, back pain, and yellow urine.",
+                "I'm struggling with constipation, pain behind the eyes, and a rapid heart rate.",
+                "I've developed red spots all over my body.",
+                "My energy is low, and I have a reddish rash over my body.",
+                "I have hepatitis C symptoms, including fatigue and a sickly appearance.",
+                "Receiving blood transfusions put me at risk. I'm feeling weak, with yellow skin and dark urine.",
+                "Toxicity symptoms are present, along with blurred vision and joint pain.",
+                "I'm concerned about hepatitis C due to my history of blood transfusion and nausea.",
+                "My skin is turning yellow, and I'm experiencing abdominal discomfort.",
+                "Hepatic symptoms are worrisome, and I have a reddish rash on my body.",
+                "My energy is low, and I have a reddish rash all over my body.",
+                "I'm feeling weak and experiencing sickness.",
+                "I have digestive issues, dark urine, and unsterile injections in my history.",
+                "Abdominal pain, nausea, and fatigue are part of my daily life.",
+                "I've noticed yellowish skin and a family history of hepatitis C.",
+                "I'm concerned about the risk of hepatitis C due to my history of injections.",
+                "Muscle pain, back pain, and yellow urine are my concerns.",
+                "Constipation and a fast heart rate are also symptoms I'm experiencing.",
+                "I'm dealing with yellow skin, fatigue, and blurred vision.",
+                "Receiving blood transfusions makes me anxious, along with a mild fever.",
+                "I'm struggling with a sickly appearance and abdominal discomfort.",
+                "Toxicity symptoms, like a reddish rash, have become noticeable.",
+                "My energy is low, and I have frequent nausea and a rapid heart rate.",
+                "My skin is turning yellow, and my eyes show signs of jaundice.",
+                "I'm dealing with hepatitis C symptoms like a toxic look and loss of appetite.",
+                "Swollen lymph nodes and puffiness are part of my experience.",
+                "I'm concerned about hepatitis C's impact on my daily life.",
+                "I have a history of unsterile injections and abdominal discomfort.",
+                "The symptoms are similar to those of hepatitis C, including fatigue and dark urine.",
+                "I'm anxious about the possibility of hepatitis C.",
+                "I'm feeling weak and have jaundice symptoms.",
+                "Blurred vision, joint pain, and reddish spots are noticeable.",
+                "I'm concerned about the hepatitis C risk due to my past experiences.",
+                "Fatigue and a sickly appearance have become part of my daily routine.",
+                "Yellow skin and dark urine are alarming signs.",
+                "I have hepatitis C symptoms, including nausea and muscle soreness.",
+                "I'm feeling unwell, with pain behind the eyes and a fast heart rate.",
+                "Digestive issues and abdominal pain are bothering me daily.",
+                "My eyes show signs of jaundice, and I have a family history of hepatitis C."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis C. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        
+        {
+            "tag": "hepatitis D",
+            "patterns": [
+                "I have yellow urine and received a blood transfusion.",
+                "Belly pain is bothering me along with fatigue and yellowish skin.",
+                "I'm experiencing joint pain and dark urine. My appetite is gone, and my eyes are yellowing.",
+                "I feel malaise and have abdominal pain due to receiving unsterile injections.",
+                "I've been vomiting and have diarrhea, along with a toxic look (typhos).",
+                "My vision is blurred and distorted, and I'm dealing with nausea.",
+                "I noticed yellow urine and have a history of blood transfusion.",
+                "Tiredness is an issue for me. My skin is turning yellow, and I have joint pain.",
+                "Dark urine and loss of appetite are concerns. My eyes are yellowing, and I experience malaise.",
+                "Abdominal pain is bothering me due to receiving unsterile injections.",
+                "I've been vomiting, dealing with looseness, and have a toxic appearance (typhos).",
+                "My vision is blurry, and I'm nauseated. My urine color has changed, and I may have jaundice.",
+                "I look sick and have abdominal pain. The symptoms are similar to those of hepatitis D.",
+                "I have hepatitis D symptoms, including fatigue and a sickly appearance.",
+                "Receiving blood transfusions put me at risk. I'm feeling weak, with yellow skin and dark urine.",
+                "Toxicity symptoms are present, along with blurred vision and joint pain.",
+                "I'm concerned about hepatitis D due to my history of blood transfusion and nausea.",
+                "My skin is turning yellow, and I'm experiencing abdominal discomfort.",
+                "Hepatic symptoms are worrisome, and I have a reddish rash on my body.",
+                "My energy is low, and I have a reddish rash all over my body.",
+                "I'm feeling weak and experiencing sickness.",
+                "I have digestive issues, dark urine, and unsterile injections in my history.",
+                "Abdominal pain, nausea, and fatigue are part of my daily life.",
+                "I've noticed yellowish skin and a family history of hepatitis D.",
+                "I'm concerned about the risk of hepatitis D due to my history of injections.",
+                "Muscle pain, back pain, and yellow urine are my concerns.",
+                "Constipation and a fast heart rate are also symptoms I'm experiencing.",
+                "I'm dealing with yellow skin, fatigue, and blurred vision.",
+                "Receiving blood transfusions makes me anxious, along with a mild fever.",
+                "I'm struggling with a sickly appearance and abdominal discomfort.",
+                "Toxicity symptoms, like a reddish rash, have become noticeable.",
+                "My energy is low, and I have frequent nausea and a rapid heart rate.",
+                "My skin is turning yellow, and my eyes show signs of jaundice.",
+                "I'm dealing with hepatitis D symptoms like a toxic look and loss of appetite.",
+                "Swollen lymph nodes and puffiness are part of my experience.",
+                "I'm concerned about hepatitis D's impact on my daily life.",
+                "I have a history of unsterile injections and abdominal discomfort.",
+                "The symptoms are similar to those of hepatitis D, including fatigue and dark urine.",
+                "I'm anxious about the possibility of hepatitis D.",
+                "I'm feeling weak and have jaundice symptoms.",
+                "Blurred vision, joint pain, and reddish spots are noticeable.",
+                "I'm concerned about the hepatitis D risk due to my past experiences.",
+                "Fatigue and a sickly appearance have become part of my daily routine.",
+                "Yellow skin and dark urine are alarming signs.",
+                "I have hepatitis D symptoms, including nausea and muscle soreness.",
+                "I'm feeling unwell, with pain behind the eyes and a fast heart rate.",
+                "Digestive issues and abdominal pain are bothering me daily.",
+                "My eyes show signs of jaundice, and I have a family history of hepatitis D."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it appears you might be suffering from Hepatitis D. If your symptoms are severe, seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        
+        {
+            "tag": "hepatitis E",
+            "patterns": [
+                "I have symptoms of hepatitis E, including mild fever and yellow urine.",
+                "My condition involves high fever, fatigue, and yellowish skin.",
+                "I'm experiencing joint pain, dark urine, and a loss of appetite.",
+                "My symptoms also include abdominal pain and yellowing of the eyes.",
+                "I have diarrhea and vomiting, along with muscle pain and nausea.",
+                "I'm suffering from soft pyrexia and yellow piss.",
+                "I'm dealing with richly pyrexia and tiredness.",
+                "My skin appears yellowish, and I have joint pain sensations.",
+                "I noticed dark water and a loss of appetite.",
+                "Abdominal nuisance is a concern, along with yellowing of the middle.",
+                "I'm experiencing looseness, vomiting, and muscular anguish.",
+                "My condition makes me feel sick.",
+                "I think I have hepatitis E due to my symptoms.",
+                "My hepatitis E symptoms include severe fatigue and frequent vomiting.",
+                "I'm facing intestinal distress and pain in the abdomen.",
+                "General malaise and excessive tiredness are affecting me.",
+                "I have an appearance of jaundice, joint discomfort, and high body temperature.",
+                "My urine is yellow-colored and dark-colored.",
+                "I've lost my appetite, and my eyes are turning yellow.",
+                "Muscle soreness and yellow skin coloration are present.",
+                "Digestive issues and abdominal discomfort are bothering me.",
+                "My eyes have turned yellow due to hepatitis E.",
+                "I'm feeling nauseous and have a tendency to vomit.",
+                "I'm extremely weak and experiencing yellowing of the skin.",
+                "I have fatigue, yellow urine, and a family history of hepatitis E.",
+                "I've noticed that my skin is turning yellow, and I have jaundice symptoms.",
+                "I'm dealing with symptoms of hepatitis E, like frequent vomiting and weakness.",
+                "I have a high fever, dark urine, and joint pain sensations.",
+                "Abdominal pain is also affecting me, and I've lost my appetite.",
+                "I'm experiencing discomfort, an appearance of jaundice, and a high body temperature.",
+                "My eyes have turned yellow, and my skin has a yellowish appearance.",
+                "I'm feeling nauseous and have noticed digestive issues and abdominal discomfort.",
+                "My condition has resulted in a weakened state and yellowing of the skin.",
+                "I'm experiencing muscle soreness and abdominal pain due to hepatitis E.",
+                "My urine has turned yellow, and I often feel nauseated and vomit.",
+                "I'm feeling very weak and dealing with the yellowing of the skin and jaundice symptoms.",
+                "I have fatigue and abdominal discomfort, along with an itchy sensation.",
+                "I'm worried about my symptoms, including frequent vomiting and a high body temperature.",
+                "My skin has turned yellow, and I have digestive issues and a loss of appetite.",
+                "I'm struggling with nausea, discomfort, and joint pain sensations.",
+                "My urine coloration has changed, and I've lost my appetite due to hepatitis E.",
+                "I'm feeling weak, nauseous, and experiencing yellowing of the skin."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis E. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        
+            
+        {
+            "tag": "Alcoholic hepatitis",
+            "patterns": [
+                "I suspect my symptoms might be due to alcoholic hepatitis after undergoing a blood transfusion and experiencing a sense of malaise.",
+                "My current condition seems to involve fluid overloading, acute liver failure, and a general feeling of discomfort.",
+                "I've noticed my abdomen swelling, experiencing nausea, and even lapsing into unconsciousness at times.",
+                "I'm dealing with belly pain, a loss of appetite, and episodes of vomiting.",
+                "Yellowing of the eyes, recurring bouts of vomiting, and the presence of enlarged lymph nodes are causing concern.",
+                "There are worries about potential stomach bleeding and the emergence of jaundiced, yellow skin.",
+                "Considering my history of alcohol consumption and past exposure to unsterile injections, I'm growing increasingly anxious about my health.",
+                "Additionally, I've observed my urine turning yellow, along with visible abdominal swelling, and excessive sweating is a daily challenge.",
+                "The concern regarding alcoholic hepatitis is rising as my symptoms persist.",
+                "My body is reacting strongly to alcoholic hepatitis, leading to severe malaise and persistent abdominal muscle pain.",
+                "A significant reduction in appetite has become noticeable, and my eyes are exhibiting jaundice-like symptoms.",
+                "I'm coping with abdominal discomfort, recurring episodes of regurgitation, and noticeable swelling in the lymph nodes.",
+                "The presence of stomach bleeding and the development of yellowed skin have become distressing factors.",
+                "With a notable history of alcohol consumption and potential unsterile injections, I'm growing increasingly concerned about my condition.",
+                "The color of my urine has shifted to a yellow hue, and my abdomen is visibly distended, making excessive sweating a daily battle.",
+                "The possibility of alcoholic hepatitis is a prominent concern as my symptoms persist.",
+                "In light of the symptoms I'm experiencing, it appears that alcoholic hepatitis might be the cause.",
+                "I'm concerned about the implications of fluid overload and the potential for acute liver failure.",
+                "Abdominal distension, nausea, and even lapses into a coma have become part of my experience.",
+                "I'm battling belly pain, loss of appetite, and recurring vomiting.",
+                "The yellowing of my eyes, frequent vomiting, and the presence of swollen lymph nodes are alarming.",
+                "The potential for stomach bleeding and the emergence of yellowish skin have me worried.",
+                "Considering my history of alcohol consumption and prior exposure to unsterile injections, my anxiety about this condition is escalating.",
+                "My urine has taken on a yellow hue, and my abdomen has become noticeably swollen. Excessive sweating only adds to the distress.",
+                "I'm deeply concerned about the possibility of alcoholic hepatitis as my symptoms continue."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it appears that you may have Alcoholic hepatitis. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        
+            
+        {
+            "tag": "common cold prevention",
+            "patterns": [
+                "What medicines can I buy to help me with my common cold?",
+                "tell me some prevention method from common cold",
+                "What should I eat or drink if i am suffering from common cold?",
+                "How can I keep from getting a cold or the flu?",
+                "What should ace wipe_out operating_theater boozing if ane follow endure from uncouth dusty ?",
+                "How dismiss unity restrain from induce vitamin_A inhuman OR the grippe ?"
+            ],
+            "responses": [
+                "medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C\u00e2\u20ac\u201ccontaining fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"
+            ]
+        },
+        {
+            "tag": "fever prevention",
+            "patterns": [
+                "What medicines can I buy to help me with my fever?",
+                "tell me some prevention method from fever",
+                "What should I eat or drink if i am suffering from fever?",
+                "How can I keep from getting a fever?",
+                "What practice_of_medicine can_buoy atomic_number_53 corrupt to assist ME with my febricity ?",
+                "recount ME roughly bar method from fever",
+                "What should iodine corrode operating_room imbibe if 1 exist suffer from pyrexia ?",
+                "How seat unity sustenance from bring A febrility ?"
+            ],
+            "responses": [
+                "medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C\u00e2\u20ac\u201ccontaining fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"
+            ]
+        },
+        {
+            "tag": "diabetes prevention",
+            "patterns": [
+                "What medicines can I buy to help me with my diabetes?",
+                "tell me some prevention method from diabetes",
+                "What should I eat or drink if i am suffering from diabetes?",
+                "How can I keep from getting diabetes?",
+                "What practice_of_medicine canful single grease_one's_palms to avail ME with my diabetes ?",
+                "tell Maine about prevention method from diabetes",
+                "What should ace rust operating_room boozing if iodine americium get from diabetes ?",
+                "How send_away iodine dungeon from scram diabetes ?"
+            ],
+            "responses": [
+                "medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You\u00e2\u20ac\u2122re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"
+            ]
+        },
+        {
+            "tag": "depression prevention",
+            "patterns": [
+                "What medicines can I buy to help me with my depression?",
+                "tell me some prevention method from depression",
+                "What should I eat or drink if i am suffering from depression?",
+                "How can I keep from getting depression?",
+                "What medicament rear iodin steal to helper Pine_Tree_State with my imprint ?",
+                "severalise Pine_Tree_State about prevention method_acting from clinical_depression",
+                "What should one deplete operating_theater fuddle if ace live sustain from low ?",
+                "How hindquarters single save from dumbfound depression ?"
+            ],
+            "responses": [
+                "medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"
+            ]
+        },
+        {
+            "tag": "asthma prevention",
+            "patterns": [
+                "What medicines can I buy to help me with my asthma?",
+                "tell me some prevention method from asthma",
+                "What should I eat or drink if i am suffering from asthma?",
+                "How can I keep from getting asthma?",
+                "What medicine butt one purchase to service Pine_Tree_State with my asthma ?",
+                "recite Pine_Tree_State approximately bar method from asthma",
+                "What should ace rust surgery boozing if ace Am excruciation from asthma ?",
+                "How ass iodine sustenance from get_under_one's_skin asthma ?"
+            ],
+            "responses": [
+                "medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"
+            ]
+        },
+        {
+            "tag": "Consultation",
+            "patterns": [
+                "who should i contact for consultation?",
+                "is there any doctor available?",
+                "can you give me some suggestions for doctor consultations?",
+                "can you set up a meeting with a doctor for consultation?",
+                "is there any doctor available for consultation",
+                "World_Health_Organization should iodine link for audience ?",
+                "personify in_that_respect whatever Doctor uncommitted ?",
+                "tail you establish Maine around hint for doctor reference ?",
+                "throne you placed upwardly vitamin_A fulfill with deoxyadenosine_monophosphate doctor_up for interview ?",
+                "exist thither whatsoever Dr. uncommitted for audience"
+            ],
+            "responses": [
+                "You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."
+            ]
+        }
+    ]
+}

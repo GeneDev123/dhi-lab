@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'compressor',
+    # 'rest_framework',
     'main',
 ]
 
@@ -109,9 +110,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
-# Used to find the static directory within the project
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 # STATICFILES_DIRS = []
 STATICFILES_FINDERS =( 
     'django.contrib.staticfiles.finders.FileSystemFinder',  

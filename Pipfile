@@ -7,6 +7,9 @@ name = "pypi"
 django = "*"
 django-compressor = "*"
 django-libsass = "*"
+djangorestframework = "*"
+tensorflow = "*"
+nltk = "*"
 
 [dev-packages]
 

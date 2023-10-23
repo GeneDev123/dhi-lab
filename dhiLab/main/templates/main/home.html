@@ -1,12 +1,78 @@
 {% extends 'main/base.html' %}
 
+{% load static %}
+
 {% block page_content %}
-  <div class="user-information-page">
-    {% if user.is_authenticated %}
-    <p>Welcome, {{ user.username }} ({{ user.email }})!</p>
-    <a href="{% url 'logout' %}">Logout</a>
-    {% else %}
-      <p>You are not logged in.</p>
-    {% endif %}
+
+  <div id="home-page-container">
+    <div class="chatbot-label-container">
+      <div><img class="logo" src="{% static 'main/assets/logo.svg' %}"></div>
+      <div class="text-container">
+        Symptoms Checker
+      </div>
+      <!-- <button id="classify-symptoms-btn">Classify Symptoms</button> -->
+    </div>
+    
+    <div class="chatbot-main-container">
+      <div class="message-display-container">
+
+        <div class="chatbot-bubble-container">
+          <div class="chatbot-name">
+            Chatbot
+          </div>
+
+          <div class="chatbot-message">
+            Hi {% if user.username %} {{ user.username }} {% else %} Guest {% endif %}! Go ahead and send me a message!😄
+          </div>
+
+        </div>
+
+      </div>
+      
+      <div class="user-options-container">
+        <form id="user-input-message-form">
+          {% csrf_token %}
+          <input type="text" class="user-input-container" id="user-input" placeholder="Type your message..."></input>
+          <button class="user-message-send-btn" id="user-message-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#user-input-message-form').submit(function(e) {
+        e.preventDefault();
+        var user_input = $('#user-input').val();
+
+        $.ajax({
+          type: 'GET',
+          url: "{% url 'home' %}",
+          data: { user_input: user_input },
+          success: function(data) {
+            var response = data.response;
+
+            let userMessage = '<div class="user-bubble-container"><div class="user-name">' + '{% if user.username %} {{ user.username }} {% else %} Guest {% endif %}' + '</div><div class="user-message">' + user_input + '</div></div>';
+            let chatbotResponse = '<div class="chatbot-bubble-container"><div class="chatbot-name">Chatbot</div><div class="chatbot-message">' + response + '</div></div>';
+            
+            $('.message-display-container').append(userMessage);
+            $('.message-display-container').append(chatbotResponse);
+            $('#user-input').val(''); 
+
+            const $container = $(".message-display-container");
+            $container.scrollTop($container[0].scrollHeight);
+          }
+        });
+      });
+      
+      // let classifyBtn = document.getElementById('classify-symptoms-btn');
+      // classifyBtn.addEventListener('click', () => {
+      //   event.preventDefault();
+
+      // });
+    });
+  </script>
+  
 {% endblock %}

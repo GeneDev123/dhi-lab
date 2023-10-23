@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block page_content %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#train-chatbot-btn').click(function() {
+        $.ajax({
+          url: "{% url 'train-chatbot' %}",
+          type: "GET",
+          success: function(response) {
+            alert(response.message);
+          },
+          error: function(xhr) {
+            console.log(xhr.status);
+          }
+        });
+      });
+    });
+  </script>
+
+  <div id="chatbot-info-page-container">  
+    <button id="train-chatbot-btn">
+      Click hear to re train Chatbot
+    </button>
+  </div>
+
+{% endblock %}
