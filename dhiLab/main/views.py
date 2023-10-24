@@ -6,6 +6,8 @@ from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from .forms import CustomUserCreationForm
+from .models import CustomUser
+
 # from rest_framework import generics
 # from .models import CustomUser
 # from .serializers import CustomUserSerializer
@@ -54,7 +56,14 @@ def user_logout(request):
 @login_required(login_url='/accounts/login/')
 def user_profile(request):
   print("In profile view")
-  return render(request, 'main/profile.html')
+  context = {
+    'user_data': request.user,
+  }
+  return render(request, 'main/profile.html', context)
+
+def update_user_data(request):
+  pass
+
 
 @login_required(login_url='/accounts/login/') 
 def home(request):
