@@ -12,32 +12,217 @@
       </div>
     </div>
 
-    <form method="post" class="form-container">
-      {% csrf_token %}
-      {% for field in form %}
-      <p class="display-flex">{{ field.label_tag }} {{ field }}</p>
-      {% endfor %}
+    <div class="user-profile-container">
+      {% if is_updating_data == 0 %}
+        <div class="scrollbar-container">
+        
+          <div class="user-individual-data-container">
+            <div class="data-label">Username: </div>
+            <div class="data">
+              {% if user_data.username %} {{ user_data.username}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">First Name: </div>
+            <div class="data">
+              {% if user_data.first_name %} {{ user_data.first_name}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">Last Name: </div>
+            <div class="data">
+              {% if user_data.last_name %} {{ user_data.last_name}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">Age: </div>
+            <div class="data">
+              {% if user_data.age %} {{ user_data.age}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">Gender: </div>
+            <div class="data">
+              {% if user_data.gender %} {{ user_data.gender}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">Bio: </div>
+            <div class="data bio-container">
+              {% if user_data.bio %} {{ user_data.bio}} {% else %} Unset {% endif %}
+            </div>
+          </div>
 
-      <hr>
+          <hr>
 
-      <div class="options-container">
-        <button type="submit" class="form-submission-button">
-          {% if login_or_register == 'login' %}
-            LOGIN
-          {% else %}
-            REGISTER
-          {% endif %}
-        </button>
+          <div class="user-individual-data-container">
+            <div class="data-label">I am overweight: </div>
+            <div class="data">
+              {% if user_data.is_overweight %} {{ user_data.is_overweight}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">I smoke cigarettes: </div>
+            <div class="data">
+              {% if user_data.is_smoking_cigarettes %} {{ user_data.is_smoking_cigarettes}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">I have been recently injured: </div>
+            <div class="data">
+              {% if user_data.is_recently_injured %} {{ user_data.is_recently_injured}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">I have high colesterol: </div>
+            <div class="data">
+              {% if user_data.is_high_cholesterol %} {{ user_data.is_high_cholesterol}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">I have high hypertension: </div>
+            <div class="data">
+              {% if user_data.is_having_hypertension %} {{ user_data.is_having_hypertension}} {% else %} Unset {% endif %}
+            </div>
+          </div>
+          <div class="user-individual-data-container">
+            <div class="data-label">I have high diabetes: </div>
+            <div class="data">
+              {% if user_data.is_diabetic %} {{ user_data.is_diabetic}} {% else %} Unset {% endif %}
+            </div>
+          </div>
 
-        <div class="authentication-link">
-          {% if login_or_register == 'login' %}
-            <a class="link" href="{% url 'login-register' 'register' %}">Register an account?</a>  
-          {% else %}
-            <a class="link" href="{% url 'login-register' 'login' %}">Login in an existing account?</a>  
-          {% endif %}
+          <hr>
+
         </div>
-      </div>
-    </form>
-    
+
+        <div class="dhi-user-aggreement-container">
+          <div class="dhi-user-aggreement-label">
+            I, 
+              {% if user_data.username != '' %} 
+                <span class="text-bolder">{{ user_data.username}}</span>
+              {% else %}
+                the <span class="text-bolder">User </span>
+              {% endif %}
+            , agree to the DHILab terms and conditions.
+          </div>
+          <input type="checkbox" class="readonly-checkboxes" {% if user_data.is_agree_terms_and_condition %}checked{% endif %} readonly>  
+        </div>    
+
+        <a class="update-user-data" href="{% url 'user-profile' 1 %}">Update User Data</a>
+      {% else %}
+
+        <form method="post">
+          {% csrf_token %}
+
+          <div class="scrollbar-container">
+
+            {{ form.non_field_errors }}
+
+            <div class="user-individual-data-container">
+              <div class="data-label">Username: </div>
+              <div class="data-input">{{ form.username }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">First Name: </div>
+              <div class="data-input">{{ form.first_name }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">Age: </div>
+              <div class="data-input">{{ form.age }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">Gender: </div>
+              <div class="data-input">{{ form.gender }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">Bio: </div>
+              <div class="data-input">{{ form.bio }}</div>
+            </div>
+            
+            <hr>
+
+            <div class="user-individual-data-container">
+              <div class="data-label">I am overweight: </div>
+              <div class="data-input">{{ form.is_overweight }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">I smoke cigarettes: </div>
+              <div class="data-input">{{ form.is_smoking_cigarettes }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">I have been recently injured: </div>
+              <div class="data-input">{{ form.is_recently_injured }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">I have high colesterol: </div>
+              <div class="data-input">{{ form.is_high_cholesterol }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">I have high hypertension: </div>
+              <div class="data-input">{{ form.is_having_hypertension }}</div>
+            </div>
+            
+            <div class="user-individual-data-container">
+              <div class="data-label">I have high diabetes: </div>
+              <div class="data-input">{{ form.is_diabetic }}</div>
+            </div>
+            
+            <hr>
+          
+          </div>
+          
+          <div class="dhi-user-aggreement-container">
+            <div class="dhi-user-aggreement-label">
+              I, 
+                {% if user_data.username != '' %} 
+                  <span class="text-bolder">{{ user_data.username}}</span>
+                {% else %}
+                  the <span class="text-bolder">User </span>
+                {% endif %}
+              , agree to the DHILab terms and conditions.
+            </div>
+          
+            {{ form.is_agree_terms_and_condition }}  
+
+          </div>
+
+          <div class="display-flex">
+            <button type="submit">Save</button>
+            <a class="update-user-data" href="{% url 'user-profile' 0 %}">Cancel</a>
+          </div>
+        </form>
+
+      {% endif %}
+
+    </div>
+
+    <script type="text/javascript">
+      var readonlyCheckeboxes = document.querySelectorAll('.readonly-checkboxes');
+      var readonlyInputs = document.querySelectorAll('.readonly-inputs');
+
+      readonlyCheckeboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('click', function(event) {
+          event.preventDefault();
+          checkbox.checked = !checkbox.checked;
+          return false;
+        });
+      });
+
+      readonlyInputs.forEach(function(input) {
+        input.readOnly = true;
+        input.addEventListener('click', function(event) {
+          event.preventDefault();
+        });
+      });
+    </script>
   </div>
 {% endblock %}

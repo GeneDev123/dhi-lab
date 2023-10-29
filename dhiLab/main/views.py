@@ -1,14 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
-from .forms import CustomUserCreationForm
-# from rest_framework import generics
-# from .models import CustomUser
-# from .serializers import CustomUserSerializer
+from .forms import CustomUserCreationForm, UserUpdateForm
+from .models import CustomUser
 
 from . import chatbot_training
 from . import chatbot_utils
@@ -43,18 +42,33 @@ def user_logout(request):
   logout(request)
   return redirect('home') 
 
-# class CustomUserList(generics.ListCreateAPIView):
-#   queryset = CustomUser.objects.all()
-#   serializer_class = CustomUserSerializer
-
-# class CustomUserDetail(generics.RetrieveUpdateDestroyAPIView):
-#   queryset = CustomUser.objects.all()
-#   serializer_class = CustomUserSerializer
-
 @login_required(login_url='/accounts/login/')
-def user_profile(request):
+def user_profile(request, is_updating_user_data):
   print("In profile view")
-  return render(request, 'main/profile.html')
+  
+  context = {
+    'user_data': request.user,
+    'is_updating_data': 1 if is_updating_user_data == 1 else 0,
+  }
+
+  if request.method == 'POST' and is_updating_user_data == 1:
+    form = UserUpdateForm(request.POST, instance=request.user)
+    if form.is_valid():
+      form.save()
+      messages.success(request, 'Your profile has been updated successfully.')
+      return redirect('user-profile', is_updating_user_data=0)
+    else:
+      messages.error(request, 'There was an error in updating your profile. Please correct the errors.')
+    
+  else:
+    form = UserUpdateForm(instance=request.user)
+
+  context['form'] = form
+  return render(request, 'main/profile.html', context)
+
+def update_user_data(request):
+  pass
+
 
 @login_required(login_url='/accounts/login/') 
 def home(request):
