@@ -202,82 +202,90 @@
   height: 450px;
   width: 100%;
   overflow-y: auto;
+  overflow-x: clip;
   margin-bottom: 20px; }
 
-/* line 75, main/static/main/sass/profile.scss */
+/* line 76, main/static/main/sass/profile.scss */
 #profile-page-container .user-profile-container .user-individual-data-container {
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: auto; }
-  /* line 81, main/static/main/sass/profile.scss */
+  /* line 82, main/static/main/sass/profile.scss */
   #profile-page-container .user-profile-container .user-individual-data-container .data-label, #profile-page-container .user-profile-container .user-individual-data-container .data {
     margin: 5px 0px;
     padding: 5px;
     font-size: 15px;
     border-radius: 6px; }
-  /* line 88, main/static/main/sass/profile.scss */
+  /* line 89, main/static/main/sass/profile.scss */
   #profile-page-container .user-profile-container .user-individual-data-container .data-label {
     font-weight: bold; }
-  /* line 92, main/static/main/sass/profile.scss */
+  /* line 93, main/static/main/sass/profile.scss */
   #profile-page-container .user-profile-container .user-individual-data-container .data {
     background-color: #e4e4e4;
     width: 300px;
     max-width: 300px; }
-  /* line 98, main/static/main/sass/profile.scss */
+  /* line 99, main/static/main/sass/profile.scss */
   #profile-page-container .user-profile-container .user-individual-data-container .bio-container {
-    height: 200px; }
+    height: 200px;
+    overflow-y: scroll; }
 
-/* line 103, main/static/main/sass/profile.scss */
+/* line 105, main/static/main/sass/profile.scss */
 #profile-page-container .user-profile-container .dhi-user-aggreement-container {
   display: flex;
   justify-content: center; }
-  /* line 107, main/static/main/sass/profile.scss */
+  /* line 109, main/static/main/sass/profile.scss */
   #profile-page-container .user-profile-container .dhi-user-aggreement-container .dhi-user-aggreement-label {
     margin-right: 5px; }
 
-/* line 113, main/static/main/sass/profile.scss */
+/* line 115, main/static/main/sass/profile.scss */
 #profile-page-container .text-bolder {
   font-weight: bold; }
 
-/* line 117, main/static/main/sass/profile.scss */
+/* line 119, main/static/main/sass/profile.scss */
 #profile-page-container .display-flex {
   display: flex;
   justify-content: space-between; }
 
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
-  /* line 125, main/static/main/sass/profile.scss */
+  /* line 127, main/static/main/sass/profile.scss */
   #profile-page-container .form-label-container, #profile-page-container .form-container, #profile-page-container .user-profile-container {
     width: 100%; }
-  /* line 131, main/static/main/sass/profile.scss */
+  /* line 133, main/static/main/sass/profile.scss */
   #profile-page-container .form-label-container .logo {
     width: 65px; }
-  /* line 135, main/static/main/sass/profile.scss */
+  /* line 137, main/static/main/sass/profile.scss */
   #profile-page-container .form-label-container .text-container {
     font-size: 30px;
     font-weight: bolder; } }
 
 @media only screen and (max-width: 600px) {
-  /* line 145, main/static/main/sass/profile.scss */
-  #profile-page-container .form-label-container, #profile-page-container .form-container, #profile-page-container .user-profile-container {
-    width: 100%; }
-  /* line 150, main/static/main/sass/profile.scss */
-  #profile-page-container .user-profile-container .user-individual-data-container {
-    display: block; }
-  /* line 155, main/static/main/sass/profile.scss */
-  #profile-page-container .form-label-container {
-    padding: 0px 2rem; }
-    /* line 158, main/static/main/sass/profile.scss */
-    #profile-page-container .form-label-container .logo {
-      width: 50px; }
-    /* line 162, main/static/main/sass/profile.scss */
-    #profile-page-container .form-label-container .text-container {
-      font-size: 25px;
-      font-weight: bolder; }
-  /* line 168, main/static/main/sass/profile.scss */
-  #profile-page-container .form-container, #profile-page-container .user-profile-container {
-    border: none;
-    box-shadow: none; } }
+  /* line 146, main/static/main/sass/profile.scss */
+  #profile-page-container {
+    margin-top: 70px; }
+    /* line 149, main/static/main/sass/profile.scss */
+    #profile-page-container .form-label-container, #profile-page-container .form-container, #profile-page-container .user-profile-container {
+      width: 100%; }
+    /* line 154, main/static/main/sass/profile.scss */
+    #profile-page-container .user-profile-container .user-individual-data-container {
+      display: block; }
+      /* line 157, main/static/main/sass/profile.scss */
+      #profile-page-container .user-profile-container .user-individual-data-container .data {
+        width: 100%; }
+    /* line 163, main/static/main/sass/profile.scss */
+    #profile-page-container .form-label-container {
+      padding: 0px 2rem; }
+      /* line 166, main/static/main/sass/profile.scss */
+      #profile-page-container .form-label-container .logo {
+        width: 50px; }
+      /* line 170, main/static/main/sass/profile.scss */
+      #profile-page-container .form-label-container .text-container {
+        font-size: 25px;
+        font-weight: bolder; }
+    /* line 176, main/static/main/sass/profile.scss */
+    #profile-page-container .form-container, #profile-page-container .user-profile-container {
+      border: none;
+      box-shadow: none; } }
 
 /* line 3, main/static/main/sass/home.scss */
 #home-page-container .chatbot-label-container, #home-page-container .chatbot-container {
