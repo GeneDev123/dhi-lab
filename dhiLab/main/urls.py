@@ -3,8 +3,7 @@ from . import views
 
 urlpatterns = [
     path('accounts/<str:login_or_register_param>/', views.user_login_and_register, name='login-register'),
-    path('profile/', views.user_profile, name='user-profile'),
-    path('profile/', views.update_user_data, name='update-user-data'),
+    path('profile/is-updating=<int:is_updating_user_data>', views.user_profile, name='user-profile'),
     path('logout/', views.user_logout, name='logout'),
     path('home/', views.home, name='home'),
     path('chatbot/', views.chatbot_page, name='chatbot-page'),
