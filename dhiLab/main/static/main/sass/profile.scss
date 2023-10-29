@@ -69,6 +69,7 @@
       height: 450px;
       width: 100%;
       overflow-y: auto;
+      overflow-x: clip;
       margin-bottom: 20px
     }
 
@@ -97,6 +98,7 @@
 
       .bio-container{
         height: 200px;
+        overflow-y: scroll;
       }
 
     }
@@ -142,6 +144,8 @@
 
 @media only screen and (max-width: 600px) {
   #profile-page-container{
+    margin-top: 70px;
+
     .form-label-container, .form-container, .user-profile-container{
       width: 100%;
     }
@@ -149,6 +153,10 @@
     .user-profile-container{
       .user-individual-data-container{
         display: block;
+        
+        .data{
+          width: 100%;
+        }
       }
     }
 
