@@ -1,0 +1,88 @@
+#classifier-main-container{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+
+  .classifier-container-background{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .classifier-container{
+      width: 70%;
+      height: 500px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      position: relative;
+
+      .display-flex{
+        display: flex;
+        height: 100%;
+        width: 100%;
+      }
+
+      .classify-cancel-btn{
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        padding: 10px;
+      }
+
+      .disease-list-container{
+        width: 300px;    
+        padding: 10px 20px;
+
+        .disease-search-bar{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .disease-symptoms-container{
+          overflow-y: scroll;
+          height: 440px;
+          
+          .individual-symptom{
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+          }
+  
+          .individual-symptom:hover{
+            background-color: #005ea2;
+            color: white;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #classifier-main-container{
+    .classifier-container-background{
+      
+      .classifier-container{
+        width: 100%;
+        border-radius: 0px;
+
+        .disease-list-container{
+          width: 100%;
+          
+          .disease-search-bar{
+            width: 80%;
+          }
+        }
+      }
+
+    }
+  }
+}
