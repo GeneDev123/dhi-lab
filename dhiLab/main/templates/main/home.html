@@ -10,10 +10,12 @@
       <div class="text-container">
         Symptoms Checker
       </div>
-      <button id="classify-symptoms-btn">Classify Symptoms</button>
     </div>
     
     <div class="chatbot-main-container">
+      
+      <button id="classify-symptoms-toggle">Classify Symptoms</button>
+      
       <div class="message-display-container">
 
         <div class="chatbot-bubble-container">
@@ -67,11 +69,6 @@
         });
       });
       
-      let classifyBtn = document.getElementById('classify-symptoms-btn');
-      classifyBtn.addEventListener('click', () => {
-        event.preventDefault();
-
-      });
     });
   </script>
   

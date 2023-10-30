@@ -23,6 +23,12 @@
         navLinks[i].parentElement.classList.add("active");
       }
     }
+
+    $(document).ready(function() {
+      $("#classify-symptoms-toggle, .classify-cancel-btn").click(function() {
+        $("#classifier-main-container").toggle();
+      });
+    });
   </script>
 
   {% load compress %}
@@ -84,6 +90,32 @@
 
     </header>
 
+    <div id="classifier-main-container">
+      <!-- Todo: transfer to another template -->
+      <div class="classifier-container-background">
+        <div class="classifier-container">
+          
+          <div class="classify-cancel-btn">
+            Cancel
+          </div>
+
+          <div class="display-flex">
+            <div class="disease-list-container">
+            
+              <input class="disease-search-bar" type="text" placeholder="Search disease">
+              
+              <div class="disease-symptoms-container">
+                {% for symptom in symptoms %}
+                  <div class="individual-symptom">{{ symptom }}</div>
+                {% endfor %}
+              </div>
+  
+            </div>  
+          </div>
+    
+        </div>
+      </div>
+    </div>
 
     <div class="page-content-container">
       {% block page_content %}
