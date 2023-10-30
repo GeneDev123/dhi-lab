@@ -202,7 +202,7 @@
   height: 450px;
   width: 100%;
   overflow-y: auto;
-  overflow-x: clip;
+  overflow-x: auto;
   margin-bottom: 20px; }
 
 /* line 76, main/static/main/sass/profile.scss */
@@ -319,6 +319,10 @@
   border-radius: 1rem;
   padding: 2rem; }
   /* line 37, main/static/main/sass/home.scss */
+  #home-page-container .chatbot-main-container #classify-symptoms-toggle {
+    margin-bottom: 10px;
+    border-radius: 10px; }
+  /* line 42, main/static/main/sass/home.scss */
   #home-page-container .chatbot-main-container .message-display-container {
     width: 100%;
     height: 300px;
@@ -329,70 +333,139 @@
     margin-bottom: 20px;
     color: black;
     overflow-y: auto; }
-    /* line 48, main/static/main/sass/home.scss */
+    /* line 53, main/static/main/sass/home.scss */
     #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container {
       padding: 10px;
       background-color: #efefef;
       border-radius: 10px;
       margin: 10px 0px; }
-      /* line 54, main/static/main/sass/home.scss */
+      /* line 59, main/static/main/sass/home.scss */
       #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-name, #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-message, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container .chatbot-name, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container .chatbot-message {
         text-align: left;
         color: black; }
-      /* line 59, main/static/main/sass/home.scss */
+      /* line 64, main/static/main/sass/home.scss */
       #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container .user-name, #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container .user-message, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container .user-name, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container .user-message {
         text-align: right;
         color: white; }
-      /* line 64, main/static/main/sass/home.scss */
+      /* line 69, main/static/main/sass/home.scss */
       #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-name, #home-page-container .chatbot-main-container .message-display-container .chatbot-bubble-container .user-name, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container .chatbot-name, #home-page-container .chatbot-main-container .message-display-container .user-bubble-container .user-name {
         font-size: 12px;
         text-decoration: underline; }
-    /* line 70, main/static/main/sass/home.scss */
+    /* line 75, main/static/main/sass/home.scss */
     #home-page-container .chatbot-main-container .message-display-container .user-bubble-container {
       background-color: #005ea2; }
-  /* line 77, main/static/main/sass/home.scss */
+  /* line 82, main/static/main/sass/home.scss */
   #home-page-container .chatbot-main-container .user-options-container #user-input-message-form {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around; }
-    /* line 83, main/static/main/sass/home.scss */
+    /* line 88, main/static/main/sass/home.scss */
     #home-page-container .chatbot-main-container .user-options-container #user-input-message-form .user-input-container {
       width: 100%;
       padding: 5px;
       margin-right: 10px; }
 
-/* line 92, main/static/main/sass/home.scss */
+/* line 97, main/static/main/sass/home.scss */
 #home-page-container .display-flex {
   display: flex;
   justify-content: space-between; }
 
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
-  /* line 100, main/static/main/sass/home.scss */
+  /* line 105, main/static/main/sass/home.scss */
   #home-page-container .chatbot-label-container, #home-page-container .chatbot-main-container {
     width: 100%; }
-  /* line 106, main/static/main/sass/home.scss */
+  /* line 111, main/static/main/sass/home.scss */
   #home-page-container .chatbot-label-container .logo {
     width: 65px; }
-  /* line 110, main/static/main/sass/home.scss */
+  /* line 115, main/static/main/sass/home.scss */
   #home-page-container .chatbot-label-container .text-container {
     font-size: 30px;
     font-weight: bolder; } }
 
 @media only screen and (max-width: 600px) {
-  /* line 120, main/static/main/sass/home.scss */
+  /* line 125, main/static/main/sass/home.scss */
   #home-page-container .chatbot-label-container, #home-page-container .chatbot-main-container {
     width: 100%; }
-  /* line 124, main/static/main/sass/home.scss */
+  /* line 129, main/static/main/sass/home.scss */
   #home-page-container .chatbot-label-container {
     padding: 0px 2rem; }
-    /* line 127, main/static/main/sass/home.scss */
+    /* line 132, main/static/main/sass/home.scss */
     #home-page-container .chatbot-label-container .logo {
       width: 50px; }
-    /* line 131, main/static/main/sass/home.scss */
+    /* line 136, main/static/main/sass/home.scss */
     #home-page-container .chatbot-label-container .text-container {
       font-size: 25px;
       font-weight: bolder; }
-  /* line 137, main/static/main/sass/home.scss */
+  /* line 142, main/static/main/sass/home.scss */
   #home-page-container .chatbot-main-container {
     border: none; } }
+
+/* line 1, main/static/main/sass/classifier.scss */
+#classifier-main-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10; }
+  /* line 8, main/static/main/sass/classifier.scss */
+  #classifier-main-container .classifier-container-background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    /* line 17, main/static/main/sass/classifier.scss */
+    #classifier-main-container .classifier-container-background .classifier-container {
+      width: 70%;
+      height: 500px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      position: relative; }
+      /* line 25, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .display-flex {
+        display: flex;
+        height: 100%;
+        width: 100%; }
+      /* line 31, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .classify-cancel-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        padding: 10px; }
+      /* line 38, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .disease-list-container {
+        width: 300px;
+        padding: 10px 20px; }
+        /* line 42, main/static/main/sass/classifier.scss */
+        #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-search-bar {
+          width: 100%;
+          margin-bottom: 10px; }
+        /* line 47, main/static/main/sass/classifier.scss */
+        #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container {
+          overflow-y: scroll;
+          height: 440px; }
+          /* line 51, main/static/main/sass/classifier.scss */
+          #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container .individual-symptom {
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer; }
+          /* line 58, main/static/main/sass/classifier.scss */
+          #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container .individual-symptom:hover {
+            background-color: #005ea2;
+            color: white; }
+
+@media only screen and (max-width: 600px) {
+  /* line 73, main/static/main/sass/classifier.scss */
+  #classifier-main-container .classifier-container-background .classifier-container {
+    width: 100%;
+    border-radius: 0px; }
+    /* line 77, main/static/main/sass/classifier.scss */
+    #classifier-main-container .classifier-container-background .classifier-container .disease-list-container {
+      width: 100%; }
+      /* line 80, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-search-bar {
+        width: 80%; } }
