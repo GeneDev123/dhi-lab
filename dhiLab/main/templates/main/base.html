@@ -26,6 +26,7 @@
 
     $(document).ready(function() {
       $("#classify-symptoms-toggle, .classify-cancel-btn").click(function() {
+
         $("#classifier-main-container").toggle();
       });
     });
@@ -111,6 +112,14 @@
               </div>
   
             </div>  
+
+            <div class="selected-symptoms-container">      
+            </div>
+            
+            <div class="classify-symptoms-btn">
+              <button type="button" id="classify-button">Classify</button>
+            </div>
+            
           </div>
     
         </div>

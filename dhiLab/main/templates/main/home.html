@@ -99,5 +99,50 @@
         }
     });
   </script>
+
+  <script>
+    $(document).ready(function() {
+      let selectedSymptoms = [];
+      const selectedSymptomsContainer = $('.selected-symptoms-container');
+
+      $('.individual-symptom').click(function() {
+        addOrRemoveFromSelectedList(this);
+      });
+    
+      $('#classify-button').click(function() {
+        console.log(selectedSymptoms);
+      });
+
+      selectedSymptomsContainer.on('click', '.selected-symptom', function() {
+        addOrRemoveFromSelectedList(this);
+      });
+
+      function addOrRemoveFromSelectedList(container){
+        const symptomText = $(container).text().trim();
+    
+        if ($.inArray(symptomText, selectedSymptoms) === -1) {
+          selectedSymptoms.push(symptomText);
+          $(this).addClass('selected');
+        } else {
+          selectedSymptoms.splice($.inArray(symptomText, selectedSymptoms), 1);
+          $(this).removeClass('selected');
+        }
+
+        updateSelectedSymptoms(selectedSymptomsContainer, selectedSymptoms);
+      }
+
+      function updateSelectedSymptoms(container, symptoms) {
+        container.empty(); // Clear the container
+
+        if (symptoms.length > 0) {
+          for (const symptom of symptoms) {
+            const selectedSymptom = $('<div class="selected-symptom">' + symptom + '</div>');
+            container.append(selectedSymptom);
+          }
+        }
+      }
+
+    });
+  </script>
   
 {% endblock %}

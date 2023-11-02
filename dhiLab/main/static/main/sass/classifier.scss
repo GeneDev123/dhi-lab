@@ -26,6 +26,7 @@
         display: flex;
         height: 100%;
         width: 100%;
+        justify-content: space-between;
       }
 
       .classify-cancel-btn{
@@ -34,6 +35,42 @@
         right: 0;
         padding: 10px;
       }
+
+      .selected-symptoms-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        padding: 20px;
+        overflow-y: scroll;
+
+        .selected-symptom{
+          align-self: flex-start;
+          background-color: #0c5f96;
+          color: white;
+          border-radius: 15px;          
+          margin: 10px;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .classify-symptoms-btn{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        #classify-button{
+          height: 35px;
+          width: 100%;
+          border: none;
+          color: rgba(255,255,255,.8);
+          border-radius: 10px;
+          margin: 5px;
+          background-color: #005ea2;
+          cursor: pointer;
+        }
+      }  
 
       .disease-list-container{
         width: 300px;    
@@ -74,12 +111,31 @@
         width: 100%;
         border-radius: 0px;
 
+        .display-flex{
+          flex-wrap: wrap;
+          overflow-y: scroll;
+        }
+
         .disease-list-container{
           width: 100%;
           
           .disease-search-bar{
             width: 80%;
           }
+
+          .disease-symptoms-container{  
+            height: 300px;
+            border: 1px solid;
+            border-radius: 10px;
+          }
+        }
+
+        .selected-symptoms-container{
+          height: 300px;
+        }
+
+        .classify-symptoms-btn{
+          height: 100px;
         }
       }
 
