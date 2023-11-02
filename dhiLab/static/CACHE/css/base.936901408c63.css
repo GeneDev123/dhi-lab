@@ -428,44 +428,92 @@
       #classifier-main-container .classifier-container-background .classifier-container .display-flex {
         display: flex;
         height: 100%;
-        width: 100%; }
-      /* line 31, main/static/main/sass/classifier.scss */
+        width: 100%;
+        justify-content: space-between; }
+      /* line 32, main/static/main/sass/classifier.scss */
       #classifier-main-container .classifier-container-background .classifier-container .classify-cancel-btn {
         cursor: pointer;
         position: absolute;
         right: 0;
         padding: 10px; }
-      /* line 38, main/static/main/sass/classifier.scss */
+      /* line 39, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .selected-symptoms-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        padding: 20px;
+        overflow-y: scroll; }
+        /* line 46, main/static/main/sass/classifier.scss */
+        #classifier-main-container .classifier-container-background .classifier-container .selected-symptoms-container .selected-symptom {
+          align-self: flex-start;
+          background-color: #0c5f96;
+          color: white;
+          border-radius: 15px;
+          margin: 10px;
+          padding: 10px;
+          cursor: pointer; }
+      /* line 57, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .classify-symptoms-btn {
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end; }
+        /* line 63, main/static/main/sass/classifier.scss */
+        #classifier-main-container .classifier-container-background .classifier-container .classify-symptoms-btn #classify-button {
+          height: 35px;
+          width: 100%;
+          border: none;
+          color: rgba(255, 255, 255, 0.8);
+          border-radius: 10px;
+          margin: 5px;
+          background-color: #005ea2;
+          cursor: pointer; }
+      /* line 75, main/static/main/sass/classifier.scss */
       #classifier-main-container .classifier-container-background .classifier-container .disease-list-container {
         width: 300px;
         padding: 10px 20px; }
-        /* line 42, main/static/main/sass/classifier.scss */
+        /* line 79, main/static/main/sass/classifier.scss */
         #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-search-bar {
           width: 100%;
           margin-bottom: 10px; }
-        /* line 47, main/static/main/sass/classifier.scss */
+        /* line 84, main/static/main/sass/classifier.scss */
         #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container {
           overflow-y: scroll;
           height: 440px; }
-          /* line 51, main/static/main/sass/classifier.scss */
+          /* line 88, main/static/main/sass/classifier.scss */
           #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container .individual-symptom {
             padding: 10px 5px;
             border-radius: 5px;
             font-size: 12px;
             cursor: pointer; }
-          /* line 58, main/static/main/sass/classifier.scss */
+          /* line 95, main/static/main/sass/classifier.scss */
           #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container .individual-symptom:hover {
             background-color: #005ea2;
             color: white; }
 
 @media only screen and (max-width: 600px) {
-  /* line 73, main/static/main/sass/classifier.scss */
+  /* line 110, main/static/main/sass/classifier.scss */
   #classifier-main-container .classifier-container-background .classifier-container {
     width: 100%;
     border-radius: 0px; }
-    /* line 77, main/static/main/sass/classifier.scss */
+    /* line 114, main/static/main/sass/classifier.scss */
+    #classifier-main-container .classifier-container-background .classifier-container .display-flex {
+      flex-wrap: wrap;
+      overflow-y: scroll; }
+    /* line 119, main/static/main/sass/classifier.scss */
     #classifier-main-container .classifier-container-background .classifier-container .disease-list-container {
       width: 100%; }
-      /* line 80, main/static/main/sass/classifier.scss */
+      /* line 122, main/static/main/sass/classifier.scss */
       #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-search-bar {
-        width: 80%; } }
+        width: 80%; }
+      /* line 126, main/static/main/sass/classifier.scss */
+      #classifier-main-container .classifier-container-background .classifier-container .disease-list-container .disease-symptoms-container {
+        height: 300px;
+        border: 1px solid;
+        border-radius: 10px; }
+    /* line 133, main/static/main/sass/classifier.scss */
+    #classifier-main-container .classifier-container-background .classifier-container .selected-symptoms-container {
+      height: 300px; }
+    /* line 137, main/static/main/sass/classifier.scss */
+    #classifier-main-container .classifier-container-background .classifier-container .classify-symptoms-btn {
+      height: 100px; } }
