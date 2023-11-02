@@ -96,25 +96,38 @@
         data.forEach(function (item) {
           $filteredList.append("<div class='individual-symptom'>" + item + "</div>");
         });
-        }
-    });
-  </script>
 
-  <script>
-    $(document).ready(function() {
+        $('.individual-symptom').click(function() {
+          addOrRemoveFromSelectedList(this);
+        });
+
+      }
+    
       let selectedSymptoms = [];
       const selectedSymptomsContainer = $('.selected-symptoms-container');
 
       $('.individual-symptom').click(function() {
         addOrRemoveFromSelectedList(this);
       });
-    
-      $('#classify-button').click(function() {
-        console.log(selectedSymptoms);
-      });
 
       selectedSymptomsContainer.on('click', '.selected-symptom', function() {
         addOrRemoveFromSelectedList(this);
+      });
+
+      $('#classify-button').click(function() {
+       
+        $.ajax({
+          url: "{% url 'classify-symptoms' %}",  
+          type: "GET",
+          data: { selected_symptoms: selectedSymptoms },
+          success: function (data) {
+            selectedSymptoms = [];
+            $("#classifier-main-container").toggle();
+            formatDiseaseData(data);
+            updateSelectedSymptoms(selectedSymptomsContainer, selectedSymptoms);
+          }
+        });
+
       });
 
       function addOrRemoveFromSelectedList(container){
@@ -132,14 +145,36 @@
       }
 
       function updateSelectedSymptoms(container, symptoms) {
-        container.empty(); // Clear the container
-
+        container.empty(); 
         if (symptoms.length > 0) {
           for (const symptom of symptoms) {
             const selectedSymptom = $('<div class="selected-symptom">' + symptom + '</div>');
             container.append(selectedSymptom);
           }
         }
+      }
+
+      function formatDiseaseData(data){
+        let output = {};
+        let alertMessage = '';
+
+        datasetLength = data['totalDataset'];
+        disease = data['diseases'];
+        
+        if(disease.length > 0){
+          let outputString = '';
+          for(let i = 0; i < disease.length; i++){
+            output[disease[i][0]] = (parseFloat(disease[i][1] / datasetLength) * 100).toFixed(2) + '%';
+            outputString += `${disease[i][0]}: ${output[disease[i][0]]}\n`;
+          }
+
+          alertMessage = 'Out of ' + datasetLength + ' diseases in dataset, matching conditions are: \n\n' + outputString;
+        }
+        else{
+          alertMessage = 'Out of ' + datasetLength + ' diseases in dataset, no matches are found with the given symptoms.'
+        }
+
+        alert(alertMessage);
       }
 
     });

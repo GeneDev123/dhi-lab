@@ -112,6 +112,12 @@ def filter_symptoms(request):
   filtered_symptoms = classifier_utils.filter_symptoms(query, disease["disease_symptoms"])
   return JsonResponse(filtered_symptoms, safe=False)
 
+def classify_symptoms(request):
+  selected_symptoms = request.GET.getlist('selected_symptoms[]')
+  diseases, dataset_length = classifier_utils.classify(selected_symptoms)
+  
+  return JsonResponse({'diseases': diseases, 'totalDataset': dataset_length}, safe=False)
+
 @user_passes_test(is_admin, login_url='/accounts/login/')
 def chatbot_page(request):
   return render(request, 'main/chatbot-page.html')
