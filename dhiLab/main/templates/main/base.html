@@ -104,7 +104,7 @@
             
               <input class="disease-search-bar" type="text" placeholder="Search disease">
               
-              <div class="disease-symptoms-container">
+              <div class="disease-symptoms-container" id="filtered-symptoms">
                 {% for symptom in symptoms %}
                   <div class="individual-symptom">{{ symptom }}</div>
                 {% endfor %}

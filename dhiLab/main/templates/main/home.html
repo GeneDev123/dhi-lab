@@ -72,4 +72,32 @@
     });
   </script>
   
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".disease-search-bar").on("input", function() {
+        var query = $(this).val();
+        filterList(query);
+      });
+
+      function filterList(query) {
+        $.ajax({
+          url: "{% url 'filter-symptoms' %}",  
+          type: "GET",
+          data: { query: query },
+          success: function (data) {
+            updateFilteredList(data);
+          }
+        });
+      }
+
+      function updateFilteredList(data) {
+        var $filteredList = $("#filtered-symptoms");
+        $filteredList.empty();
+        data.forEach(function (item) {
+          $filteredList.append("<div class='individual-symptom'>" + item + "</div>");
+        });
+        }
+    });
+  </script>
+  
 {% endblock %}

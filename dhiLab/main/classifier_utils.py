@@ -17,3 +17,7 @@ def get_disease_list():
     "disease_names": disease_names,
     "disease_symptoms": symptoms
   }
+
+def filter_symptoms(user_input, symptoms_list):
+  filtered_symptoms = [symptom for symptom in symptoms_list if user_input in symptom]
+  return filtered_symptoms

@@ -106,6 +106,12 @@ def home(request):
   
   return render(request, 'main/home.html', context)
 
+def filter_symptoms(request):
+  query = request.GET.get("query", "")
+  disease = classifier_utils.get_disease_list()
+  filtered_symptoms = classifier_utils.filter_symptoms(query, disease["disease_symptoms"])
+  return JsonResponse(filtered_symptoms, safe=False)
+
 @user_passes_test(is_admin, login_url='/accounts/login/')
 def chatbot_page(request):
   return render(request, 'main/chatbot-page.html')
