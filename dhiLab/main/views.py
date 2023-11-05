@@ -131,3 +131,12 @@ def train_chatbot(request):
   print("In Home View")
   chatbot_training.start_chatbot_training()
   return JsonResponse({'message': 'Function executed successfully'})
+
+@login_required(login_url='/accounts/login/') 
+def doctors_page(request):
+  context = {}
+
+  healthcare_professionals = CustomUser.objects.filter(is_health_care_professional=True)
+  
+  context['health_care_prof'] = healthcare_professionals
+  return render(request, 'main/doctors-page.html', context)
