@@ -14,7 +14,68 @@
     align-items: center;
     justify-content: center;
 
-    .classifier-container{
+    .classifier-output-container{
+      display: none;
+
+      .done-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #005ea2;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .header{
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      .classify-output-container{
+        height: 88%;
+        overflow-y: scroll;
+        padding: 15px;
+
+        .single-disease-container{
+          background-color: #005ea2;
+          color: white;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+
+          .disease-name-percent-container{
+            font-size: 20px;
+            font-weight: bolder;
+          }
+
+          .disease-symptom-header{
+            font-weight: bold;
+          }
+
+          .symptom-list-container{
+            display: flex;
+            flex-wrap: wrap;
+
+            .highlighted-symptom{
+              font-weight: bold;
+            }
+
+            div{
+              margin: 5px;
+              padding: 5px;
+              background-color: white;
+              color: black;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .classifier-container, .classifier-output-container{
       width: 70%;
       height: 500px;
       background-color: white;
@@ -107,7 +168,7 @@
   #classifier-main-container{
     .classifier-container-background{
       
-      .classifier-container{
+      .classifier-container, .classifier-output-container{
         width: 100%;
         border-radius: 0px;
 
