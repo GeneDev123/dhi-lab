@@ -11,7 +11,7 @@
           url: "{% url 'train-chatbot' %}",
           type: "GET",
           success: function(response) {
-            alert(response.message);
+            console.log(response);
           },
           error: function(xhr) {
             console.log(xhr.status);

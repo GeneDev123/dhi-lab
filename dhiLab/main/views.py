@@ -85,7 +85,7 @@ def home(request):
   context['symptoms'] = sorted(symptoms)
 
   # Model and Intents directory
-  chatbot_model_dir = "./main/custom_modules/machine-learning-models/chatbot_2023-10-23_04-32-27.h5"
+  chatbot_model_dir = "./main/custom_modules/machine-learning-models/chatbot_model.h5"
   intents_dir = "./main/custom_modules/json/intents2.json"
   model_data = chatbot_utils.initialize_static_chatbot_requirements(chatbot_model_dir, intents_dir)
   
@@ -129,5 +129,8 @@ def chatbot_page(request):
 @user_passes_test(is_admin, login_url='/custom-page/')
 def train_chatbot(request):
   print("In Home View")
-  chatbot_training.start_chatbot_training()
-  return JsonResponse({'message': 'Function executed successfully'})
+  data  = chatbot_training.start_chatbot_training()
+  return JsonResponse({
+    'message': 'Function executed successfully',
+    'data': data
+  })
