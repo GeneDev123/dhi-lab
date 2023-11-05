@@ -22,12 +22,12 @@ def filter_symptoms(user_input, symptoms_list):
   filtered_symptoms = [symptom for symptom in symptoms_list if user_input in symptom]
   return filtered_symptoms
 
+def clean_symptom(symptom):
+  return symptom.strip().replace(" ", "").replace("_", "").lower()
+
 def classify(symptoms):
   with open("./main/custom_modules/json/unique_symptoms.json") as file:
     dataset = json.load(file)
-
-  def clean_symptom(symptom):
-    return symptom.strip().replace(" ", "").replace("_", "").lower()
 
   user_symptoms = [clean_symptom(symptom) for symptom in symptoms]
   ranked_diseases = []
@@ -41,7 +41,10 @@ def classify(symptoms):
 
   top_diseases = [(disease, matches) for disease, matches in ranked_diseases if matches > 0]
 
-  if top_diseases:
-    return top_diseases, len(dataset) 
-  else:
-    return []
+  classify_output = {
+    'top_diseases': top_diseases,
+    'dataset_length': len(dataset),
+    'dataset': dataset
+  }
+
+  return classify_output
