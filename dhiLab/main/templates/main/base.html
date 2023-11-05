@@ -23,6 +23,18 @@
         navLinks[i].parentElement.classList.add("active");
       }
     }
+
+    $(document).ready(function() {
+      $("#classify-symptoms-toggle, .classify-cancel-btn").click(function() {
+        $("#classifier-main-container").toggle();
+      });
+      $(".done-btn").click(function() {
+        $(".classifier-output-container").toggle();
+        $("#classifier-main-container").toggle();
+        $(".classifier-container").toggle();
+        $('.classifier-output-container .single-disease-container').remove();
+      });
+    });
   </script>
 
   {% load compress %}
@@ -84,6 +96,53 @@
 
     </header>
 
+    <div id="classifier-main-container">
+      <!-- Todo: transfer to another template -->
+      <div class="classifier-container-background">
+        <div class="classifier-container">
+          
+          <div class="classify-cancel-btn">
+            Cancel
+          </div>
+
+          <div class="display-flex">
+            <div class="disease-list-container">
+            
+              <input class="disease-search-bar" type="text" placeholder="Search disease">
+              
+              <div class="disease-symptoms-container" id="filtered-symptoms">
+                {% for symptom in symptoms %}
+                  <div class="individual-symptom">{{ symptom }}</div>
+                {% endfor %}
+              </div>
+  
+            </div>  
+
+            <div class="selected-symptoms-container">      
+            </div>
+            
+            <div class="classify-symptoms-btn">
+              <button type="button" id="classify-button">Classify</button>
+            </div>
+            
+          </div>
+    
+        </div>
+        
+        <div class="classifier-output-container">
+          <div class="done-btn">
+            Close Classifier
+          </div>
+
+          <div class="classify-output-container">
+            <div class="header">
+              Classification Output
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>  
 
     <div class="page-content-container">
       {% block page_content %}

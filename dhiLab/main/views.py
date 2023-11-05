@@ -11,6 +11,7 @@ from .models import CustomUser
 
 from . import chatbot_training
 from . import chatbot_utils
+from . import classifier_utils
 
 def is_admin(user):
   return user.is_superuser or user.is_staff
@@ -74,6 +75,15 @@ def update_user_data(request):
 def home(request):
   print("In Home View")
 
+  context = {}
+
+  disease = classifier_utils.get_disease_list()
+  disease_list = disease["disease_names"]
+  symptoms = disease["disease_symptoms"]
+  
+  context['disease_list'] = sorted(disease_list)
+  context['symptoms'] = sorted(symptoms)
+
   # Model and Intents directory
   chatbot_model_dir = "./main/custom_modules/machine-learning-models/chatbot_2023-10-23_04-32-27.h5"
   intents_dir = "./main/custom_modules/json/intents2.json"
@@ -94,7 +104,23 @@ def home(request):
       chatbot_reply = chatbot_utils.get_response(intents, model_data['data'])
       return JsonResponse({'response': chatbot_reply})
   
-  return render(request, 'main/home.html')
+  return render(request, 'main/home.html', context)
+
+def filter_symptoms(request):
+  query = request.GET.get("query", "")
+  disease = classifier_utils.get_disease_list()
+  filtered_symptoms = classifier_utils.filter_symptoms(query, disease["disease_symptoms"])
+  return JsonResponse(filtered_symptoms, safe=False)
+
+def classify_symptoms(request):
+  selected_symptoms = request.GET.getlist('selected_symptoms[]')
+  classification = classifier_utils.classify(selected_symptoms)
+
+  return JsonResponse({
+    'diseases': classification['top_diseases'], 
+    'totalDataset': classification['dataset_length'],
+    'dataset': classification['dataset'],
+  }, safe=False)
 
 @user_passes_test(is_admin, login_url='/accounts/login/')
 def chatbot_page(request):

@@ -10,10 +10,12 @@
       <div class="text-container">
         Symptoms Checker
       </div>
-      <button id="classify-symptoms-btn">Classify Symptoms</button>
     </div>
     
     <div class="chatbot-main-container">
+      
+      <button id="classify-symptoms-toggle">Classify Symptoms</button>
+      
       <div class="message-display-container">
 
         <div class="chatbot-bubble-container">
@@ -67,11 +69,145 @@
         });
       });
       
-      let classifyBtn = document.getElementById('classify-symptoms-btn');
-      classifyBtn.addEventListener('click', () => {
-        event.preventDefault();
+    });
+  </script>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".disease-search-bar").on("input", function() {
+        var query = $(this).val();
+        filterList(query);
+      });
+
+      function filterList(query) {
+        $.ajax({
+          url: "{% url 'filter-symptoms' %}",  
+          type: "GET",
+          data: { query: query },
+          success: function (data) {
+            updateFilteredList(data);
+          }
+        });
+      }
+
+      function updateFilteredList(data) {
+        var $filteredList = $("#filtered-symptoms");
+        $filteredList.empty();
+        data.forEach(function (item) {
+          $filteredList.append("<div class='individual-symptom'>" + item + "</div>");
+        });
+
+        $('.individual-symptom').click(function() {
+          addOrRemoveFromSelectedList(this);
+        });
+
+      }
+    
+      let selectedSymptoms = [];
+      const selectedSymptomsContainer = $('.selected-symptoms-container');
+
+      $('.individual-symptom').click(function() {
+        addOrRemoveFromSelectedList(this);
+      });
+
+      selectedSymptomsContainer.on('click', '.selected-symptom', function() {
+        addOrRemoveFromSelectedList(this);
+      });
+
+      $('#classify-button').click(function() {
+       
+        $.ajax({
+          url: "{% url 'classify-symptoms' %}",  
+          type: "GET",
+          data: { selected_symptoms: selectedSymptoms },
+          success: function (data) {
+            $(".classifier-container").toggle();
+            $(".classifier-output-container").toggle();
+
+            formatDiseaseData(data, selectedSymptoms);
+            
+            selectedSymptoms = [];
+            updateSelectedSymptoms(selectedSymptomsContainer, selectedSymptoms);
+          }
+        });
 
       });
+
+      function addOrRemoveFromSelectedList(container){
+        const symptomText = $(container).text().trim();
+    
+        if ($.inArray(symptomText, selectedSymptoms) === -1) {
+          selectedSymptoms.push(symptomText);
+          $(this).addClass('selected');
+        } else {
+          selectedSymptoms.splice($.inArray(symptomText, selectedSymptoms), 1);
+          $(this).removeClass('selected');
+        }
+
+        updateSelectedSymptoms(selectedSymptomsContainer, selectedSymptoms);
+      }
+
+      function updateSelectedSymptoms(container, symptoms) {
+        container.empty(); 
+        if (symptoms.length > 0) {
+          for (const symptom of symptoms) {
+            const selectedSymptom = $('<div class="selected-symptom">' + symptom + '</div>');
+            container.append(selectedSymptom);
+          }
+        }
+      }
+
+      function cleanData(data){
+        return data.trim().replace(/ /g, '').replace(/_/g, '').toLowerCase();
+      }
+
+      function formatDiseaseData(data, selectedSymptoms){
+        const outputContainer = $('.classify-output-container');
+            
+        datasetLength = data['totalDataset'];
+        disease = data['diseases'];
+        dataset = data['dataset'];
+
+        for(let i = 0; i < selectedSymptoms.length; i++){
+          selectedSymptoms[i] = cleanData(selectedSymptoms[i]);
+        }
+        
+        for(let i = 0; i < disease.length; i++){
+          let diseaseName = disease[i][0];
+          let percentage = ((parseFloat(disease[i][1]) / dataset[diseaseName].length) * 100).toFixed(2) + '%';
+          
+          let diseaseInfo = $('<div>', {
+            text:`${diseaseName}: ${percentage}`,
+            class: 'disease-name-percent-container'
+          });
+
+          let diseaseSymptomsHeader = $('<div>', {
+            text:`Disease Symptoms:`,
+            class: 'disease-symptom-header'
+          });
+
+          let diseaseSymptomsList = $('<div>', {
+            class: 'symptom-list-container'
+          });
+
+          for (const symptom of dataset[diseaseName]) {
+            const listItem = $('<div>').text(symptom);
+            if (selectedSymptoms.includes(cleanData(symptom))) {
+              listItem.addClass('highlighted-symptom');
+            }
+
+            diseaseSymptomsList.append(listItem);
+          }
+
+          let singleOutputContainer = $('<div>', {
+            class: 'single-disease-container'
+          });
+
+          singleOutputContainer.append(diseaseInfo, diseaseSymptomsHeader, diseaseSymptomsList);
+          outputContainer.append(singleOutputContainer);
+         
+        }
+      }
     });
   </script>
   
