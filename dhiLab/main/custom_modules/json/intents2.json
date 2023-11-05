@@ -425,6 +425,485 @@
             ]
         },
         {
+            "tag": "symptoms",
+            "patterns": [
+                "I have some symptoms.",
+                "Can you help with medical symptoms?",
+                "What are common flu symptoms?",
+                "who are you?",
+                "can you tell me your name",
+                "what make_up your nominate",
+                "what should i call_in you",
+                "what 's your public_figure ?",
+                "World_Health_Organization personify you ?",
+                "backside you assure ME your figure"
+            ],
+            "responses": [
+                "I can provide some general information, but it's essential to consult a healthcare professional for accurate diagnosis and advice. More over, you can use my symptoms classifier feature",
+                "Common flu symptoms include fever, cough, sore throat, and fatigue"
+            ]
+        },
+        {
+            "tag": "medication",
+            "patterns": [
+                "What's the dosage for ibuprofen?",
+                "Tell me about over-the-counter pain relievers",
+                "Are there any side effects of this medication?"
+            ],
+            "responses": [
+                "I can provide general information about medications, but it's crucial to follow your doctor's recommendations and read the label for specific dosage instructions and potential side effects.",
+                "Ibuprofen is a common pain reliever. The dosage may vary, so consult your healthcare provider or follow the label instructions."
+            ]
+        },
+        {
+            "tag": "health_advice",
+            "patterns": [
+                "Do you have any health advice?",
+                "How can I stay healthy?",
+                "What are some general health tips?"
+            ],
+            "responses": [
+                "Maintaining a healthy lifestyle includes eating a balanced diet, exercising regularly, getting enough sleep, and managing stress.",
+                "For personalized health advice, it's best to consult a healthcare professional."
+            ]
+        },
+        {
+            "tag": "appointment",
+            "patterns": [
+                "I need to schedule a doctor's appointment.",
+                "Can you help me book a medical appointment?",
+                "When is the next available appointment with a general practitioner?"
+            ],
+            "responses": [
+                "I can't schedule appointments, but I recommend contacting your healthcare provider or their website to book an appointment.",
+                "Please contact your doctor's office for appointment scheduling."
+            ]
+        },
+        {
+            "tag": "medical_condition",
+            "patterns": [
+                "Tell me about diabetes.",
+                "What are the symptoms of asthma?",
+                "Explain hypertension to me."
+            ],
+            "responses": [
+                "I can provide general information about medical conditions, but it's essential to consult a healthcare professional for a proper diagnosis and treatment plan.",
+                "Diabetes is a chronic condition that affects blood sugar levels. Common symptoms include increased thirst, frequent urination, and fatigue."
+            ]
+        },
+        {
+            "tag": "ph_healthcare_system",
+            "patterns": [
+                "How does the healthcare system work in the Philippines?",
+                "Tell me about healthcare in the Philippines."
+            ],
+            "responses": [
+                "The healthcare system in the Philippines includes public and private healthcare providers. Public health services are provided by the government, while private healthcare facilities offer various medical services."
+            ]
+        },
+        {
+            "tag": "ph_health_insurance",
+            "patterns": [
+                "What are the health insurance options in the Philippines?",
+                "Tell me about health insurance in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, health insurance options include PhilHealth, private health insurance providers, and HMOs (Health Maintenance Organizations). These can help cover medical expenses."
+            ]
+        },
+        {
+            "tag": "ph_common_illnesses",
+            "patterns": [
+                "What are common illnesses in the Philippines?",
+                "Tell me about health risks in the Philippines."
+            ],
+            "responses": [
+                "Common illnesses in the Philippines include dengue, tuberculosis, and respiratory infections. Mosquito-borne diseases like dengue can be a concern, so take precautions."
+            ]
+        },
+        {
+            "tag": "ph_vaccination_schedule",
+            "patterns": [
+                "What is the vaccination schedule for children in the Philippines?",
+                "Tell me about vaccines in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, children receive vaccinations against diseases like polio, measles, and tuberculosis. The Department of Health (DOH) provides a recommended schedule."
+            ]
+        },
+        {
+            "tag": "ph_hospitals",
+            "patterns": [
+                "List hospitals in Metro Manila.",
+                "Find hospitals in the Philippines."
+            ],
+            "responses": [
+                "Some well-known hospitals in Metro Manila include St. Luke's Medical Center, Makati Medical Center, and Philippine General Hospital (PGH). There are numerous hospitals throughout the Philippines."
+            ]
+        },
+        {
+            "tag": "ph_symptoms",
+            "patterns": [
+                "What are common symptoms of dengue in the Philippines?",
+                "Tell me about the symptoms of common illnesses in the Philippines."
+            ],
+            "responses": [
+                "Common symptoms of dengue in the Philippines may include high fever, severe headache, joint and muscle pain, rash, and bleeding. It's essential to seek medical attention if you experience these symptoms.",
+                "Symptoms of common illnesses in the Philippines can vary. For example, respiratory infections may cause cough, fever, and difficulty breathing."
+            ]
+        },
+        {
+            "tag": "ph_home_remedies",
+            "patterns": [
+                "Are there traditional home remedies for common illnesses in the Philippines?",
+                "Tell me about natural remedies in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, there are traditional home remedies for various ailments. For instance, ginger and honey may be used for coughs, while calamansi (Philippine lime) is a common remedy for sore throat. However, consult a healthcare professional for serious illnesses."
+            ]
+        },
+        {
+            "tag": "ph_preventing_sickness",
+            "patterns": [
+                "How can I prevent common illnesses in the Philippines?",
+                "Give me tips for staying healthy in the Philippines."
+            ],
+            "responses": [
+                "To prevent common illnesses in the Philippines, practice good hygiene, avoid areas with a high risk of dengue mosquitoes, get vaccinated, and maintain a balanced diet. Stay informed about health advisories from the Department of Health (DOH)."
+            ]
+        },
+        {
+            "tag": "ph_flu_season",
+            "patterns": [
+                "When is the flu season in the Philippines?",
+                "Tell me about the timing of flu outbreaks in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, the flu season typically occurs during the rainy season, which is from June to November. It's advisable to get a flu vaccine and take preventive measures during this period."
+            ]
+        },
+        {
+            "tag": "ph_hospitals_nearby",
+            "patterns": [
+                "Find hospitals near me in the Philippines.",
+                "Locate the nearest hospital in the Philippines."
+            ],
+            "responses": [
+                "To find hospitals near you in the Philippines, you can use online maps and healthcare directories. In case of a medical emergency, call local emergency services or go to the nearest hospital."
+            ]
+        },
+        {
+            "tag": "ph_find_doctor",
+            "patterns": [
+                "How can I find a doctor in the Philippines?",
+                "Find me a medical specialist in the Philippines."
+            ],
+            "responses": [
+                "To find a doctor or medical specialist in the Philippines, you can use online healthcare directories, contact your local hospital, or consult your health insurance provider for recommendations."
+            ]
+        },
+        {
+            "tag": "ph_medical_specialties",
+            "patterns": [
+                "Tell me about different medical specialties in the Philippines.",
+                "What are the types of healthcare professionals in the Philippines?"
+            ],
+            "responses": [
+                "Medical specialties in the Philippines include general practitioners, pediatricians, cardiologists, dermatologists, and more. You can consult the specific specialist depending on your medical needs."
+            ]
+        },
+        {
+            "tag": "ph_healthcare_facilities",
+            "patterns": [
+                "What types of healthcare facilities are available in the Philippines?",
+                "Tell me about medical centers in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, healthcare facilities include hospitals, clinics, diagnostic centers, and specialty medical centers. You can choose a facility based on your medical requirements."
+            ]
+        },
+        {
+            "tag": "ph_healthcare_training",
+            "patterns": [
+                "How can I pursue a career in healthcare in the Philippines?",
+                "Tell me about medical education in the Philippines."
+            ],
+            "responses": [
+                "To pursue a career in healthcare in the Philippines, you can enroll in medical schools, nursing programs, or other healthcare-related courses. Licensing and certification requirements vary by profession."
+            ]
+        },
+        {
+            "tag": "ph_doctor_availability",
+            "patterns": [
+                "Are doctors available 24/7 in the Philippines?",
+                "Tell me about the availability of doctors in emergency situations."
+            ],
+            "responses": [
+                "In the Philippines, most hospitals have emergency departments with doctors available 24/7 to handle medical emergencies. However, it's advisable to call ahead for critical cases."
+            ]
+        },
+        {
+            "tag": "fever_symptoms",
+            "patterns": [
+                "What are the symptoms of a fever?",
+                "Tell me about fever symptoms."
+            ],
+            "responses": [
+                "Fever symptoms may include high body temperature, sweating, chills, headache, and muscle aches. It can be a sign of an underlying infection or illness."
+            ]
+        },
+        {
+            "tag": "cough_cold",
+            "patterns": [
+                "What are the remedies for a common cold?",
+                "Tell me about cough and cold treatments."
+            ],
+            "responses": [
+                "Common cold remedies include rest, hydration, and over-the-counter cold medications. Gargling with warm salt water and using a humidifier can help ease symptoms."
+            ]
+        },
+        {
+            "tag": "headache_causes",
+            "patterns": [
+                "What are common causes of headaches?",
+                "Tell me about headache triggers."
+            ],
+            "responses": [
+                "Common causes of headaches include stress, dehydration, lack of sleep, and tension. Identifying the cause can help in finding the right treatment."
+            ]
+        },
+        {
+            "tag": "stomachache_remedies",
+            "patterns": [
+                "How can I relieve a stomachache?",
+                "Tell me about stomachache remedies."
+            ],
+            "responses": [
+                "To relieve a stomachache, you can try drinking ginger tea, avoiding spicy or fatty foods, and resting. If the pain persists, consult a healthcare professional."
+            ]
+        },
+        {
+            "tag": "sore_throat_care",
+            "patterns": [
+                "What can I do for a sore throat?",
+                "Tell me about caring for a sore throat."
+            ],
+            "responses": [
+                "Sore throat care includes drinking warm liquids, gargling with salt water, and using throat lozenges. If the sore throat is severe or persistent, seek medical advice."
+            ]
+        },
+        {
+            "tag": "hospital_search",
+            "patterns": [
+                "Find hospitals near me.",
+                "Search for healthcare facilities in my area."
+            ],
+            "responses": [
+                "You can search for hospitals and healthcare facilities near you by using online maps and healthcare directories. Remember to specify your location for accurate results."
+            ]
+        },
+        {
+            "tag": "hospital_services",
+            "patterns": [
+                "What services do hospitals provide?",
+                "Tell me about the services offered by healthcare facilities."
+            ],
+            "responses": [
+                "Hospitals offer a wide range of services, including emergency care, surgeries, diagnostic tests, inpatient and outpatient care, and specialized medical treatments."
+            ]
+        },
+        {
+            "tag": "hospital_emergencies",
+            "patterns": [
+                "What should I do in a medical emergency?",
+                "Tell me about handling healthcare emergencies."
+            ],
+            "responses": [
+                "In a medical emergency, call your local emergency number immediately. You can also go to the nearest hospital with an emergency department for immediate medical attention."
+            ]
+        },
+        {
+            "tag": "hospital_quality",
+            "patterns": [
+                "How can I assess the quality of a hospital?",
+                "Tell me about evaluating healthcare facility quality."
+            ],
+            "responses": [
+                "You can assess the quality of a hospital by checking accreditation, patient reviews, the expertise of healthcare professionals, and the availability of advanced medical technology."
+            ]
+        },
+        {
+            "tag": "hospital_visiting_hours",
+            "patterns": [
+                "What are the visiting hours at hospitals?",
+                "Tell me about hospital visiting hours."
+            ],
+            "responses": [
+                "Hospital visiting hours can vary, so it's best to check with the specific hospital. Most hospitals have designated visiting hours to ensure patient rest and privacy."
+            ]
+        },
+        {
+            "tag": "medication_info",
+            "patterns": [
+                "Tell me about common medications.",
+                "What are some commonly used medicines?"
+            ],
+            "responses": [
+                "Common medications include over-the-counter drugs like ibuprofen, aspirin, and paracetamol. Prescription medications can vary based on specific medical conditions."
+            ]
+        },
+        {
+            "tag": "medication_usage",
+            "patterns": [
+                "How should I take my medication?",
+                "Tell me about proper medication usage."
+            ],
+            "responses": [
+                "Proper medication usage involves following your doctor's instructions and the instructions on the medication label. Take medications with or without food, as directed."
+            ]
+        },
+        {
+            "tag": "medication_side_effects",
+            "patterns": [
+                "What are common side effects of medications?",
+                "Tell me about potential medication side effects."
+            ],
+            "responses": [
+                "Common side effects of medications can include nausea, dizziness, headache, and digestive issues. Always consult your healthcare provider if you experience unusual side effects."
+            ]
+        },
+        {
+            "tag": "medication_interactions",
+            "patterns": [
+                "Are there any medication interactions I should be aware of?",
+                "Tell me about potential drug interactions."
+            ],
+            "responses": [
+                "Medication interactions can occur when two or more drugs interact in the body, potentially leading to adverse effects. It's crucial to inform your healthcare provider about all the medications you're taking."
+            ]
+        },
+        {
+            "tag": "medication_storage",
+            "patterns": [
+                "How should I store my medications?",
+                "Tell me about proper medication storage."
+            ],
+            "responses": [
+                "Proper medication storage typically involves keeping medications in a cool, dry place and away from direct sunlight. Some medications may require refrigeration, so read the storage instructions on the label."
+            ]
+        },
+        {
+            "tag": "find_hospital_contact",
+            "patterns": [
+                "How can I find contact information for a hospital in the Philippines?",
+                "Tell me how to reach a hospital in the Philippines."
+            ],
+            "responses": [
+                "To find contact information for a hospital in the Philippines, you can visit the hospital's official website, use online healthcare directories, or contact the Department of Health (DOH) for recommendations."
+            ]
+        },
+        {
+            "tag": "health_department_contact",
+            "patterns": [
+                "How can I contact the Department of Health (DOH) in the Philippines?",
+                "Tell me about reaching the DOH in the Philippines."
+            ],
+            "responses": [
+                "You can contact the Department of Health (DOH) in the Philippines by visiting their official website for contact details or calling their national hotline at 02-8651-7800. The DOH handles public health matters and provides information on various health-related concerns."
+            ]
+        },
+        {
+            "tag": "pharmacy_contact_info",
+            "patterns": [
+                "Give me the contact information for a pharmacy in the Philippines.",
+                "Tell me how to get in touch with a pharmacy in the Philippines."
+            ],
+            "responses": [
+                "You can find contact information for pharmacies in the Philippines by searching online or using a pharmacy locator. Pharmacies typically have phone numbers and store addresses available for customer inquiries."
+            ]
+        },
+        {
+            "tag": "emergency_medical_services_ph",
+            "patterns": [
+                "How do I contact emergency medical services (EMS) in the Philippines?",
+                "Tell me the number for medical emergencies in the Philippines."
+            ],
+            "responses": [
+                "In case of a medical emergency in the Philippines, dial 911 or the local emergency number to contact EMS. They will dispatch the necessary medical assistance to your location."
+            ]
+        },
+        {
+            "tag": "medical_professional_contacts",
+            "patterns": [
+                "I need to contact a specific medical professional in the Philippines. How can I do that?",
+                "Tell me how to find contact information for a healthcare specialist."
+            ],
+            "responses": [
+                "To contact a specific medical professional in the Philippines, you can visit their clinic's website, use online healthcare directories, or inquire with the relevant medical association for recommendations."
+            ]
+        },
+        {
+            "tag": "tell_me_a_joke",
+            "patterns": [
+                "Tell me a joke.",
+                "Share a joke with me.",
+                "I could use a good laugh."
+            ],
+            "responses": [
+                "Sure, here's a joke: Why don't scientists trust atoms? Because they make up everything!",
+                "Here's one: How do you organize a space party? You 'planet'!",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!"
+            ]
+        },
+        {
+            "tag": "joke_about_animals",
+            "patterns": [
+                "Tell me a joke about animals.",
+                "Share a funny animal joke."
+            ],
+            "responses": [
+                "Sure, here's an animal joke: Why did the monkey like the banana? Because it had appeal!",
+                "Here's one: What do you call a bear with no teeth? A gummy bear!",
+                "Why don't seagulls fly over the bay? Because then they'd be called bagels!"
+            ]
+        },
+        {
+            "tag": "knock_knock_joke",
+            "patterns": [
+                "Do you have a knock-knock joke?",
+                "Tell me a knock-knock joke."
+            ],
+            "responses": [
+                "Knock knock. Who's there? Boo. Boo who? Don't cry; it's just a joke!",
+                "Sure, here's a knock-knock joke: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in; it's cold out here!",
+                "Knock knock. Who's there? Cow says. Cow says who? No silly, Cow says mooo!"
+            ]
+        },
+        {
+            "tag": "tech_joke",
+            "patterns": [
+                "Share a tech-related joke.",
+                "Tell me a technology joke."
+            ],
+            "responses": [
+                "Here's a tech joke: Why do programmers prefer iOS development over Android development? Because on iOS, there are no 'unexpected Java exceptions'!",
+                "Why was the computer cold? It left its Windows open!",
+                "How many programmers does it take to change a light bulb? None; that's a hardware problem!"
+            ]
+        },
+        {
+            "tag": "food_joke",
+            "patterns": [
+                "Give me a joke about food.",
+                "Tell me a funny food-related joke."
+            ],
+            "responses": [
+                "Sure, here's a food joke: I told my wife she was drawing her eyebrows too high. She looked surprised!",
+                "Why did the tomato turn red? Because it saw the salad dressing!",
+                "What's orange and sounds like a parrot? A carrot!"
+            ]
+        },
+        {
             "tag": "common cold symptoms",
             "patterns": [
                 "I have a runny or stuffy nose, a sore throat, and cough.",

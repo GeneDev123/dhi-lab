@@ -10,10 +10,8 @@ from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
-# from tensorflow.keras.callbacks import CSVLogger
-# from pathlib import Path
-# import pickle
-# import os 
+
+from sklearn.metrics import classification_report, accuracy_score, precision_score, recall_score, f1_score
 
 def training_chatbot_new():
   nltk.download("punkt")
@@ -77,7 +75,7 @@ def training_chatbot_new():
   model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 
   # Train the model
-  model.fit(np.array(X_train), np.array(y_train), epochs=200, batch_size=10, verbose=1)
+  model.fit(np.array(X_train), np.array(y_train), epochs=300, batch_size=10, verbose=1)
 
   # Save the model
   current_datetime = datetime.datetime.now()
@@ -85,5 +83,31 @@ def training_chatbot_new():
   model_name = f"./main/custom_modules/machine-learning-models/chatbot_{formatted_datetime}.h5"
   model.save(model_name)
 
+  X_test = np.array([data[0] for data in training_data])
+  y_test = np.array([data[1] for data in training_data])
+  y_pred = model.predict(X_test)
+  y_pred_classes = np.argmax(y_pred, axis=1)
+  y_true = np.argmax(y_test, axis=1)
+
+  accuracy = accuracy_score(y_true, y_pred_classes)
+  precision = precision_score(y_true, y_pred_classes, average='weighted')
+  recall = recall_score(y_true, y_pred_classes, average='weighted')
+  f1 = f1_score(y_true, y_pred_classes, average='weighted')
+
+  target_names = [classes[i] for i in range(len(classes))]
+  report = classification_report(y_true, y_pred_classes, target_names=target_names)
+  
+  print(report)
+
+  returnOutput = {
+    "accuracy:": str(round(accuracy, 4) * 100) + "%",
+    "precision:": str(round(precision, 4) * 100) + "%",
+    "recall:": str(round(recall, 4) * 100) + "%",
+    "f1Score:": str(round(f1, 4) * 100) + "%",
+    "report": report,
+  }
+
+  return returnOutput
+
 def start_chatbot_training(): 
-  training_chatbot_new()
+  return training_chatbot_new()
