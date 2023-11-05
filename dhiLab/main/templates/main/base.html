@@ -26,8 +26,13 @@
 
     $(document).ready(function() {
       $("#classify-symptoms-toggle, .classify-cancel-btn").click(function() {
-
         $("#classifier-main-container").toggle();
+      });
+      $(".done-btn").click(function() {
+        $(".classifier-output-container").toggle();
+        $("#classifier-main-container").toggle();
+        $(".classifier-container").toggle();
+        $('.classifier-output-container .single-disease-container').remove();
       });
     });
   </script>
@@ -123,8 +128,21 @@
           </div>
     
         </div>
+        
+        <div class="classifier-output-container">
+          <div class="done-btn">
+            Close Classifier
+          </div>
+
+          <div class="classify-output-container">
+            <div class="header">
+              Classification Output
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </div>  
 
     <div class="page-content-container">
       {% block page_content %}

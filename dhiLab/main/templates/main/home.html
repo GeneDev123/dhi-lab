@@ -121,9 +121,12 @@
           type: "GET",
           data: { selected_symptoms: selectedSymptoms },
           success: function (data) {
+            $(".classifier-container").toggle();
+            $(".classifier-output-container").toggle();
+
+            formatDiseaseData(data, selectedSymptoms);
+            
             selectedSymptoms = [];
-            $("#classifier-main-container").toggle();
-            formatDiseaseData(data);
             updateSelectedSymptoms(selectedSymptomsContainer, selectedSymptoms);
           }
         });
@@ -154,29 +157,57 @@
         }
       }
 
-      function formatDiseaseData(data){
-        let output = {};
-        let alertMessage = '';
-
-        datasetLength = data['totalDataset'];
-        disease = data['diseases'];
-        
-        if(disease.length > 0){
-          let outputString = '';
-          for(let i = 0; i < disease.length; i++){
-            output[disease[i][0]] = (parseFloat(disease[i][1] / datasetLength) * 100).toFixed(2) + '%';
-            outputString += `${disease[i][0]}: ${output[disease[i][0]]}\n`;
-          }
-
-          alertMessage = 'Out of ' + datasetLength + ' diseases in dataset, matching conditions are: \n\n' + outputString;
-        }
-        else{
-          alertMessage = 'Out of ' + datasetLength + ' diseases in dataset, no matches are found with the given symptoms.'
-        }
-
-        alert(alertMessage);
+      function cleanData(data){
+        return data.trim().replace(/ /g, '').replace(/_/g, '').toLowerCase();
       }
 
+      function formatDiseaseData(data, selectedSymptoms){
+        const outputContainer = $('.classify-output-container');
+            
+        datasetLength = data['totalDataset'];
+        disease = data['diseases'];
+        dataset = data['dataset'];
+
+        for(let i = 0; i < selectedSymptoms.length; i++){
+          selectedSymptoms[i] = cleanData(selectedSymptoms[i]);
+        }
+        
+        for(let i = 0; i < disease.length; i++){
+          let diseaseName = disease[i][0];
+          let percentage = ((parseFloat(disease[i][1]) / dataset[diseaseName].length) * 100).toFixed(2) + '%';
+          
+          let diseaseInfo = $('<div>', {
+            text:`${diseaseName}: ${percentage}`,
+            class: 'disease-name-percent-container'
+          });
+
+          let diseaseSymptomsHeader = $('<div>', {
+            text:`Disease Symptoms:`,
+            class: 'disease-symptom-header'
+          });
+
+          let diseaseSymptomsList = $('<div>', {
+            class: 'symptom-list-container'
+          });
+
+          for (const symptom of dataset[diseaseName]) {
+            const listItem = $('<div>').text(symptom);
+            if (selectedSymptoms.includes(cleanData(symptom))) {
+              listItem.addClass('highlighted-symptom');
+            }
+
+            diseaseSymptomsList.append(listItem);
+          }
+
+          let singleOutputContainer = $('<div>', {
+            class: 'single-disease-container'
+          });
+
+          singleOutputContainer.append(diseaseInfo, diseaseSymptomsHeader, diseaseSymptomsList);
+          outputContainer.append(singleOutputContainer);
+         
+        }
+      }
     });
   </script>
   
