@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-sh!%)ui@ocs%6y-$c^_k151&wyb39^hm^bc!sop9$1smzj$xh3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['dhilab.pythonanywhere.com', '127.0.0.1']
 
