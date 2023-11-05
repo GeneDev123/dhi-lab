@@ -114,9 +114,13 @@ def filter_symptoms(request):
 
 def classify_symptoms(request):
   selected_symptoms = request.GET.getlist('selected_symptoms[]')
-  diseases, dataset_length = classifier_utils.classify(selected_symptoms)
-  
-  return JsonResponse({'diseases': diseases, 'totalDataset': dataset_length}, safe=False)
+  classification = classifier_utils.classify(selected_symptoms)
+
+  return JsonResponse({
+    'diseases': classification['top_diseases'], 
+    'totalDataset': classification['dataset_length'],
+    'dataset': classification['dataset'],
+  }, safe=False)
 
 @user_passes_test(is_admin, login_url='/accounts/login/')
 def chatbot_page(request):
