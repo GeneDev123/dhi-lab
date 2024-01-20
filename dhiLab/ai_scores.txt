@@ -1,0 +1,115 @@
+accuracy: 97.66%
+precision: 97.21%
+recall: 97.66%
+f1Score: 97.16%
+report                                precision    recall  f1-score   support
+
+          Alcoholic hepatitis       1.00      1.00      1.00        12
+              Asthma symptoms       1.00      1.00      1.00        10
+             Bronchial Asthma       1.00      1.00      1.00        10
+         Cervical spondylosis       1.00      1.00      1.00        11
+                  Chicken pox       1.00      1.00      1.00        25
+          Chronic cholestasis       1.00      1.00      1.00        10
+                 Consultation       1.00      1.00      1.00        10
+                       Dengue       0.96      1.00      0.98        27
+          Depression symptoms       1.00      1.00      1.00        10
+            Diabetes symptoms       1.00      1.00      1.00        10
+                         GERD       1.00      1.00      1.00        10
+              Gastroenteritis       1.00      1.00      1.00        10
+                  Hepatitis A       1.00      1.00      1.00        24
+                  Hepatitis B       1.00      1.00      1.00        25
+                  Hepatitis C       1.00      1.00      1.00        13
+                 Hypertension       1.00      1.00      1.00        10
+                     Jaundice       1.00      1.00      1.00        12
+                      Malaria       1.00      1.00      1.00        18
+                     Migraine       1.00      1.00      1.00        10
+ Paralysis (brain hemorrhage)       1.00      1.00      1.00        12
+         Peptic ulcer disease       1.00      1.00      1.00        10
+                      Typhoid       1.00      1.00      1.00        27
+                          age       1.00      1.00      1.00        10
+                  appointment       1.00      1.00      1.00         3
+           arthritis symptoms       1.00      1.00      1.00         4
+            asthma prevention       1.00      1.00      1.00         8
+                     birthday       0.00      0.00      0.00         1
+       common cold prevention       1.00      1.00      1.00         6
+         common cold symptoms       1.00      1.00      1.00        10
+                   cough_cold       1.00      1.00      1.00         2
+        depression prevention       1.00      1.00      1.00         8
+          diabetes prevention       0.89      1.00      0.94         8
+emergency_medical_services_ph       1.00      1.00      1.00         2
+               favorite_color       0.00      0.00      0.00         1
+             fever prevention       1.00      1.00      1.00         8
+               fever symptoms       1.00      1.00      1.00        10
+               fever_symptoms       1.00      1.00      1.00         2
+        find_hospital_contact       1.00      1.00      1.00         2
+                    food_joke       0.00      0.00      0.00         2
+                      goodbye       1.00      1.00      1.00        14
+                    gratitude       0.92      1.00      0.96        12
+                    greetings       1.00      1.00      1.00        14
+              headache_causes       1.00      1.00      1.00         2
+                health_advice       1.00      1.00      1.00         3
+    health_department_contact       1.00      1.00      1.00         2
+        heart attack symptoms       1.00      1.00      1.00         5
+                  hepatitis D       1.00      1.00      1.00        12
+                  hepatitis E       1.00      1.00      1.00        13
+         hospital_emergencies       1.00      1.00      1.00         2
+             hospital_quality       1.00      1.00      1.00         2
+              hospital_search       1.00      1.00      1.00         2
+            hospital_services       1.00      1.00      1.00         2
+      hospital_visiting_hours       1.00      1.00      1.00         2
+      hypothyroidism symptoms       1.00      1.00      1.00         4
+           joke_about_animals       1.00      0.50      0.67         2
+             knock_knock_joke       1.00      0.50      0.67         2
+            medical_condition       1.00      0.67      0.80         3
+medical_professional_contacts       1.00      1.00      1.00         2
+                   medication       1.00      1.00      1.00         3
+              medication_info       1.00      1.00      1.00         2
+      medication_interactions       1.00      1.00      1.00         2
+      medication_side_effects       1.00      1.00      1.00         2
+           medication_storage       0.50      1.00      0.67         2
+             medication_usage       0.00      0.00      0.00         2
+                         name       1.00      1.00      1.00        10
+                        noans       0.89      0.80      0.84        10
+          ph_common_illnesses       1.00      0.50      0.67         2
+       ph_doctor_availability       1.00      1.00      1.00         2
+               ph_find_doctor       1.00      1.00      1.00         2
+                ph_flu_season       1.00      1.00      1.00         2
+          ph_health_insurance       0.67      1.00      0.80         2
+     ph_healthcare_facilities       1.00      0.50      0.67         2
+         ph_healthcare_system       1.00      1.00      1.00         2
+       ph_healthcare_training       1.00      1.00      1.00         2
+             ph_home_remedies       1.00      1.00      1.00         2
+                 ph_hospitals       1.00      0.50      0.67         2
+          ph_hospitals_nearby       0.67      1.00      0.80         2
+       ph_medical_specialties       0.67      1.00      0.80         2
+       ph_preventing_sickness       1.00      1.00      1.00         2
+                  ph_symptoms       1.00      1.00      1.00         2
+      ph_vaccination_schedule       1.00      1.00      1.00         2
+        pharmacy_contact_info       1.00      1.00      1.00         2
+           pneumonia symptoms       1.00      1.00      1.00         5
+                         sick       1.00      1.00      1.00        10
+                   small_talk       1.00      1.00      1.00         8
+                  small_talk2       0.92      1.00      0.96        11
+                  small_talk3       1.00      1.00      1.00         9
+                small_talk_10       1.00      1.00      1.00         2
+                small_talk_11       1.00      1.00      1.00         2
+                small_talk_12       1.00      1.00      1.00         1
+                 small_talk_5       1.00      1.00      1.00         2
+                 small_talk_6       1.00      1.00      1.00         8
+                 small_talk_7       1.00      1.00      1.00         3
+                 small_talk_8       1.00      1.00      1.00         3
+                 small_talk_9       1.00      1.00      1.00         2
+             sore_throat_care       1.00      1.00      1.00         2
+         stomachache_remedies       1.00      1.00      1.00         2
+                     symptoms       1.00      1.00      1.00         2
+                    tech_joke       0.00      0.00      0.00         2
+               tell_me_a_joke       0.54      1.00      0.70         7
+                  think_of_me       1.00      1.00      1.00         4
+        tuberculosis symptoms       1.00      1.00      1.00         5
+      varicose veins symptoms       1.00      1.00      1.00         5
+                 vulgar_words       1.00      1.00      1.00        20
+
+                     accuracy                           0.98       683
+                    macro avg       0.93      0.92      0.92       683
+                 weighted avg       0.97      0.98      0.97       683
+

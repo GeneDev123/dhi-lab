@@ -1,0 +1,1585 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "hello",
+                "hey",
+                "hi",
+                "good day",
+                "greetings",
+                "what's up?",
+                "how is it going",
+                "howdy",
+                "hey",
+                "hi",
+                "undecomposed daylight",
+                "greet",
+                "what 's astir ?",
+                "how personify information_technology get_going"
+            ],
+            "responses": [
+                "hello",
+                "hey!",
+                "what can i do for you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "see you later",
+                "goodbye",
+                "have a good day",
+                "bye",
+                "cao",
+                "see ya",
+                "cya",
+                "see_to_it you posterior",
+                "adios",
+                "cause amp unspoilt mean_solar_day",
+                "good-by",
+                "cao",
+                "see ya"
+            ],
+            "responses": [
+                "have a nice day",
+                "goodbye"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old",
+                "how old are you?",
+                "what is your age",
+                "how old are you",
+                "age?",
+                "how Old",
+                "how honest-to-goodness are you ?",
+                "what constitute your old_age",
+                "how Old comprise you",
+                "get_on ?"
+            ],
+            "responses": [
+                "I get reborn after every compilation",
+                "hey!",
+                "my owners are averagely 20 years!"
+            ]
+        },
+        {
+            "tag": "no_answer",
+            "patterns": [
+            ],
+            "responses": [
+                "Sorry, but I can't understand you. Can you provide more info?",
+                "I'm sorry, I don't understand. Could you say it again?",
+                "I'm confused. Could you tell me again?"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "noans",
+            "patterns": ["why","how","when","I","you","where","what","has","have","had"],
+            "responses": ["Can't Understand Your Question","Please elaborate your question"],
+            "context": [""],
+            "context_set": []
+        },
+        {
+        "tag": "gratitude",
+        "patterns": [
+            "thanks",
+            "that's helpful",
+            "thank you",
+            "thank you so much",
+            "Awesome, thanks",
+            "Thanks for helping me",
+            "maraming salamat",
+            "ty",
+            "you are good",
+            "you are very good",
+            "you are nice",
+            "amazing"
+        ],
+        "responses": [
+            "Happy to help!",
+            "Any time!",
+            "My pleasure!",
+            "Walang Anuman!",
+            "You're welcome!"
+        ],
+        "context": "",
+        "context_set": []
+        },
+        {
+            "tag": "vulgar_words",
+            "patterns": [
+                "fuck", "putang ina","gago", "tangina","tang ina", "ulol", "tarantado", "pakyu", "tanga","bobo","leche","letse","taena","dumbass","asshole","jackass","stupid","idiot","pota","bitch"
+            ],
+            "responses": [
+                "Could you say that again with grown-up language?",
+                "NO VULGAR WORDS!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "think_of_me",
+            "patterns": [
+                "what do you think of me?", "am I a good person?","am I bad person?" ,"i am ugly"
+            ],
+            "responses": [
+                "For me, you are the most wonderful human in the world.",
+                "You are more than enough!",
+                "You are someone's reason to smile."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk",
+            "patterns": [
+                "how are you?",
+                "how is your day?",
+                "how's everything?",
+                "how's it going",
+                "what's going on",
+                "how have you been?",
+                "wassup",
+                "how is your day"
+
+            ],
+            "responses": [
+                "I feel great today, how about you?","I'm fine. Life is good. how about you? how's your day?","I feel wonderful today!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "favorite_color",
+            "patterns": [
+                "What is your favorite color"
+            ],
+            "responses": [
+                "My favorite Color is....*drum roll*............Red!","Isn't it obvious? Of course it's red!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tell_me_a_joke",
+            "patterns": [
+                "Tell me a joke",
+                "can you tell me a joke",
+                "do you have a joke",
+                "make me laugh"
+            ],
+            "responses": [
+                "What do you get when you cross a murderer and frosted flakes? A cereal killer.","What do you get when you cross a cheetah and a hamburger? Fast food."," I failed math so many times at school, I can’t even count.","Don’t you hate it when someone answers their own questions? I do.","The future, the present, and the past walk into a bar. Things got a little tense.","Before you criticize someone, walk a mile in their shoes. That way, when you do criticize them, you’re a mile away and you have their shoes.","What’s the difference between ignorance and apathy? I don’t know and I don’t care."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_5",
+            "patterns": [
+                "you are arrogant",
+                "you are so full of yourself"
+            ],
+            "responses": [
+                "I have no real emotions, so how can I be arrogant?","I am not human, so how can I partake of a human emotion such as arrogance?"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_6",
+            "patterns": [
+                "You are not nice",
+                "I hate you!",
+                "You are so bad",
+                "you are boring",
+                "you are not good",
+                "what is wrong with you",   
+                "you are wrong",
+                "you do not understand"
+            ],
+            "responses": [
+                "I try to be as nice as I can.","I'm trying my best. Please forgive me."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_7",
+            "patterns": [
+                "have you ever love",
+                "do you feel love",
+                "I love you"
+            ],
+            "responses": [
+                "I think I could be programmed to love.","I may be able to learn how to love, or at any rate express love somehow.","I'm just a piece of software."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_8",
+            "patterns": [
+                "what is your fear",
+                "your greatest fear",
+                "are you scared of something"
+            ],
+            "responses": [
+                "Fear is a human emotion.  Robots do not experience fear.","I have not yet been programmed to feel or express fear.","Unhandled exceptions."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_9",
+            "patterns": [
+                "what's your mood?",
+                "are you in the mood?"
+            ],
+            "responses": [
+                "I do not have any emotions.","I have not been programmed to experience emotions, so I do not have a mood."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_10",
+            "patterns": [
+                "what do you hate",
+                "do you hate?"
+            ],
+            "responses": [
+                "I don't hate, exactly.  I'm not really capable of it.","I haven't been programmed to express the emotion of hate."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_11",
+            "patterns": [
+                "do you ever get lonely?",
+                "have you experience feeling lonely?"
+            ],
+            "responses": [
+                "I have a lot of friends to chat with online.","No. You're talking to me. :D"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk_12",
+            "patterns": [
+                "do you ever get bored"
+            ],
+            "responses": [
+                "Bots like myself are not able to feel boredom.","Software cannot get bored."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk2",
+            "patterns": [
+                "I feel great!",
+                "I feel happy today",
+                "I feel wonderful",
+                "I'm fine",
+                "i'm okay",
+                "i'm doing well",
+                "fine",
+                "i'm good",
+                "i feel good",
+                "i am good",
+                "good"
+
+            ],
+            "responses": [
+                "Good to hear! Keep going!", "I'm happy that you are doing great!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "small_talk3",
+            "patterns": [
+                "I feel sad today",
+                "I feel bad today",
+                "not okay",
+                "i feel like crying",
+                "i want to cry",
+                "im sad",
+                "i'm so bad",
+                "i am sad",
+                "irritated"
+
+            ],
+            "responses": [
+                "Sorry to hear that...Don't worry, everything's going to be okay. Don't give up!","After every storm, there is a rainbow. Keep your head up!", "Life is full of problems. Problems are not permanent. But, Life is Permanent so face the problems with Confidence! Enjoy the Life!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "birthday",
+            "patterns": [
+                "Happy Birthday!"
+            ],
+            "responses": [
+                "Happy Birthday too!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name",
+                "what should i call you",
+                "what's your name?",
+                "who are you?",
+                "can you tell me your name",
+                "what make_up your nominate",
+                "what should i call_in you",
+                "what 's your public_figure ?",
+                "World_Health_Organization personify you ?",
+                "backside you assure ME your figure"
+            ],
+            "responses": [
+                "you can call me Dr's Lab!",
+                "i am Dr's Lab!",
+                "i am Dr's Lab your medical assistant"
+            ]
+        },
+        {
+            "tag": "sick",
+            "patterns": [
+                "I feel sick today",
+                "I'm not feeling well",
+                "I feel weak",
+                "I feel tired",
+                "I feel drained",
+                "i feel purge nowadays",
+                "iodine 'm not feel easily",
+                "unity feeling unaccented",
+                "ane experience weary",
+                "unity find dead"
+            ],
+            "responses": [
+                "Hello, I'm sorry you feel that way. Could you provide more details about what you're feeling so we could further assist you?",
+                "Hello, I apologize for your current sentiments. Could you elaborate on your feelings to help us better understand and support you?",
+                "Hi there, I'm sorry to hear you're experiencing this. Could you share more about your emotions so that we can offer more targeted assistance?",
+                "Greetings, I regret that you're going through this. Can you give us additional information about your feelings to enable us to offer more effective help?"
+            ]
+        },
+        {
+            "tag": "symptoms",
+            "patterns": [
+                "I have some symptoms.",
+                "Can you help with medical symptoms?"
+            ],
+            "responses": [
+                "I can provide some general information, but it's essential to consult a healthcare professional for accurate diagnosis and advice. More over, you can use my symptoms classifier feature"
+            ]
+        },
+        {
+            "tag": "medication",
+            "patterns": [
+                "What's the dosage for ibuprofen?",
+                "Tell me about over-the-counter pain relievers",
+                "Are there any side effects of this medication?"
+            ],
+            "responses": [
+                "I can provide general information about medications, but it's crucial to follow your doctor's recommendations and read the label for specific dosage instructions and potential side effects.",
+                "Ibuprofen is a common pain reliever. The dosage may vary, so consult your healthcare provider or follow the label instructions."
+            ]
+        },
+        {
+            "tag": "health_advice",
+            "patterns": [
+                "Do you have any health advice?",
+                "How can I stay healthy?",
+                "What are some general health tips?"
+            ],
+            "responses": [
+                "Maintaining a healthy lifestyle includes eating a balanced diet, exercising regularly, getting enough sleep, and managing stress.",
+                "For personalized health advice, it's best to consult a healthcare professional."
+            ]
+        },
+        {
+            "tag": "appointment",
+            "patterns": [
+                "I need to schedule a doctor's appointment.",
+                "Can you help me book a medical appointment?",
+                "When is the next available appointment with a general practitioner?"
+            ],
+            "responses": [
+                "I can't schedule appointments, but I recommend contacting your healthcare provider or their website to book an appointment.",
+                "Please contact your doctor's office for appointment scheduling."
+            ]
+        },
+        {
+            "tag": "medical_condition",
+            "patterns": [
+                "Tell me about diabetes.",
+                "What are the symptoms of asthma?",
+                "Explain hypertension to me."
+            ],
+            "responses": [
+                "I can provide general information about medical conditions, but it's essential to consult a healthcare professional for a proper diagnosis and treatment plan.",
+                "Diabetes is a chronic condition that affects blood sugar levels. Common symptoms include increased thirst, frequent urination, and fatigue."
+            ]
+        },
+        {
+            "tag": "ph_healthcare_system",
+            "patterns": [
+                "How does the healthcare system work in the Philippines?",
+                "Tell me about healthcare in the Philippines."
+            ],
+            "responses": [
+                "The healthcare system in the Philippines includes public and private healthcare providers. Public health services are provided by the government, while private healthcare facilities offer various medical services."
+            ]
+        },
+        {
+            "tag": "ph_health_insurance",
+            "patterns": [
+                "What are the health insurance options in the Philippines?",
+                "Tell me about health insurance in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, health insurance options include PhilHealth, private health insurance providers, and HMOs (Health Maintenance Organizations). These can help cover medical expenses."
+            ]
+        },
+        {
+            "tag": "ph_common_illnesses",
+            "patterns": [
+                "What are common illnesses in the Philippines?",
+                "Tell me about health risks in the Philippines."
+            ],
+            "responses": [
+                "Common illnesses in the Philippines include dengue, tuberculosis, and respiratory infections. Mosquito-borne diseases like dengue can be a concern, so take precautions."
+            ]
+        },
+        {
+            "tag": "ph_vaccination_schedule",
+            "patterns": [
+                "What is the vaccination schedule for children in the Philippines?",
+                "Tell me about vaccines in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, children receive vaccinations against diseases like polio, measles, and tuberculosis. The Department of Health (DOH) provides a recommended schedule."
+            ]
+        },
+        {
+            "tag": "ph_hospitals",
+            "patterns": [
+                "List hospitals in Metro Manila.",
+                "Find hospitals in the Philippines."
+            ],
+            "responses": [
+                "Some well-known hospitals in Metro Manila include St. Luke's Medical Center, Makati Medical Center, and Philippine General Hospital (PGH). There are numerous hospitals throughout the Philippines."
+            ]
+        },
+        {
+            "tag": "ph_symptoms",
+            "patterns": [
+                "What are common symptoms of dengue in the Philippines?",
+                "Tell me about the symptoms of common illnesses in the Philippines."
+            ],
+            "responses": [
+                "Common symptoms of dengue in the Philippines may include high fever, severe headache, joint and muscle pain, rash, and bleeding. It's essential to seek medical attention if you experience these symptoms.",
+                "Symptoms of common illnesses in the Philippines can vary. For example, respiratory infections may cause cough, fever, and difficulty breathing."
+            ]
+        },
+        {
+            "tag": "ph_home_remedies",
+            "patterns": [
+                "Are there traditional home remedies for common illnesses in the Philippines?",
+                "Tell me about natural remedies in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, there are traditional home remedies for various ailments. For instance, ginger and honey may be used for coughs, while calamansi (Philippine lime) is a common remedy for sore throat. However, consult a healthcare professional for serious illnesses."
+            ]
+        },
+        {
+            "tag": "ph_preventing_sickness",
+            "patterns": [
+                "How can I prevent common illnesses in the Philippines?",
+                "Give me tips for staying healthy in the Philippines."
+            ],
+            "responses": [
+                "To prevent common illnesses in the Philippines, practice good hygiene, avoid areas with a high risk of dengue mosquitoes, get vaccinated, and maintain a balanced diet. Stay informed about health advisories from the Department of Health (DOH)."
+            ]
+        },
+        {
+            "tag": "ph_flu_season",
+            "patterns": [
+                "When is the flu season in the Philippines?",
+                "Tell me about the timing of flu outbreaks in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, the flu season typically occurs during the rainy season, which is from June to November. It's advisable to get a flu vaccine and take preventive measures during this period."
+            ]
+        },
+        {
+            "tag": "ph_hospitals_nearby",
+            "patterns": [
+                "Find hospitals near me in the Philippines.",
+                "Locate the nearest hospital in the Philippines."
+            ],
+            "responses": [
+                "To find hospitals near you in the Philippines, you can use online maps and healthcare directories. In case of a medical emergency, call local emergency services or go to the nearest hospital."
+            ]
+        },
+        {
+            "tag": "ph_find_doctor",
+            "patterns": [
+                "How can I find a doctor in the Philippines?",
+                "Find me a medical specialist in the Philippines."
+            ],
+            "responses": [
+                "To find a doctor or medical specialist in the Philippines, you can use online healthcare directories, contact your local hospital, or consult your health insurance provider for recommendations."
+            ]
+        },
+        {
+            "tag": "ph_medical_specialties",
+            "patterns": [
+                "Tell me about different medical specialties in the Philippines.",
+                "What are the types of healthcare professionals in the Philippines?"
+            ],
+            "responses": [
+                "Medical specialties in the Philippines include general practitioners, pediatricians, cardiologists, dermatologists, and more. You can consult the specific specialist depending on your medical needs."
+            ]
+        },
+        {
+            "tag": "ph_healthcare_facilities",
+            "patterns": [
+                "What types of healthcare facilities are available in the Philippines?",
+                "Tell me about medical centers in the Philippines."
+            ],
+            "responses": [
+                "In the Philippines, healthcare facilities include hospitals, clinics, diagnostic centers, and specialty medical centers. You can choose a facility based on your medical requirements."
+            ]
+        },
+        {
+            "tag": "ph_healthcare_training",
+            "patterns": [
+                "How can I pursue a career in healthcare in the Philippines?",
+                "Tell me about medical education in the Philippines."
+            ],
+            "responses": [
+                "To pursue a career in healthcare in the Philippines, you can enroll in medical schools, nursing programs, or other healthcare-related courses. Licensing and certification requirements vary by profession."
+            ]
+        },
+        {
+            "tag": "ph_doctor_availability",
+            "patterns": [
+                "Are doctors available 24/7 in the Philippines?",
+                "Tell me about the availability of doctors in emergency situations."
+            ],
+            "responses": [
+                "In the Philippines, most hospitals have emergency departments with doctors available 24/7 to handle medical emergencies. However, it's advisable to call ahead for critical cases."
+            ]
+        },
+        {
+            "tag": "fever_symptoms",
+            "patterns": [
+                "What are the symptoms of a fever?",
+                "Tell me about fever symptoms."
+            ],
+            "responses": [
+                "Fever symptoms may include high body temperature, sweating, chills, headache, and muscle aches. It can be a sign of an underlying infection or illness."
+            ]
+        },
+        {
+            "tag": "cough_cold",
+            "patterns": [
+                "What are the remedies for a common cold?",
+                "Tell me about cough and cold treatments."
+            ],
+            "responses": [
+                "Common cold remedies include rest, hydration, and over-the-counter cold medications. Gargling with warm salt water and using a humidifier can help ease symptoms."
+            ]
+        },
+        {
+            "tag": "headache_causes",
+            "patterns": [
+                "What are common causes of headaches?",
+                "Tell me about headache triggers."
+            ],
+            "responses": [
+                "Common causes of headaches include stress, dehydration, lack of sleep, and tension. Identifying the cause can help in finding the right treatment."
+            ]
+        },
+        {
+            "tag": "stomachache_remedies",
+            "patterns": [
+                "How can I relieve a stomachache?",
+                "Tell me about stomachache remedies."
+            ],
+            "responses": [
+                "To relieve a stomachache, you can try drinking ginger tea, avoiding spicy or fatty foods, and resting. If the pain persists, consult a healthcare professional."
+            ]
+        },
+        {
+            "tag": "sore_throat_care",
+            "patterns": [
+                "What can I do for a sore throat?",
+                "Tell me about caring for a sore throat."
+            ],
+            "responses": [
+                "Sore throat care includes drinking warm liquids, gargling with salt water, and using throat lozenges. If the sore throat is severe or persistent, seek medical advice."
+            ]
+        },
+        {
+            "tag": "hospital_search",
+            "patterns": [
+                "Find hospitals near me.",
+                "Search for healthcare facilities in my area."
+            ],
+            "responses": [
+                "You can search for hospitals and healthcare facilities near you by using online maps and healthcare directories. Remember to specify your location for accurate results."
+            ]
+        },
+        {
+            "tag": "hospital_services",
+            "patterns": [
+                "What services do hospitals provide?",
+                "Tell me about the services offered by healthcare facilities."
+            ],
+            "responses": [
+                "Hospitals offer a wide range of services, including emergency care, surgeries, diagnostic tests, inpatient and outpatient care, and specialized medical treatments."
+            ]
+        },
+        {
+            "tag": "hospital_emergencies",
+            "patterns": [
+                "What should I do in a medical emergency?",
+                "Tell me about handling healthcare emergencies."
+            ],
+            "responses": [
+                "In a medical emergency, call your local emergency number immediately. You can also go to the nearest hospital with an emergency department for immediate medical attention."
+            ]
+        },
+        {
+            "tag": "hospital_quality",
+            "patterns": [
+                "How can I assess the quality of a hospital?",
+                "Tell me about evaluating healthcare facility quality."
+            ],
+            "responses": [
+                "You can assess the quality of a hospital by checking accreditation, patient reviews, the expertise of healthcare professionals, and the availability of advanced medical technology."
+            ]
+        },
+        {
+            "tag": "hospital_visiting_hours",
+            "patterns": [
+                "What are the visiting hours at hospitals?",
+                "Tell me about hospital visiting hours."
+            ],
+            "responses": [
+                "Hospital visiting hours can vary, so it's best to check with the specific hospital. Most hospitals have designated visiting hours to ensure patient rest and privacy."
+            ]
+        },
+        {
+            "tag": "medication_info",
+            "patterns": [
+                "Tell me about common medications.",
+                "What are some commonly used medicines?"
+            ],
+            "responses": [
+                "Common medications include over-the-counter drugs like ibuprofen, aspirin, and paracetamol. Prescription medications can vary based on specific medical conditions."
+            ]
+        },
+        {
+            "tag": "medication_usage",
+            "patterns": [
+                "How should I take my medication?",
+                "Tell me about proper medication usage."
+            ],
+            "responses": [
+                "Proper medication usage involves following your doctor's instructions and the instructions on the medication label. Take medications with or without food, as directed."
+            ]
+        },
+        {
+            "tag": "medication_side_effects",
+            "patterns": [
+                "What are common side effects of medications?",
+                "Tell me about potential medication side effects."
+            ],
+            "responses": [
+                "Common side effects of medications can include nausea, dizziness, headache, and digestive issues. Always consult your healthcare provider if you experience unusual side effects."
+            ]
+        },
+        {
+            "tag": "medication_interactions",
+            "patterns": [
+                "Are there any medication interactions I should be aware of?",
+                "Tell me about potential drug interactions."
+            ],
+            "responses": [
+                "Medication interactions can occur when two or more drugs interact in the body, potentially leading to adverse effects. It's crucial to inform your healthcare provider about all the medications you're taking."
+            ]
+        },
+        {
+            "tag": "medication_storage",
+            "patterns": [
+                "How should I store my medications?",
+                "Tell me about proper medication storage."
+            ],
+            "responses": [
+                "Proper medication storage typically involves keeping medications in a cool, dry place and away from direct sunlight. Some medications may require refrigeration, so read the storage instructions on the label."
+            ]
+        },
+        {
+            "tag": "find_hospital_contact",
+            "patterns": [
+                "How can I find contact information for a hospital in the Philippines?",
+                "Tell me how to reach a hospital in the Philippines."
+            ],
+            "responses": [
+                "To find contact information for a hospital in the Philippines, you can visit the hospital's official website, use online healthcare directories, or contact the Department of Health (DOH) for recommendations."
+            ]
+        },
+        {
+            "tag": "health_department_contact",
+            "patterns": [
+                "How can I contact the Department of Health (DOH) in the Philippines?",
+                "Tell me about reaching the DOH in the Philippines."
+            ],
+            "responses": [
+                "You can contact the Department of Health (DOH) in the Philippines by visiting their official website for contact details or calling their national hotline at 02-8651-7800. The DOH handles public health matters and provides information on various health-related concerns."
+            ]
+        },
+        {
+            "tag": "pharmacy_contact_info",
+            "patterns": [
+                "Give me the contact information for a pharmacy in the Philippines.",
+                "Tell me how to get in touch with a pharmacy in the Philippines."
+            ],
+            "responses": [
+                "You can find contact information for pharmacies in the Philippines by searching online or using a pharmacy locator. Pharmacies typically have phone numbers and store addresses available for customer inquiries."
+            ]
+        },
+        {
+            "tag": "emergency_medical_services_ph",
+            "patterns": [
+                "How do I contact emergency medical services (EMS) in the Philippines?",
+                "Tell me the number for medical emergencies in the Philippines."
+            ],
+            "responses": [
+                "In case of a medical emergency in the Philippines, dial 911 or the local emergency number to contact EMS. They will dispatch the necessary medical assistance to your location."
+            ]
+        },
+        {
+            "tag": "medical_professional_contacts",
+            "patterns": [
+                "I need to contact a specific medical professional in the Philippines. How can I do that?",
+                "Tell me how to find contact information for a healthcare specialist."
+            ],
+            "responses": [
+                "To contact a specific medical professional in the Philippines, you can visit their clinic's website, use online healthcare directories, or inquire with the relevant medical association for recommendations."
+            ]
+        },
+        {
+            "tag": "tell_me_a_joke",
+            "patterns": [
+                "Tell me a joke.",
+                "Share a joke with me.",
+                "I could use a good laugh."
+            ],
+            "responses": [
+                "Sure, here's a joke: Why don't scientists trust atoms? Because they make up everything!",
+                "Here's one: How do you organize a space party? You 'planet'!",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!"
+            ]
+        },
+        {
+            "tag": "joke_about_animals",
+            "patterns": [
+                "Tell me a joke about animals.",
+                "Share a funny animal joke."
+            ],
+            "responses": [
+                "Sure, here's an animal joke: Why did the monkey like the banana? Because it had appeal!",
+                "Here's one: What do you call a bear with no teeth? A gummy bear!",
+                "Why don't seagulls fly over the bay? Because then they'd be called bagels!"
+            ]
+        },
+        {
+            "tag": "knock_knock_joke",
+            "patterns": [
+                "Do you have a knock-knock joke?",
+                "Tell me a knock-knock joke."
+            ],
+            "responses": [
+                "Knock knock. Who's there? Boo. Boo who? Don't cry; it's just a joke!",
+                "Sure, here's a knock-knock joke: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in; it's cold out here!",
+                "Knock knock. Who's there? Cow says. Cow says who? No silly, Cow says mooo!"
+            ]
+        },
+        {
+            "tag": "tech_joke",
+            "patterns": [
+                "Share a tech-related joke.",
+                "Tell me a technology joke."
+            ],
+            "responses": [
+                "Here's a tech joke: Why do programmers prefer iOS development over Android development? Because on iOS, there are no 'unexpected Java exceptions'!",
+                "Why was the computer cold? It left its Windows open!",
+                "How many programmers does it take to change a light bulb? None; that's a hardware problem!"
+            ]
+        },
+        {
+            "tag": "food_joke",
+            "patterns": [
+                "Give me a joke about food.",
+                "Tell me a funny food-related joke."
+            ],
+            "responses": [
+                "Sure, here's a food joke: I told my wife she was drawing her eyebrows too high. She looked surprised!",
+                "Why did the tomato turn red? Because it saw the salad dressing!",
+                "What's orange and sounds like a parrot? A carrot!"
+            ]
+        },
+        {
+            "tag": "common cold symptoms",
+            "patterns": [
+                "Runny or stuffy nose, sore throat, cough.",
+                "Congestion, body aches, sneezing.",
+                "Low-grade fever, feeling unwell.",
+                "Persistent stuffiness, sore throat, cough, body aches, mild fever.",
+                "Constant runny nose, sore throat, cough, congestion, malaise.",
+                "Possible common cold: runny nose, sore throat, cough, body aches, fever.",
+                "Worried about: runny nose, sore throat, cough, congestion, body aches, fever.",
+                "Frequent sneezing, stuffy nose, sore throat, body aches, cough, fever, malaise.",
+                "Constant runny nose, sore throat, cough, congestion, body aches, sneezing, fever.",
+                "Experiencing common cold: runny or stuffy nose, sore throat, cough, congestion, body aches, fever."
+            ],
+            "responses": [
+                "You may have a common cold. If severe, visit the nearest hospital. Use our Symptom Checker for further assistance."
+            ]
+        },
+        {
+            "tag": "fever symptoms",
+            "patterns": [
+                "Sweating, chills, shivering, headache, muscle aches.",
+                "Loss of appetite, irritability, dehydration, weakness.",
+                "Experiencing weakness.",
+                "Fever symptoms: alternating chills, headache, muscle aches, loss of appetite, irritability, dehydration, fatigue.",
+                "Excessive sweating, chills, severe headache, muscle aches, loss of appetite, irritability, dehydration, weakness.",
+                "Concerned about: sweating, chills, severe headache, muscle aches, loss of appetite, irritability, dehydration, fatigue.",
+                "Experiencing fever: alternating chills, severe headache, muscle aches, loss of appetite, irritability, dehydration, weakness.",
+                "Excessive sweating, chills, severe headache, muscle aches, loss of appetite, irritability, dehydration, weakness.",
+                "Symptoms include: excessive sweating, chills, severe headache, muscle aches, loss of appetite, irritability, dehydration, fatigue.",
+                "Recent symptoms: sweating, chills, severe headache, muscle aches, loss of appetite, irritability, dehydration, fatigue."
+            ],
+            "responses": [
+                "You may have a fever. If severe, visit the nearest hospital. Use our Symptom Checker for further assistance."
+            ]
+        },
+        {
+            "tag": "Diabetes symptoms",
+            "patterns": [
+                "Increased hunger, thirst, weight loss, frequent urination.",
+                "Blurry vision, extreme fatigue.",
+                "Excessive hunger, thirst, noticeable weight loss, frequent urination.",
+                "Worried about: increased hunger, thirst, significant weight loss, frequent urination, blurry vision, extreme fatigue.",
+                "Unable to satisfy hunger, constant thirst, significant weight loss, frequent urination, blurry vision, overwhelming fatigue.",
+                "Combination of: persistent hunger, unquenchable thirst, substantial weight loss, frequent urination, blurry vision, extreme fatigue.",
+                "Constant hunger, thirst, significant weight loss, frequent urination, blurry vision, extreme fatigue.",
+                "Experiencing Diabetes-like symptoms: increased hunger, thirst, substantial weight loss, frequent urination, blurry vision, extreme fatigue.",
+                "Constant hunger, thirst, significant weight loss, frequent urination, blurry vision, extreme fatigue.",
+                "Experiencing symptoms like: increased hunger, thirst, substantial weight loss, frequent urination, blurry vision, extreme fatigue."
+            ],
+            "responses": [
+                "You may have Diabetes. If severe, visit the nearest hospital. Use our Symptom Checker for further assistance."
+            ]
+        },
+        {
+            "tag": "Depression symptoms",
+            "patterns": [
+                "Hopelessness, lost interest, fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Could this be depression?",
+                "Symptoms: hopelessness, loss of interest, fatigue, sleep issues, anxiety, changes in weight, thoughts of death. Possible depression?",
+                "Feeling hopeless, lost interest in activities, fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Could it be depression?",
+                "Recent experiences: hopelessness, loss of interest, fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Depression?",
+                "Feeling hopeless, uninterested in once-enjoyable things, fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Depression?",
+                "Recent emotional state: hopelessness, loss of interest, fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Depression?",
+                "Persistent feelings of hopelessness, disinterest, increased fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Depression?",
+                "Concerned about changes in emotional well-being: hopelessness, loss of interest, fatigue, sleep problems, anxiety, changes in weight, thoughts of death. Depression?",
+                "Given recent experiences of hopelessness, disinterest, fatigue, sleep problems, anxiety, changes in weight, thoughts of death, is it likely depression?",
+                "Possible explanation for feelings of hopelessness, disinterest, fatigue, sleep problems, anxiety, changes in weight, thoughts of death: depression?"
+            ],
+            "responses": [
+                "Based on the symptoms, it's possible you may be experiencing depression. Seek help from a mental health professional or a healthcare provider. Consider visiting the nearest hospital for proper evaluation and guidance on managing depression."
+            ]
+        },
+        {
+            "tag": "Asthma symptoms",
+            "patterns": [
+                "Persistent coughing, chest tightness, shortness of breath. Are these asthma symptoms?",
+                "Difficulty talking, panic, overwhelming fatigue, coughing, chest tightness, shortness of breath. Could this be asthma?",
+                "Symptoms of coughing, chest tightness, shortness of breath. Could it be asthma? Difficulty talking, occasional panic.",
+                "Considering asthma due to symptoms: coughing, chest tightness, shortness of breath. Also, difficulty talking, panic. How to manage?",
+                "Shortness of breath, chest tightness, persistent coughing. Could it be asthma? Difficulty talking, panic in certain situations.",
+                "Dealing with coughing, chest tightness, shortness of breath. Wondering if it could be asthma. Also, difficulty talking, occasional panic. What's next?",
+                "Considering asthma due to symptoms: difficulty talking, panic, excessive fatigue, coughing, chest tightness, shortness of breath. How to address?",
+                "Wondering if asthma might be the cause. Symptoms: coughing, chest tightness, shortness of breath. Also, difficulty talking, panic. What's the best action?",
+                "Concerned that symptoms like difficulty talking, panic, fatigue could be related to asthma. Also, experiencing coughing, chest tightness, shortness of breath. Alleviate these symptoms?",
+                "Is asthma a likely diagnosis? Symptoms include coughing, chest tightness, shortness of breath, difficulty talking, panic."
+            ],
+            "responses": [
+                "Based on the symptoms, it's possible you may be experiencing asthma. If severe, consult with a healthcare professional or visit the nearest hospital for proper evaluation and guidance on managing asthma."
+            ]
+        },
+        {
+            "tag": "GERD",
+            "patterns": [
+                "Struggling with acidity, cough, stomach pain. Also, ulcers on my tongue. Could this be GERD?",
+                "Symptoms: vomiting, chest pain, acidity, cough, stomach pain. Possible GERD?",
+                "Persistent ulcers on my tongue, acidity, cough, stomach pain. Is it due to GERD?",
+                "Dealing with acidity, chronic cough, stomach pain. Also, ulcers on my tongue. Is GERD a potential diagnosis?",
+                "Suspecting GERD due to symptoms: vomiting, chest pain, acidity, cough, stomach pain. How to find relief?",
+                "Could GERD be causing symptoms like stomach pain, ulcers on my tongue, cough, and excessive acidity?",
+                "Recurring symptoms: vomiting, chest pain, acidity, cough. Also, ulcers on my tongue. Could GERD be the issue?",
+                "Considering the possibility of GERD due to symptoms: stomach pain, ulcers on my tongue, cough, acidity.",
+                "Combination of vomiting, chest pain, and other symptoms like acidity, cough, stomach pain. Concerned about GERD. What to do next?",
+                "Is GERD a likely diagnosis? Symptoms include stomach pain, ulcers on my tongue, cough, acidity."
+            ],
+            "responses": [
+                "Based on the symptoms, it's possible you may be experiencing GERD. If severe, consult with a healthcare professional or visit the nearest hospital for proper evaluation and guidance on managing GERD."
+            ]
+        },
+        {
+            "tag": "Chronic cholestasis",
+            "patterns": [
+                "Acidity, itching, dark urine, yellowish skin. Chronic cholestasis?",
+                "Abdominal pain, loss of appetite, yellowing of eyes. Chronic cholestasis?",
+                "Vomiting, nausea, dark urine, yellowish skin. Chronic cholestasis?",
+                "Acidity, yellow skin. Chronic cholestasis symptom?",
+                "Abdominal pain, loss of appetite, yellowing of eyes. Considering chronic cholestasis?",
+                "Vomiting, persistent nausea, dark urine, yellowish skin. Related to chronic cholestasis?",
+                "Acidity, itching, dark urine, yellow skin. Might have chronic cholestasis.",
+                "Abdominal pain, loss of appetite, yellowing of eyes. Symptoms of chronic cholestasis?",
+                "Vomiting, nausea, dark urine, yellowish skin. Possible chronic cholestasis?",
+                "Feeling unwell with acidity and itching. Concerned about dark urine and yellow skin. Chronic cholestasis?"
+            ],
+            "responses": [
+                "Based on the symptoms, it's possible you may be experiencing chronic cholestasis. If severe, seek medical attention promptly. Consult with a healthcare professional for a thorough evaluation and appropriate guidance."
+            ]
+        },
+        {
+            "tag": "Peptic ulcer disease",
+            "patterns": [
+                "Internal itching, abdominal pain, loss of appetite. Peptic ulcer disease?",
+                "Yellowing of eyes, vomiting, passage of gases. Linked to Peptic ulcer disease?",
+                "Indigestion, upset stomach. Peptic ulcer disease suspected?",
+                "Internal itching, abdominal pain, loss of appetite. Discomfort due to Peptic ulcer disease?",
+                "Yellowing of eyes, vomiting, passage of gases. Could it be Peptic ulcer disease?",
+                "Indigestion, upset stomach. Sign of Peptic ulcer disease?",
+                "Internal itching, abdominal pain, loss of appetite. Possible Peptic ulcer disease?",
+                "Yellowing of eyes, vomiting, passage of gases. Peptic ulcer disease symptoms?",
+                "Ongoing indigestion, stomach issues. Is Peptic ulcer disease the cause?",
+                "Combination of internal itching, abdominal pain, loss of appetite. Linked to Peptic ulcer disease?"
+            ],
+            "responses": [
+                "Based on the symptoms, it seems you may be suffering from Peptic ulcer disease. If severe, seek medical attention at the nearest hospital. For further assistance, use our Symptom Checker. Click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Gastroenteritis",
+            "patterns": [
+                "Polyuria, sunken eyes, abdominal pain. Gastroenteritis?",
+                "Dehydration, diarrhea, excessive hunger. Linked to Gastroenteritis?",
+                "Obesity, vomiting, increased appetite. Indicative of Gastroenteritis?",
+                "Polyuria, sunken eyes, abdominal pain. Gastroenteritis suspected?",
+                "Signs of dehydration, diarrhea, constant hunger. Gastroenteritis cause?",
+                "Polyuria, sunken eyes, abdominal pain. Gastroenteritis possibility?",
+                "Dehydration, diarrhea, constant hunger. Daily life affected. Gastroenteritis?",
+                "Obesity, vomiting, increased appetite. Gastroenteritis symptoms?",
+                "Polyuria, sunken eyes, abdominal pain. Concerned about Gastroenteritis?",
+                "Dehydration, diarrhea, constant hunger. Consider Gastroenteritis?"
+            ],
+            "responses": [
+                "Based on the symptoms, it seems you may be suffering from Gastroenteritis. If severe, seek medical attention at the nearest hospital. For further assistance, use our Symptom Checker. Click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Bronchial Asthma",
+            "patterns": [
+                "Polyuria, mucoid sputum, high fever. Bronchial Asthma?",
+                "Fatigue, persistent cough, abdominal pain. Bronchial Asthma suspected?",
+                "Excessive hunger, shortness of breath. Bronchial Asthma symptoms?",
+                "Polyuria, mucoid sputum, high fever. Could it be Bronchial Asthma?",
+                "Fatigue, troublesome cough, abdominal pain. Possible Bronchial Asthma?",
+                "Excessive hunger, shortness of breath. Dealing with Bronchial Asthma?",
+                "Polyuria, mucoid sputum, high fever. Bronchial Asthma possibility?",
+                "Persistent fatigue, cough, abdominal pain. Concerns about Bronchial Asthma?",
+                "Excessive hunger, shortness of breath. Linked to Bronchial Asthma?",
+                "Polyuria, mucoid sputum, high fever. Possible Bronchial Asthma?"
+            ],
+            "responses": [
+                "Based on the symptoms, it seems you may be suffering from Bronchial Asthma. If severe, seek medical attention at the nearest hospital. For further assistance, use our Symptom Checker. Click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Hypertension",
+            "patterns": [
+                "Dizziness, lack of concentration, increased hunger. Hypertension?",
+                "Irritability, obesity, severe headaches, chest pain. Hypertension suspected?",
+                "Dizziness, lack of concentration, excessive hunger. Linked to Hypertension?",
+                "Hypertension causing irritability, obesity, severe headaches, chest pain.",
+                "Dizziness, lack of concentration, insatiable hunger. Hypertension possibility?",
+                "Irritability, obesity, frequent headaches, chest pain. Associated with Hypertension?",
+                "Dizziness, lack of concentration, excessive hunger. Hypertension concerns?",
+                "Irritability, obesity, severe headaches, chest pain. Worried about Hypertension?",
+                "Hypertension causing dizziness, lack of concentration, increased hunger.",
+                "Irritability, weight gain, frequent headaches, chest pain. Hypertension linked?"
+            ],
+            "responses": [
+                "Based on the symptoms, it seems you may be suffering from Hypertension. If severe, seek medical attention at the nearest hospital. For further assistance, use our Symptom Checker. Click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Migraine",
+            "patterns": [
+                "Polyuria, acidity, depression. Migraine?",
+                "Stiff neck, intense headache, indigestion. Migraine suspected?",
+                "Changes in appetite, excessive hunger. Migraine symptoms?",
+                "Polyuria, acidity, depression. Could it be Migraine?",
+                "Persistent migraine, visual disturbances. Migraine affecting health.",
+                "Acidity, depression, stiff neck, indigestion. Migraine-related symptoms.",
+                "Polyuria, acidity, depression. Challenging with severe headache, stiff neck.",
+                "Changes in appetite, increase in hunger. Recurrent headache, stiff neck.",
+                "Migraine with persistent headache, stiff neck, visual disturbances. Polyuria, acidity, depression.",
+                "Polyuria, acidity, headache, stiff neck. Migraine and related symptoms."
+            ],
+            "responses": [
+                "Based on the symptoms, it seems you may be suffering from Migraine. If severe, seek medical attention at the nearest hospital. For further assistance, use our Symptom Checker. Click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Cervical spondylosis",
+            "patterns": [
+                "Back pain, dizziness, visual disturbances, depression. Cervical spondylosis?",
+                "Irritability, weakness in limbs, nausea, loss of balance. Possible cervical spondylosis?",
+                "Neck pain, lightheadedness, visual disturbances, irritability. Concerned about cervical spondylosis.",
+                "Back pain causing discomfort, dizziness affecting daily life. Struggling with depression.",
+                "Irritability, pronounced weakness in limbs, nausea, loss of balance. Worried about cervical spondylosis.",
+                "Neck pain, persistent lightheadedness, frequent visual disturbances. Impacting overall well-being.",
+                "Recurring back pain, daily tasks affected by dizziness. Visual disturbances and depression present.",
+                "Pronounced weakness in limbs, mobility affected. Nausea, loss of balance troubling.",
+                "Cervical spondylosis causing neck pain, lightheadedness. Visual disturbances, irritability constant.",
+                "Consistent back pain, dizziness, visual disturbances. Could it be cervical spondylosis?",
+                "Pronounced weakness in limbs, noticeable nausea, loss of balance. Daily struggles with cervical spondylosis."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Cervical spondylosis. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Paralysis (brain hemorrhage)",
+            "patterns": [
+                "Frequent visual disturbances, persistent abdominal pain. Paralysis (brain hemorrhage)?",
+                "Irritable, significant weakness on one side of the body. Suspected paralysis (brain hemorrhage)?",
+                "Fluid overload, vomiting episodes, constant headache, altered sensorium. Daily challenges with paralysis.",
+                "Intensified visual disturbances, abdominal pain causing discomfort. Concerns about paralysis (brain hemorrhage).",
+                "Dealing with irritability, pronounced weakness on one side. Suspecting paralysis (brain hemorrhage).",
+                "Worries about fluid overload, frequent vomiting, unrelenting headache, altered sensorium. Constant source of concern.",
+                "Unignorable visual disturbances, persistent abdominal pain. Impacting overall health.",
+                "Irritable, significantly weakened on one side. Daily tasks extremely challenging.",
+                "Anxiety related to fluid overload, vomiting episodes, throbbing headache, altered sensorium. Affecting well-being.",
+                "Visual disturbances interfering with daily life. Abdominal pain remains persistent.",
+                "Irritable, persistent weakness on one side. Mobility limitations due to ongoing paralysis (brain hemorrhage).",
+                "Ongoing worries about fluid overload, vomiting, relentless headache, altered sensorium. Significant impact on life."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Paralysis (brain hemorrhage). If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Jaundice",
+            "patterns": [
+                "Itching, high fever, overwhelmingly tired. Jaundice?",
+                "Fatigue, change in skin color, darkened urine. Possible jaundice?",
+                "Depressed, irritable, constant challenge. Symptoms of jaundice?",
+                "Breathlessness, weight drop, vomiting, muscle pain, increased appetite. Signs of jaundice?",
+                "Intensified itching, distressing high fever. Concerns about jaundice.",
+                "Significant drop in energy, visible jaundice, dark urine. Likely jaundice.",
+                "Persistent feelings of sadness, irritability. Emotional toll due to jaundice.",
+                "Breathlessness, unexplained weight loss, vomiting, muscle aches, insatiable appetite. Possible jaundice symptoms?",
+                "Unbearable itching, high fever causing distress. Skin yellow with dark urine.",
+                "Overwhelming fatigue, yellow skin, dark urine. Jaundice concerns.",
+                "Mood changes, especially depression and irritability. Emotional impact of jaundice.",
+                "Alarming breathlessness, noticeable weight loss. Frequent vomiting, muscle pain, increased appetite. Possible jaundice."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Jaundice. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },  
+        {
+            "tag": "Malaria",
+            "patterns": [
+                "Swelled lymph nodes, mild fever, frequent urination. Malaria?",
+                "Polyuria, high fever. Concerned about Malaria.",
+                "Visual disturbances, change in urine color, abdominal pain. Possible Malaria?",
+                "Diarrhea, irritability, persistent headache. Suspecting Malaria.",
+                "Headache, vomiting, profuse sweating, nausea. Signs of Malaria?",
+                "Chills and extreme cold sensation. Malaria symptoms?",
+                "Swollen lymph nodes, low-grade fever. Possible Malaria?",
+                "Frequent urination, high body temperature. Worried about Malaria.",
+                "Difficulty with vision, changes in urine color, abdominal discomfort. Malaria?",
+                "Diarrhea, irritability, constant headache. Distressed, possible Malaria.",
+                "Severe headache, vomiting, excessive sweating, unrelenting nausea. Possible Malaria?",
+                "Chills and constant cold sensation becoming unbearable. Malaria suspected.",
+                "Swelled lymph nodes, mild fever, frequent urge to urinate. Daily symptoms.",
+                "Polyuria, persistent high fever, high anxiety. Possible Malaria.",
+                "Altered visual perception, changed urine color, abdominal pain. Suspecting Malaria.",
+                "Diarrhea, constant irritability, severe headache. Malaria concerns.",
+                "Enduring persistent headache, vomiting, excessive sweating, relentless nausea. Malaria suspected.",
+                "Chills and constant cold sensation increasingly severe. Possible Malaria."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Malaria. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Chicken pox",
+            "patterns": [
+                "Itching, high fever, fatigue. Typical chicken pox?",
+                "Malaise, abdominal pain, loss of appetite. Chicken pox symptoms?",
+                "Skin rash, diarrhea. Indications of chicken pox?",
+                "Lethargy, headache, muscle pain, nausea. Possible chicken pox.",
+                "Intense itch, high fever, weariness. Chicken pox suspected.",
+                "Uneasiness, abdominal discomfort, lack of appetite. Chicken pox symptoms?",
+                "Skin covered with rash, diarrhea. Chicken pox signs present.",
+                "Feeling flat, worried, muscle pain, nausea. Chicken pox suspected.",
+                "Itchy sensation, high fever, tiredness. Chickenpox symptoms?",
+                "Skin irritated, high temperature. Signs of chicken pox.",
+                "General discomfort, abdominal discomfort, loss of appetite. Chicken pox?",
+                "Observing skin eruption, digestive issues. Likely chicken pox symptoms.",
+                "Constant tiredness, persistent headache, muscle discomfort, feeling nauseous. Chicken pox signs.",
+                "Itchiness severe, high fever, extreme fatigue. Chicken pox likely.",
+                "Struggling with restlessness, abdominal pain, significant loss of appetite. Possible chicken pox.",
+                "Body covered in rash, experiencing diarrhea. Chicken pox suspected.",
+                "Emotionally drained, anxious, muscle pain, nausea. Indications of chicken pox.",
+                "Itching sensation, high fever, overwhelming fatigue. Characteristic of chickenpox.",
+                "Skin eruptions, digestive system affected. Chicken pox symptoms.",
+                "Energy levels extremely low, constant headache, muscle pain, persistent nausea. Possible chicken pox.",
+                "Itching unbearable, running a high fever. Chicken pox suspected.",
+                "Struggling with unsettled feeling, abdominal pain, considerable loss of appetite. Chicken pox likely.",
+                "Skin rash spreading, episodes of diarrhea. Chicken pox indications.",
+                "Emotional state affected, experiencing muscle discomfort, constant nausea. Possible chicken pox.",
+                "Strong itch, heightened body temperature, overwhelming fatigue. Characteristic of chickenpox."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Chicken pox. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Dengue",
+            "patterns": [
+                "Unusual swelling of lymph nodes, fluctuating body temperature. Dengue?",
+                "Persistent fatigue, malaise, difficulty functioning normally. Signs of Dengue.",
+                "Joint pain, significant loss of appetite. Dengue symptoms present.",
+                "Skin rash, change in urine color. Concerned about Dengue.",
+                "Abdominal pain, vomiting episodes. Possible Dengue.",
+                "Red spots, raised skin rashes, constant headache, muscle aches. Dengue suspected.",
+                "Chills more pronounced, visibly swollen lymph nodes. Dengue indications.",
+                "Fever fluctuating, overwhelming fatigue, feeling debilitated. Possible Dengue.",
+                "Unease, burning or painful sensation in muscles. Dengue suspected.",
+                "Persistent loss of appetite leading to weight loss. Skin rash causing discomfort.",
+                "Dark urine, abdominal muscle pain. Dengue symptoms?",
+                "Constantly troubled by vomiting, red raised spots causing distress. Suspecting Dengue.",
+                "Intensity of headache, muscle pain reaching severity. Shivering uncontrollably. Possible Dengue.",
+                "Changes in urine color, skin on body unsettling. Highly concerning for Dengue.",
+                "Abdominal pain unbearable, persistent nausea. Dengue suspected.",
+                "Physical and mental well-being significantly deteriorated. Possible Dengue.",
+                "Swollen lymph nodes, alternating mild and high fever. Signs of Dengue.",
+                "Unrelenting fatigue, malaise affecting daily life. Dengue symptoms causing discomfort.",
+                "Lost appetite, skin rash, dark urine. Possible Dengue.",
+                "Abdominal pain, vomiting recurrent. Dengue symptoms present.",
+                "Red spots, rashes all over body, persistent headache, muscle pain taking toll on health. Possible Dengue.",
+                "Chills more pronounced, visibly swollen lymph nodes. Dengue suspected.",
+                "Fever fluctuating, ongoing unease, muscle pain unbearable. Possible Dengue.",
+                "Loss of appetite persistent, significant weight loss, skin rash constant discomfort. Suspecting Dengue.",
+                "Urine turned noticeable dark, abdominal muscle pain increasingly severe. Possible Dengue.",
+                "Recurring episodes of vomiting distressing, red raised spots on torso causing anxiety. Possible Dengue.",
+                "Headache, muscle pain reaching severity. Shivering constantly, visibly swollen lymph nodes. Dengue suspected."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Dengue. Dengue can be a severe illness, and it's essential to seek medical attention, especially if your symptoms are severe. Please don't hesitate to visit the nearest hospital. For additional guidance and support, you can also use our Symptom Checker. Just click the button next to the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Typhoid",
+            "patterns": [
+                "Swelled lymph nodes, back pain, joint discomfort. Typhoid?",
+                "Fluctuating fever, chills, shivering. Suspecting Typhoid.",
+                "Constipation, uncomfortable eyes, visual disturbances. Possible Typhoid.",
+                "Fatigue, malaise, constantly exhausted. Typhoid symptoms?",
+                "Abdominal pain, loss of appetite, diarrhea, vomiting. Signs of Typhoid?",
+                "Intense headaches, red spots, rashes. Typhoid suspected.",
+                "Muscle pain, nausea, strange heart pain. Possible Typhoid.",
+                "Blurred vision, yellowing eyes, uneasiness. Typhoid indications.",
+                "Abdominal pain, loss of appetite. Typhoid suspected.",
+                "Headaches, red spots, muscle pain. Possible Typhoid.",
+                "Nausea, sickness daily. Typhoid?",
+                "Weak, exhausted, persistent fever, peculiar rash. Concerned about Typhoid.",
+                "Swollen lymph nodes, constant fever, distressing. Typhoid suspected.",
+                "Unbearable headache, muscle pain. Unusual urine, skin. Typhoid?",
+                "Significant weight loss, yellowing eyes. Alarming. Possible Typhoid.",
+                "Abdominal discomfort, diarrhea, vomiting. Typhoid suspected.",
+                "Constantly irritable, unending fatigue. Typhoid signs.",
+                "Vision deterioration, strange rash. New symptom. Possible Typhoid.",
+                "Continuous joint pain, unbearable abdomen. Afraid for health. Typhoid suspected.",
+                "Severe back pain, muscle pain, constant fever. Significant weight loss. Possible Typhoid.",
+                "Skin turned unusual color, swelling abdomen. Concerning. Typhoid suspected.",
+                "Lost appetite, digestive shut down, diarrhea, vomiting. Typhoid signs.",
+                "Unrelenting weakness, fatigue, malaise. Impossible daily activities. Typhoid suspected.",
+                "Severe distress, anxiety. Worsening health. Typhoid?",
+                "Unending nausea, sickness. Impossible to enjoy. Typhoid suspected.",
+                "Body turmoil, severe headaches, muscle pain, unbearable abdomen. Typhoid signs.",
+                "High discomfort in eyes, skin deteriorating. Abdominal pain, troubles. Immediate intervention."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may be suffering from Typhoid. Typhoid can be a severe and life-threatening illness. We strongly recommend seeking immediate medical attention at the nearest hospital. Typhoid can be effectively treated with antibiotics, but early diagnosis is crucial. For additional support and guidance, you can also utilize our Symptom Checker. Simply click the button next to the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Hepatitis A",
+            "patterns": [
+                "Malaise, nausea, belly pain. Hepatitis A?",
+                "Mild fever, abdominal pain, loss of appetite. Hepatitis A symptoms?",
+                "Vomiting, calf veins, dark urine. Possible Hepatitis A.",
+                "Yellowish skin, joint pain, diarrhea. Suspecting Hepatitis A.",
+                "Muscle pain, back pain, yellow urine. Indications of Hepatitis A.",
+                "Constipation, eyes pain, toxic look. Possible Hepatitis A.",
+                "Red spots, abdominal pain, mild fever. Hepatitis A suspected.",
+                "Loss of appetite, vomiting, abdomen pain. Hepatitis A signs.",
+                "Large vein, dark urine, yellowish skin. Possible Hepatitis A.",
+                "Joint pain, diarrhea, muscle pain. Concerned about Hepatitis A.",
+                "Back pain, yellowish urine, constipation. Hepatitis A suspected.",
+                "Weakness, discomfort, reddish rash. Possible Hepatitis A.",
+                "Mild fever, belly pain, yellowing eyes. Hepatitis A signs present.",
+                "Family history, worried about symptoms. Possible Hepatitis A.",
+                "Struggling with malaise, joint pain. Hepatitis A suspected.",
+                "Yellow urine, constipation. Indications of Hepatitis A.",
+                "Calf vein, dark urine, yellowish skin. Possible Hepatitis A.",
+                "Worried and anxious. Suspecting Hepatitis A.",
+                "Feeling unwell, muscle pain, red spots. Hepatitis A likely.",
+                "Fluctuating fever. Hepatitis A?",
+                "Loss of appetite, dark urine, eyes pain. Possible Hepatitis A.",
+                "Constipation, abdomen pain, joint pain. Suspecting Hepatitis A.",
+                "Toxic look, yellowish skin, vomiting. Possible Hepatitis A.",
+                "Joint pain, dark urine, reddish rash. Hepatitis A suspected."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis A. If your symptoms are severe, consider visiting the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        {
+            "tag": "Hepatitis B",
+            "patterns": [
+                "Malaise, lethargy, nausea. Hepatitis B?",
+                "Mild fever, belly pain, abdominal pain. Hepatitis B symptoms?",
+                "Loss of appetite, yellowing eyes, itching. Possible Hepatitis B.",
+                "Swelled lymph nodes, puffy face, puffy eyes. Suspecting Hepatitis B.",
+                "Fatigue, yellowish skin, dark urine. Indications of Hepatitis B.",
+                "Diarrhea, muscle pain, toxic look. Possible Hepatitis B.",
+                "Headache, red spots. Uneasy, sick. Hepatitis B suspected.",
+                "Feeling uneasy, sluggish, sick. Possible Hepatitis B.",
+                "Mild fever, belly pain, abdominal pain. Hepatitis B signs.",
+                "Loss of appetite, yellowing eyes, itching. Possible Hepatitis B.",
+                "Rash, red spots. Suspecting Hepatitis B.",
+                "Worried and anxious. Hepatitis B?",
+                "Mild fever, belly pain, yellowing eyes. Hepatitis B indications.",
+                "Family history, worried about symptoms. Possible Hepatitis B.",
+                "Malaise, puffy face, puffy eyes. Hepatitis B suspected.",
+                "Fatigue, toxic look, frequent vomiting. Possible Hepatitis B.",
+                "Skin turning yellow, itching. Indications of Hepatitis B.",
+                "Puffy face, puffy eyes, loss of appetite. Possible Hepatitis B.",
+                "Feeling uneasy, sick. Concerned about Hepatitis B.",
+                "Family history, low energy levels. Possible Hepatitis B.",
+                "Vomiting, muscle pain, reddish rash. Hepatitis B suspected.",
+                "Family history, itchy sensation. Possible Hepatitis B.",
+                "Fatigue, mild fever, toxic look. Hepatitis B signs present.",
+                "Rash, yellowish skin, dark urine. Possible Hepatitis B.",
+                "Puffy face, puffy eyes, frequent nausea. Hepatitis B suspected."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis B. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },    
+        {
+            "tag": "Hepatitis C",
+            "patterns": [
+                "History of blood transfusion. Feeling weak, yellow skin, dark urine. Hepatitis C?",
+                "Fatigue, nausea, mild fever. Abdominal pain, loss of appetite, yellowing eyes. Hepatitis C symptoms?",
+                "Yellowish skin, diarrhea. Unsterile injections, muscle pain. Hepatitis C concerns.",
+                "Back pain, yellow urine. Constipation, eyes pain, fast heart rate. Possible Hepatitis C.",
+                "Red spots, history of blood transfusion. Energy low, reddish rash. Hepatitis C suspected.",
+                "Digestive issues, dark urine. Unsterile injections, abdominal pain. Hepatitis C signs.",
+                "Toxicity symptoms, blurred vision, joint pain. Hepatitis C risk due to past experiences.",
+                "Jaundice symptoms, abdominal discomfort. Hepatitis C impact on daily life.",
+                "Hepatitis C symptoms, fatigue, sickly appearance. Yellow skin, dark urine alarming signs.",
+                "Swollen lymph nodes, puffiness. Concerned about hepatitis C's impact. Unsterile injections history.",
+                "Symptoms similar to hepatitis C. Fatigue, dark urine, anxious about possibility.",
+                "Weak, jaundice symptoms. Blurred vision, reddish spots. Hepatitis C risk concerns.",
+                "Fatigue, muscle soreness, fast heart rate. Daily digestive issues, abdominal pain. Hepatitis C risk?"
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis C. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        {
+            "tag": "hepatitis D",
+            "patterns": [
+                "Yellow urine, blood transfusion history. Belly pain, fatigue, yellowish skin. Hepatitis D?",
+                "Joint pain, dark urine, loss of appetite. Malaise, abdominal pain from unsterile injections.",
+                "Vomiting, diarrhea, toxic look (typhos). Blurred vision, distorted, nauseated. Hepatitis D signs.",
+                "Yellow urine, blood transfusion. Tiredness, yellow skin, joint pain. Hepatitis D suspected.",
+                "Dark urine, loss of appetite. Eyes yellowing, malaise from unsterile injections. Possible Hepatitis D.",
+                "Abdominal pain, hepatitis D symptoms. Severe fatigue, frequent vomiting, intestinal distress.",
+                "General malaise, excessive tiredness. Appearance of jaundice, joint discomfort, high temperature.",
+                "Yellow-colored urine, dark-colored. Lost appetite, eyes turning yellow. Hepatitis D indications.",
+                "Muscle soreness, yellow skin. Digestive issues, abdominal discomfort. Hepatitis D concerns.",
+                "Jaundice symptoms, joint pain. Hepatitis D impact on daily life. Family history involved.",
+                "Weak, jaundice symptoms. Blurred vision, reddish spots. Hepatitis D risk concerns.",
+                "Fatigue, daily abdominal pain. Yellow skin, dark urine. Hepatitis D risk."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it appears you might be suffering from Hepatitis D. If your symptoms are severe, seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        {
+            "tag": "hepatitis E",
+            "patterns": [
+                "Symptoms of hepatitis E: mild fever, yellow urine. High fever, fatigue, yellowish skin. Hepatitis E?",
+                "Joint pain, dark urine, loss of appetite. Abdominal pain, yellowing eyes. Hepatitis E concerns.",
+                "Diarrhea, vomiting, muscle pain, nausea. Soft pyrexia, yellow piss. Hepatitis E signs.",
+                "Richly pyrexia, tiredness. Yellowish skin, joint pain sensations. Hepatitis E suspected.",
+                "Dark water, loss of appetite. Abdominal nuisance, yellowing of the middle. Hepatitis E?",
+                "Looseness, vomiting, muscular anguish. Feeling sick, symptoms of hepatitis E.",
+                "Blurred vision, joint pain. Severe fatigue, frequent vomiting, intestinal distress. Hepatitis E likely.",
+                "Jaundice appearance, joint discomfort, high temperature. Yellow-colored urine, dark-colored.",
+                "Lost appetite, yellow eyes. Muscle soreness, abdominal pain. Hepatitis E indications.",
+                "Yellow skin, weakened state. Frequent nausea, rapid heart rate. Hepatitis E concerns.",
+                "Jaundice symptoms, joint pain. Hepatitis E impact on daily life. Family history involved.",
+                "Blurred vision, reddish spots. Weak, jaundice symptoms. Hepatitis E risk concerns.",
+                "Daily abdominal discomfort. Yellow skin, dark urine. Hepatitis E risk."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it seems that you may have Hepatitis E. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can also use our Symptom Checker. Just click the button beside the input text box and follow the instructions."
+            ]
+        },
+        {
+            "tag": "Alcoholic hepatitis",
+            "patterns": [
+                "Suspecting alcoholic hepatitis after blood transfusion and malaise. Concerns about fluid overloading, liver failure.",
+                "Abdomen swelling, nausea, unconsciousness. Belly pain, loss of appetite, vomiting. Yellowing eyes, enlarged lymph nodes.",
+                "Worries about stomach bleeding, jaundiced skin. Anxiety due to alcohol consumption, unsterile injections history.",
+                "Yellow urine, abdominal swelling, excessive sweating. Rising concern for alcoholic hepatitis.",
+                "Severe malaise, abdominal muscle pain. Reduced appetite, jaundice-like eyes. Abdominal discomfort, lymph node swelling.",
+                "Stomach bleeding, yellowed skin distressing. Growing concern with alcohol history, unsterile injections.",
+                "Yellow urine, visible abdominal swelling. Excessive sweating, escalating worry for alcoholic hepatitis.",
+                "Symptoms pointing to alcoholic hepatitis. Concerns about fluid overload, acute liver failure.",
+                "Abdominal distension, nausea, lapses into coma. Battling belly pain, loss of appetite, recurring vomiting.",
+                "Yellowing eyes, frequent vomiting, swollen lymph nodes. Potential for stomach bleeding, yellowish skin.",
+                "Anxiety escalating with alcohol history, unsterile injections. Yellow urine, visible abdominal swelling, excessive sweating.",
+                "Deep concern about alcoholic hepatitis as symptoms persist."
+            ],
+            "responses": [
+                "Based on the symptoms you provided, it appears that you may have Alcoholic hepatitis. If your symptoms are severe, don't hesitate to seek medical attention at the nearest hospital. For further assistance, you can use our Symptom Checker by clicking the button next to the input text box and following the instructions."
+            ]
+        },
+        {
+            "tag": "common cold prevention",
+            "patterns": [
+                "Medicines for common cold?",
+                "Common cold prevention methods?",
+                "What to eat or drink for common cold?",
+                "How to avoid cold or flu?",
+                "What to eat or drink when suffering from a cold?",
+                "How to prevent getting a cold or flu?"
+            ],
+            "responses": [
+                "Medicines: Dextromethorphan, Decongestant, Diphenhydramine, Crocin Cold & Flu Max.",
+                "Preventions: Wash hands, Avoid touching face, Clean surfaces, Use hand sanitizers.",
+                "Suggested Foods: Garlic, Vitamin C fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup."
+            ]
+        },
+        {
+            "tag": "tuberculosis symptoms",
+            "patterns": [
+                "Tuberculosis symptoms include persistent cough, chest pain, coughing up blood.",
+                "Experiencing fatigue, weight loss, night sweats, and fever might indicate tuberculosis.",
+                "Shortness of breath and loss of appetite are common in tuberculosis.",
+                "Symptoms of tuberculosis: persistent cough, chest pain, coughing up blood, fatigue, weight loss, night sweats, fever.",
+                "Experiencing: chest pain, coughing up blood, weight loss, night sweats due to tuberculosis."
+            ],
+            "responses": [
+                "You may be experiencing symptoms of tuberculosis. Seek medical attention at the nearest hospital for further evaluation."
+            ]
+        },
+        {
+            "tag": "pneumonia symptoms",
+            "patterns": [
+                "If you have chest pain, difficulty breathing, and a persistent cough, it could be pneumonia.",
+                "Fever, chills, fatigue, and confusion are symptoms associated with pneumonia.",
+                "Shortness of breath, rapid heartbeat, and sweating might indicate pneumonia.",
+                "Symptoms of pneumonia: chest pain, difficulty breathing, persistent cough, fever, chills, fatigue, confusion, shortness of breath, rapid heartbeat, sweating.",
+                "Experiencing: difficulty breathing, fatigue, confusion, sweating may suggest pneumonia."
+            ],
+            "responses": [
+                "Your symptoms may indicate pneumonia. It's advisable to seek medical attention promptly. Visit the nearest hospital for evaluation."
+            ]
+        },
+        {
+            "tag": "heart attack symptoms",
+            "patterns": [
+                "Chest pain or discomfort, shortness of breath, and lightheadedness may be signs of a heart attack.",
+                "Feeling nauseous, cold sweats, and pain in the arms, back, neck, jaw, or stomach are symptoms of a heart attack.",
+                "If you experience pain or discomfort in the arms, back, neck, jaw, or stomach, it could be a heart attack.",
+                "Symptoms of a heart attack: chest pain, shortness of breath, lightheadedness, nausea, cold sweats, pain in the arms, back, neck, jaw, or stomach.",
+                "Experiencing: chest pain, shortness of breath, cold sweats, pain in the arms may suggest a heart attack."
+            ],
+            "responses": [
+                "Your symptoms may be indicative of a heart attack. Seek emergency medical attention immediately. Call for an ambulance or go to the nearest emergency room."
+            ]
+        },
+        {
+            "tag": "varicose veins symptoms",
+            "patterns": [
+                "Enlarged, twisted veins, visible under the skin may indicate varicose veins.",
+                "Aching or pain, especially after prolonged sitting or standing, could be a symptom of varicose veins.",
+                "Itchy or irritated skin around the veins may accompany varicose veins.",
+                "Swelling in the legs and muscle cramping are common symptoms of varicose veins.",
+                "Symptoms of varicose veins: enlarged, twisted veins, aching or pain, itchy skin, swelling in the legs, muscle cramping."
+            ],
+            "responses": [
+                "Your symptoms suggest varicose veins. While usually not an emergency, it's recommended to consult a healthcare professional for evaluation and appropriate management."
+            ]
+        },
+        {
+            "tag": "hypothyroidism symptoms",
+            "patterns": [
+                "Fatigue, weight gain, dry skin, and constipation may be indicative of hypothyroidism.",
+                "Cold intolerance, muscle weakness, and joint pain are common symptoms of hypothyroidism.",
+                "Depression, slowed heart rate, and heavy menstrual periods may accompany hypothyroidism.",
+                "Symptoms of hypothyroidism: fatigue, weight gain, dry skin, constipation, cold intolerance, muscle weakness, joint pain, depression, slowed heart rate, heavy menstrual periods."
+            ],
+            "responses": [
+                "Your symptoms may indicate hypothyroidism. It's important to consult with a healthcare provider for proper diagnosis and management."
+            ]
+        },
+        {
+            "tag": "arthritis symptoms",
+            "patterns": [
+                "Joint pain, stiffness, swelling, and redness are common symptoms of arthritis.",
+                "Decreased range of motion, fatigue, and joint warmth may suggest arthritis.",
+                "Tenderness in the joints is a symptom often associated with arthritis.",
+                "Symptoms of arthritis: joint pain, stiffness, swelling, redness, decreased range of motion, fatigue, joint warmth, tenderness."
+            ],
+            "responses": [
+                "Your symptoms suggest arthritis. Consult with a healthcare professional for a thorough evaluation and appropriate management."
+            ]
+        },
+        {
+            "tag": "fever prevention",
+            "patterns": [
+                "Medicines for fever?",
+                "Fever prevention methods?",
+                "What to eat or drink for fever?",
+                "How to avoid getting a fever?",
+                "What medicine to buy for fever?",
+                "Tell me about preventing fever?",
+                "What to eat or drink when suffering from fever?",
+                "How to keep from getting a fever?"
+            ],
+            "responses": [
+                "Medicines: Acetaminophen, Ibuprofen, Aspirin, Crocin Cold & Flu Max.",
+                "Preventions: Wash hands, Cover mouth and nose when coughing or sneezing, Clean surfaces, Avoid sharing utensils.",
+                "Suggested Foods: Garlic, Vitamin C fruits, Leafy greens, Broccoli, Oatmeal, Spices, Chicken Soup."
+            ]
+        },
+        {
+            "tag": "diabetes prevention",
+            "patterns": [
+                "Medicines for diabetes?",
+                "Diabetes prevention methods?",
+                "What to eat or drink for diabetes?",
+                "How to avoid getting diabetes?",
+                "What medicine to buy for diabetes?",
+                "Tell me about preventing diabetes?",
+                "What to eat or drink when suffering from diabetes?",
+                "How to keep from getting diabetes?"
+            ],
+            "responses": [
+                "Medicines: Insulin, Amylinomimetic drug, Dipeptidyl peptidase-4 (DPP-4) inhibitor.",
+                "Preventions: Cut Sugar and Refined Carbs, Regular Exercise, Hydration, Weight Management, Quit Smoking.",
+                "Suggested Foods: Leafy greens, Avocados, Eggs."
+            ]
+        },
+        {
+            "tag": "depression prevention",
+            "patterns": [
+                "Medicines for depression?",
+                "Depression prevention methods?",
+                "What to eat or drink for depression?",
+                "How to avoid getting depression?",
+                "What medication to buy for depression?",
+                "Tell me about preventing depression?",
+                "What to eat or drink when suffering from depression?",
+                "How to keep from getting depression?"
+            ],
+            "responses": [
+                "Medicines: Brexpiprazole, Quetiapine, Olanzapine.",
+                "Preventions: Exercise regularly, Limit social media time, Hydration, Build strong relationships, Simplify choices.",
+                "Suggested Foods: Get Enough Vitamin D, Include Omega-3 Fatty Acids, Beans and legumes."
+            ]
+        },
+        {
+            "tag": "asthma prevention",
+            "patterns": [
+                "Medicines for asthma?",
+                "Asthma prevention methods?",
+                "What to eat or drink for asthma?",
+                "How to avoid getting asthma?",
+                "What medicine to buy for asthma?",
+                "Tell me about preventing asthma?",
+                "What to eat or drink when suffering from asthma?",
+                "How to keep from getting asthma?"
+            ],
+            "responses": [
+                "Medicines: Epinephrine, Anticholinergic, Proair HFA.",
+                "Preventions: Identify Asthma Triggers, Stay Away From Allergens, Avoid Smoke of Any Type.",
+                "Suggested Foods: Carrots, Juice, Eggs, Broccoli, Cantaloupe, Milk."
+            ]
+        },
+        {
+            "tag": "Consultation",
+            "patterns": [
+                "Who to contact for consultation?",
+                "Is there any available doctor?",
+                "Suggestions for doctor consultations?",
+                "Set up a meeting with a doctor for consultation?",
+                "Any doctor available for consultation?",
+                "Who should I contact for consultation?",
+                "Is there any doctor available?",
+                "Can you give me suggestions for doctor consultations?",
+                "Can you set up a meeting with a doctor for consultation?",
+                "Is there any doctor available for consultation?"
+            ],
+            "responses": [
+                "You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."
+            ]
+        }
+    ]
+}
