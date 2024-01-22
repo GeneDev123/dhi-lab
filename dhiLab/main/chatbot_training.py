@@ -17,7 +17,7 @@ def training_chatbot_new():
   nltk.download("punkt")
   nltk.download("wordnet")
 
-  with open("./main/custom_modules/json/intents2.json") as file:
+  with open("./main/custom_modules/json/intents3.json") as file:
     data = json.load(file)
 
   words = []
@@ -75,7 +75,7 @@ def training_chatbot_new():
   model.compile(loss="categorical_crossentropy", optimizer=sgd, metrics=["accuracy"])
 
   # Train the model
-  model.fit(np.array(X_train), np.array(y_train), epochs=300, batch_size=10, verbose=1)
+  model.fit(np.array(X_train), np.array(y_train), epochs=70, batch_size=10, verbose=1)
 
   # Save the model
   current_datetime = datetime.datetime.now()
@@ -106,6 +106,12 @@ def training_chatbot_new():
     "f1Score:": str(round(f1, 4) * 100) + "%",
     "report": report,
   }
+
+  file_path = 'ai_scores.txt'
+
+  with open(file_path, 'w') as file:
+    for key, value in returnOutput.items():
+      file.write(f"{key} {value}\n")
 
   return returnOutput
 
