@@ -6,7 +6,7 @@ from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
 
 # Load the preprocessed data
-with open("../json/intents2.json") as file:
+with open("../json/intents3.json") as file:
   data = json.load(file)
 
 words = []

@@ -85,8 +85,8 @@ def home(request):
   context['symptoms'] = sorted(symptoms)
 
   # Model and Intents directory
-  chatbot_model_dir = "./main/custom_modules/machine-learning-models/chatbot_model.h5"
-  intents_dir = "./main/custom_modules/json/intents2.json"
+  chatbot_model_dir = "./main/custom_modules/machine-learning-models/chatbot_2024-01-20_22-36-19.h5"
+  intents_dir = "./main/custom_modules/json/intents3.json"
   model_data = chatbot_utils.initialize_static_chatbot_requirements(chatbot_model_dir, intents_dir)
   
   if request.method == 'GET':

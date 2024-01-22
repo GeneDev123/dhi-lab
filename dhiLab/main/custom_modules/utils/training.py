@@ -20,7 +20,7 @@ def training_chatbot_new():
   nltk.download("wordnet")
 
   # Load and preprocess intents.json data
-  with open("../json/intents2.json") as file:
+  with open("../json/intents3.json") as file:
     data = json.load(file)
 
   words = []
