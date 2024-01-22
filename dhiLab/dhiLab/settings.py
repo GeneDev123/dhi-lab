@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-sh!%)ui@ocs%6y-$c^_k151&wyb39^hm^bc!sop9$1smzj$xh3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dhilab.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['dhilab.pythonanywhere.com', 'drslab.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
