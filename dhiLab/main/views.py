@@ -129,8 +129,19 @@ def chatbot_page(request):
 @user_passes_test(is_admin, login_url='/custom-page/')
 def train_chatbot(request):
   print("In Home View")
+
   data  = chatbot_training.start_chatbot_training()
   return JsonResponse({
     'message': 'Function executed successfully',
     'data': data
   })
+  
+@login_required(login_url='/accounts/login/') 
+def doctors_page(request):
+  context = {}
+
+  healthcare_professionals = CustomUser.objects.filter(is_health_care_professional=True)
+  
+  context['health_care_prof'] = healthcare_professionals
+  return render(request, 'main/doctors-page.html', context)
+

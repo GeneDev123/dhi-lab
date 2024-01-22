@@ -9,6 +9,7 @@ urlpatterns = [
     path('filter-symptoms/', views.filter_symptoms, name='filter-symptoms'),
     path('classify-symptoms/', views.classify_symptoms, name='classify-symptoms'),
     path('chatbot/', views.chatbot_page, name='chatbot-page'),
+    path('doctors/', views.doctors_page, name='doctors-page'),
     path('', views.home, name='home'), 
 
     path('train_chatbot/', views.train_chatbot, name='train-chatbot'),

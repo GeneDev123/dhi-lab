@@ -568,3 +568,58 @@
     /* line 198, main/static/main/sass/classifier.scss */
     #classifier-main-container .classifier-container-background .classifier-container .classify-symptoms-btn, #classifier-main-container .classifier-container-background .classifier-output-container .classify-symptoms-btn {
       height: 100px; } }
+
+/* line 1, main/static/main/sass/doctors.scss */
+#doctors-page-container {
+  height: 400px;
+  border: 1px solid #555;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #005ea2; }
+  /* line 10, main/static/main/sass/doctors.scss */
+  #doctors-page-container .page-header-container {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white; }
+  /* line 18, main/static/main/sass/doctors.scss */
+  #doctors-page-container .single-doctor-main-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 90%; }
+    /* line 27, main/static/main/sass/doctors.scss */
+    #doctors-page-container .single-doctor-main-container .doctor-card-container {
+      width: 210px;
+      height: 270px;
+      border: 1px solid #555;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
+      padding: 5px;
+      margin: 10px;
+      background-color: white;
+      font-size: 12px; }
+      /* line 38, main/static/main/sass/doctors.scss */
+      #doctors-page-container .single-doctor-main-container .doctor-card-container .doctor-icon-container {
+        width: 150px;
+        height: 150px;
+        margin: auto; }
+        /* line 43, main/static/main/sass/doctors.scss */
+        #doctors-page-container .single-doctor-main-container .doctor-card-container .doctor-icon-container .doctor-icon {
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 10px;
+          border: 1px solid #555; }
+
+@media only screen and (max-width: 600px) {
+  /* line 63, main/static/main/sass/doctors.scss */
+  #doctors-page-container {
+    width: 100%;
+    border-radius: 0px; } }

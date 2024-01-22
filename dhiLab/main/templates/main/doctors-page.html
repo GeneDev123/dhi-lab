@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block page_content %}
+  <div id="doctors-page-container">
+
+    <div class="page-header-container">
+      AFFILIATED DOCTORS
+    </div>
+    {% if health_care_prof %}
+      <div class="single-doctor-main-container">
+        
+        {% for doctor in health_care_prof %}
+          <div class="doctor-card-container">
+
+            <div class="doctor-icon-container">
+              <img class="doctor-icon" src="{% static 'main/assets/doctor_icon.jpg' %}">
+            </div>
+            
+            <hr>
+
+            <div class="name-container">
+              <div class="first-name">First Name: <b>{{ doctor.first_name }}</b></div>
+              <div class="last-name">Last Name: <b>{{ doctor.last_name }}</b></div>
+            </div>
+          
+            <div class="specialization-container">
+              Specialization: <b>{{ doctor.specialization }}</b>
+            </div>
+            
+            <div class="contact-no-container">
+              Contact no: <b>{{ doctor.contact_phone }}</b>
+            </div>
+          
+          </div>
+        {% endfor %}
+      
+      </div>
+    {% else %}
+      <div class="no-doctors">No healthcare professionals found.</div>
+    {% endif %}
+  </div>
+{% endblock %}
