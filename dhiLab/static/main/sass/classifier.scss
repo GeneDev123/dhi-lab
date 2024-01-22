@@ -1,0 +1,205 @@
+#classifier-main-container{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+
+  .classifier-container-background{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .classifier-output-container{
+      display: none;
+
+      .done-btn{
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #005ea2;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .header{
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      .classify-output-container{
+        height: 88%;
+        overflow-y: scroll;
+        padding: 15px;
+
+        .single-disease-container{
+          background-color: #005ea2;
+          color: white;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+
+          .disease-name-percent-container{
+            font-size: 20px;
+            font-weight: bolder;
+          }
+
+          .disease-symptom-header{
+            font-weight: bold;
+          }
+
+          .symptom-list-container{
+            display: flex;
+            flex-wrap: wrap;
+
+            .highlighted-symptom{
+              font-weight: bold;
+            }
+
+            div{
+              margin: 5px;
+              padding: 5px;
+              background-color: white;
+              color: black;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .classifier-container, .classifier-output-container{
+      width: 70%;
+      height: 500px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      position: relative;
+
+      .display-flex{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .classify-cancel-btn{
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        padding: 10px;
+      }
+
+      .selected-symptoms-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        padding: 20px;
+        overflow-y: scroll;
+
+        .selected-symptom{
+          align-self: flex-start;
+          background-color: #0c5f96;
+          color: white;
+          border-radius: 15px;          
+          margin: 10px;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .classify-symptoms-btn{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        #classify-button{
+          height: 35px;
+          width: 100%;
+          border: none;
+          color: rgba(255,255,255,.8);
+          border-radius: 10px;
+          margin: 5px;
+          background-color: #005ea2;
+          cursor: pointer;
+        }
+      }  
+
+      .disease-list-container{
+        width: 300px;    
+        padding: 10px 20px;
+
+        .disease-search-bar{
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .disease-symptoms-container{
+          overflow-y: scroll;
+          height: 440px;
+          
+          .individual-symptom{
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+          }
+  
+          .individual-symptom:hover{
+            background-color: #005ea2;
+            color: white;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #classifier-main-container{
+    .classifier-container-background{
+      
+      .classifier-container, .classifier-output-container{
+        width: 100%;
+        border-radius: 0px;
+
+        .display-flex{
+          flex-wrap: wrap;
+          overflow-y: scroll;
+        }
+
+        .disease-list-container{
+          width: 100%;
+          
+          .disease-search-bar{
+            width: 80%;
+          }
+
+          .disease-symptoms-container{  
+            height: 300px;
+            border: 1px solid;
+            border-radius: 10px;
+          }
+        }
+
+        .selected-symptoms-container{
+          height: 300px;
+        }
+
+        .classify-symptoms-btn{
+          height: 100px;
+        }
+      }
+
+    }
+  }
+}

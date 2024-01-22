@@ -1,0 +1,97 @@
+#login-register-container{
+
+  .form-label-container, .form-container{
+    width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .form-label-container{
+    display: flex;
+    align-items: center;
+
+    .logo{
+      width: 80px;
+      height: auto;
+      margin-right: 20px;
+
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .text-container{
+      font-size: 30px;
+      font-weight: bolder;
+    }
+  }
+
+  .form-container{
+    border: 1px solid #555;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+
+    .options-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .authentication-link{
+        font-size: 12px;
+      }
+    }
+  }
+  .display-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+  #login-register-container{
+    .form-label-container, .form-container{
+      width: 100%;
+    }
+
+    .form-label-container{
+     
+      .logo{
+        width: 65px;
+      }
+  
+      .text-container{
+        font-size: 30px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #login-register-container{
+    .form-label-container, .form-container{
+      width: 100%;
+    }
+    
+    .form-label-container{
+      padding: 0px 2rem;
+
+      .logo{
+        width: 50px;
+      }
+  
+      .text-container{
+        font-size: 25px;
+        font-weight: bolder;
+      }
+    }
+
+    .form-container{
+      border: none;
+    }
+  }
+}
