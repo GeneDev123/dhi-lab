@@ -74,6 +74,35 @@ Completed:
 
 -----------------------------
 
+January 22, 2024
+
+- Note to self: you can create multiple pythonanywhere account on 1 email
+
+Gmail
+- First Name: drslab123
+- Last Name: drslab123
+- email: drslab123@gmailcom
+- Bday: Jan 1 2000, Male
+- password: testing321
+
 Website:
 http://dhilab.pythonanywhere.com/
 http://dhilab.pythonanywhere.com/admin
+
+Access Log: drslab2.pythonanywhere.com.access.log
+Error log: drslab2.pythonanywhere.com.error.log
+Server Log: drslab2.pythonanywhere.com.server.log
+
+---------------------------
+
+January 27, 2024
+
+Updated Deployment:
+pythonanywhere
+- email: dhilab112@gmail.com
+- username: drslab2
+- password: testing321
+
+Access Log: drslab2.pythonanywhere.com.access.log
+Error log: drslab2.pythonanywhere.com.error.log
+Server Log: drslab2.pythonanywhere.com.server.log
