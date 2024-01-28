@@ -21,6 +21,7 @@ class CustomUser(AbstractUser):
   age = models.IntegerField(blank=True, null=True)
   gender = models.CharField(max_length=20, choices=GENDER, default="Not Mention")
   is_agree_terms_and_condition = models.BooleanField(default=False)
+  profile_picture = models.ImageField(upload_to='profile_pics/', blank=True, null=True)
 
   is_overweight = models.CharField(max_length=20, choices=PRESENT_CONDITION_OPTIONS, blank=True, null=True,)
   is_smoking_cigarettes = models.CharField(max_length=20, choices=PRESENT_CONDITION_OPTIONS, blank=True, null=True,)

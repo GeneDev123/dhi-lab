@@ -15,6 +15,17 @@
     <div class="user-profile-container">
       {% if is_updating_data == 0 %}
         <div class="scrollbar-container">
+          
+          <div class="user-individual-data-container">
+            <div class="data-label">Profile Picture: </div>
+            <div class="data" style="display: flex; justify-content: center;">
+              {% if user_data.profile_picture %}
+                <img src="{{ user_data.profile_picture.url }}" alt="Profile Picture">
+              {% else %}
+                No profile picture set.
+              {% endif %}
+            </div>
+          </div>
         
           <div class="user-individual-data-container">
             <div class="data-label">Username: </div>
@@ -55,45 +66,6 @@
 
           <hr>
 
-          <div class="user-individual-data-container">
-            <div class="data-label">I am overweight: </div>
-            <div class="data">
-              {% if user_data.is_overweight %} {{ user_data.is_overweight}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I smoke cigarettes: </div>
-            <div class="data">
-              {% if user_data.is_smoking_cigarettes %} {{ user_data.is_smoking_cigarettes}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have been recently injured: </div>
-            <div class="data">
-              {% if user_data.is_recently_injured %} {{ user_data.is_recently_injured}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have high colesterol: </div>
-            <div class="data">
-              {% if user_data.is_high_cholesterol %} {{ user_data.is_high_cholesterol}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have high hypertension: </div>
-            <div class="data">
-              {% if user_data.is_having_hypertension %} {{ user_data.is_having_hypertension}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have high diabetes: </div>
-            <div class="data">
-              {% if user_data.is_diabetic %} {{ user_data.is_diabetic}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-
-          <hr>
-
         </div>
 
         <div class="dhi-user-aggreement-container">
@@ -112,12 +84,19 @@
         <a class="update-user-data" href="{% url 'user-profile' 1 %}">Update User Data</a>
       {% else %}
 
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
           {% csrf_token %}
 
           <div class="scrollbar-container">
 
             {{ form.non_field_errors }}
+
+            <div class="user-individual-data-container">
+              <div class="data-label">Profile Picture: </div>
+              <div class="data-input">{{ form.profile_picture }}</div>
+            </div>
+
+            <hr>
 
             <div class="user-individual-data-container">
               <div class="data-label">Username: </div>
@@ -146,38 +125,6 @@
             
             <hr>
 
-            <div class="user-individual-data-container">
-              <div class="data-label">I am overweight: </div>
-              <div class="data-input">{{ form.is_overweight }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I smoke cigarettes: </div>
-              <div class="data-input">{{ form.is_smoking_cigarettes }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have been recently injured: </div>
-              <div class="data-input">{{ form.is_recently_injured }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have high colesterol: </div>
-              <div class="data-input">{{ form.is_high_cholesterol }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have high hypertension: </div>
-              <div class="data-input">{{ form.is_having_hypertension }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have high diabetes: </div>
-              <div class="data-input">{{ form.is_diabetic }}</div>
-            </div>
-            
-            <hr>
-          
           </div>
           
           <div class="dhi-user-aggreement-container">

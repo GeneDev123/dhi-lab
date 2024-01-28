@@ -53,14 +53,13 @@ def user_profile(request, is_updating_user_data):
   }
 
   if request.method == 'POST' and is_updating_user_data == 1:
-    form = UserUpdateForm(request.POST, instance=request.user)
+    form = UserUpdateForm(request.POST, request.FILES, instance=request.user)
     if form.is_valid():
       form.save()
       messages.success(request, 'Your profile has been updated successfully.')
       return redirect('user-profile', is_updating_user_data=0)
     else:
       messages.error(request, 'There was an error in updating your profile. Please correct the errors.')
-    
   else:
     form = UserUpdateForm(instance=request.user)
 

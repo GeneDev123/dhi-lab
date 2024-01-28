@@ -41,7 +41,7 @@ class UserUpdateForm(forms.ModelForm):
     model = CustomUser
     fields = ['username', 'first_name', 'last_name', 'age', 'gender', 'bio',
       'is_overweight', 'is_smoking_cigarettes', 'is_recently_injured',
-      'is_high_cholesterol', 'is_having_hypertension', 'is_diabetic', 'is_agree_terms_and_condition']
+      'is_high_cholesterol', 'is_having_hypertension', 'is_diabetic', 'is_agree_terms_and_condition', 'profile_picture']
 
     def clean_username(self):
       username = self.cleaned_data['username']

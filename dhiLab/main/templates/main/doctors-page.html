@@ -15,7 +15,11 @@
           <div class="doctor-card-container">
 
             <div class="doctor-icon-container">
-              <img class="doctor-icon" src="{% static 'main/assets/doctor_icon.jpg' %}">
+              {% if doctor.profile_picture %}
+                <img src="{{ doctor.profile_picture.url }}" alt="Profile Picture">
+              {% else %}
+                <img class="doctor-icon" src="{% static 'main/assets/doctor_icon.jpg' %}">
+              {% endif %}
             </div>
             
             <hr>
