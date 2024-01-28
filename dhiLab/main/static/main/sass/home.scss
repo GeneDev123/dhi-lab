@@ -1,4 +1,6 @@
 #home-page-container{
+
+  margin: 0 20rem;
   
   .chatbot-label-container, .chatbot-container{
     margin: auto;
@@ -29,7 +31,6 @@
   }
 
   .chatbot-main-container{
-    border: 1px solid #555;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     padding: 2rem;
@@ -37,6 +38,14 @@
     #classify-symptoms-toggle{
       margin-bottom: 10px;
       border-radius: 10px;
+      padding: 5px 15px;
+      font-size: 15px;
+      background-color: var(--main-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     }
 
     .message-display-container{
@@ -73,7 +82,7 @@
       }
       
       .user-bubble-container{
-        background-color:#005ea2;
+        background-color:var(--main-color);
 
       }
     }
@@ -89,8 +98,23 @@
           width: 100%;
           padding: 5px;
           margin-right: 10px;
+          font-size: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          outline: none;
+          transition: border-color 0.3s ease;
         }
-      } 
+      }
+      button{
+        margin-left: 10px;
+        padding: 5px 15px;
+        font-size: 15px;
+        background-color: var(--main-color);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
     }
   }
 
@@ -102,6 +126,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
   #home-page-container{
+    margin: auto;
     .chatbot-label-container, .chatbot-main-container{
       width: 100%;
     }
@@ -122,6 +147,7 @@
 
 @media only screen and (max-width: 600px) {
   #home-page-container{
+    margin: auto;
     .chatbot-label-container, .chatbot-main-container{
       width: 100%;
     }

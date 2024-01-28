@@ -77,6 +77,8 @@ def home(request):
 
   context = {}
 
+  request.session['hide_welcome'] = True
+
   disease = classifier_utils.get_disease_list()
   disease_list = disease["disease_names"]
   symptoms = disease["disease_symptoms"]

@@ -2,11 +2,23 @@ from django.contrib.auth.forms import UserCreationForm #UserChangeForm,
 from .models import CustomUser
 from django import forms
 
+
 class CustomUserCreationForm(UserCreationForm):
   class Meta(UserCreationForm.Meta):
     model = CustomUser
     fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2',)
-    
+
+  def __init__(self, *args, **kwargs):
+        super(CustomUserCreationForm, self).__init__(*args, **kwargs)
+
+        # Add a class to the email field
+        self.fields['email'].widget.attrs.update({'class': 'form-control'})
+        self.fields['password1'].widget.attrs.update({'class': 'form-control'})
+        self.fields['password2'].widget.attrs.update({'class': 'form-control'})
+        self.fields['username'].widget.attrs.update({'class': 'form-control'})
+        self.fields['first_name'].widget.attrs.update({'class': 'form-control'})
+        self.fields['last_name'].widget.attrs.update({'class': 'form-control'})
+
   def clean_email(self):
 
     email = self.cleaned_data['email'].lower()
