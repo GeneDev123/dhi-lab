@@ -3,6 +3,8 @@ from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser
 from django.utils.html import format_html
 
+admin.site.site_header = "Dr's Lab Administration"
+
 class CustomUserAdmin(UserAdmin):
   model = CustomUser
 
