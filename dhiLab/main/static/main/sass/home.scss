@@ -126,6 +126,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
   #home-page-container{
+    margin: auto;
     .chatbot-label-container, .chatbot-main-container{
       width: 100%;
     }
@@ -146,6 +147,7 @@
 
 @media only screen and (max-width: 600px) {
   #home-page-container{
+    margin: auto;
     .chatbot-label-container, .chatbot-main-container{
       width: 100%;
     }
