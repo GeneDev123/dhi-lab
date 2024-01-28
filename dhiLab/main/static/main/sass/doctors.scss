@@ -1,11 +1,17 @@
+:root {
+  --main-color:#05325d;
+}
+
+
 #doctors-page-container{
+  margin: 0 10rem;
 
   height: 400px;
   border: 1px solid #555;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   padding: 2rem;
-  background-color: #005ea2;
+  background-color: var(--main-color);
   
   .page-header-container{
     width: 100%;
