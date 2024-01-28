@@ -15,6 +15,17 @@
     <div class="user-profile-container">
       {% if is_updating_data == 0 %}
         <div class="scrollbar-container">
+          
+          <div class="user-individual-data-container">
+            <div class="data-label">Profile Picture: </div>
+            <div class="data" style="display: flex; justify-content: center;">
+              {% if user_data.profile_picture %}
+                <img src="{{ user_data.profile_picture.url }}" alt="Profile Picture">
+              {% else %}
+                No profile picture set.
+              {% endif %}
+            </div>
+          </div>
         
           <div class="user-individual-data-container">
             <div class="data-label">Username: </div>
@@ -73,12 +84,19 @@
         <a class="update-user-data" href="{% url 'user-profile' 1 %}">Update User Data</a>
       {% else %}
 
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
           {% csrf_token %}
 
           <div class="scrollbar-container">
 
             {{ form.non_field_errors }}
+
+            <div class="user-individual-data-container">
+              <div class="data-label">Profile Picture: </div>
+              <div class="data-input">{{ form.profile_picture }}</div>
+            </div>
+
+            <hr>
 
             <div class="user-individual-data-container">
               <div class="data-label">Username: </div>
