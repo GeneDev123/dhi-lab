@@ -55,7 +55,7 @@
   .carousel{
 
     overflow: hidden;
-    height: 27rem;
+    height: 35rem;
     width: auto;
     top: 10px;
 
@@ -70,6 +70,7 @@
         img{
           height: 43rem;
           overflow: hidden;
+          object-fit: contain;
         }
       }
   }
@@ -84,8 +85,6 @@
     }
   }
 }
-
-
 
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
   #dhi-lab-main-container{
@@ -113,7 +112,13 @@
         }
       }
     }
-
+    
+    .carousel{
+      img{
+        object-fit: cover !important;
+      }
+    }
+    
     .page-content-container{
       width: 100%;
     }
