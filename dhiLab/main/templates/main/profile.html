@@ -55,45 +55,6 @@
 
           <hr>
 
-          <div class="user-individual-data-container">
-            <div class="data-label">I am overweight: </div>
-            <div class="data">
-              {% if user_data.is_overweight %} {{ user_data.is_overweight}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I smoke cigarettes: </div>
-            <div class="data">
-              {% if user_data.is_smoking_cigarettes %} {{ user_data.is_smoking_cigarettes}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have been recently injured: </div>
-            <div class="data">
-              {% if user_data.is_recently_injured %} {{ user_data.is_recently_injured}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have high colesterol: </div>
-            <div class="data">
-              {% if user_data.is_high_cholesterol %} {{ user_data.is_high_cholesterol}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have high hypertension: </div>
-            <div class="data">
-              {% if user_data.is_having_hypertension %} {{ user_data.is_having_hypertension}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-          <div class="user-individual-data-container">
-            <div class="data-label">I have high diabetes: </div>
-            <div class="data">
-              {% if user_data.is_diabetic %} {{ user_data.is_diabetic}} {% else %} Unset {% endif %}
-            </div>
-          </div>
-
-          <hr>
-
         </div>
 
         <div class="dhi-user-aggreement-container">
@@ -146,38 +107,6 @@
             
             <hr>
 
-            <div class="user-individual-data-container">
-              <div class="data-label">I am overweight: </div>
-              <div class="data-input">{{ form.is_overweight }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I smoke cigarettes: </div>
-              <div class="data-input">{{ form.is_smoking_cigarettes }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have been recently injured: </div>
-              <div class="data-input">{{ form.is_recently_injured }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have high colesterol: </div>
-              <div class="data-input">{{ form.is_high_cholesterol }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have high hypertension: </div>
-              <div class="data-input">{{ form.is_having_hypertension }}</div>
-            </div>
-            
-            <div class="user-individual-data-container">
-              <div class="data-label">I have high diabetes: </div>
-              <div class="data-input">{{ form.is_diabetic }}</div>
-            </div>
-            
-            <hr>
-          
           </div>
           
           <div class="dhi-user-aggreement-container">
