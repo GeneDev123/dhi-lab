@@ -1,2 +1,8 @@
 # Ignore database files
 dhiLab/db.sqlite3
+
+# Ignore pycache
+dhiLab/main/__pycache__/
+
+# Ignore migrations dir
+dhiLab/main/migrations
