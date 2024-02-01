@@ -118,7 +118,7 @@ def classify_symptoms(request):
   classification = classifier_utils.classify(selected_symptoms)
 
   return JsonResponse({
-    'diseases': classification['top_diseases'], 
+    'diseases': classification['top_diseases'][:3], 
     'totalDataset': classification['dataset_length'],
     'dataset': classification['dataset'],
   }, safe=False)
