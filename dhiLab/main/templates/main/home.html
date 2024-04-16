@@ -5,16 +5,65 @@
 {% block page_content %}
 
   <div id="home-page-container">
-    <div class="chatbot-label-container">
-      <!-- <div><img class="logo" src="{% static 'main/assets/logo.svg' %}"></div> -->
+
+    <div class="classifier-label-container">
+      <div><img class="logo" src="{% static 'main/assets/logoD.png' %}"></div>
       <div class="text-container">
-        Dr's Lab
+        Dr's Lab : Symptoms Classifier
+      </div>
+
+      <div id="chatbot-button">
+        Dr's Lab Assistant
+      </div>
+    
+    </div>
+
+    <div id="classifier-main-container">
+      <div class="classifier-container-background">
+        <div class="classifier-container">
+        
+          <div class="display-flex">
+            <div class="disease-list-container">
+            
+              <input class="disease-search-bar" type="text" placeholder="Search disease">
+              
+              <div class="disease-symptoms-container" id="filtered-symptoms">
+                {% for symptom in symptoms %}
+                  <div class="individual-symptom">{{ symptom }}</div>
+                {% endfor %}
+              </div>
+  
+            </div>  
+
+            <div class="selected-symptoms-container">
+            </div>
+            
+            <div class="classify-symptoms-btn">
+              <button type="button" id="classify-button">Classify</button>
+            </div>
+            
+          </div>
+    
+        </div>
+        
+        <div class="classifier-output-container">
+          <div class="done-btn">
+            Return
+          </div>
+
+          <div class="classify-output-container">
+            <div class="header">
+              Classification Output
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    
-    <div class="chatbot-main-container">
+
+    <div id="chatbot-main-container">
       
-      <button id="classify-symptoms-toggle">Classify Symptoms</button>
+      <button id="chatbot-cancel-btn">Close</button>
       
       <div class="message-display-container">
 
@@ -121,6 +170,7 @@
           type: "GET",
           data: { selected_symptoms: selectedSymptoms },
           success: function (data) {
+            $("#chatbot-button").toggle();
             $(".classifier-container").toggle();
             $(".classifier-output-container").toggle();
 
