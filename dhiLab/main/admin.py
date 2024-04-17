@@ -39,7 +39,7 @@ class CustomUserAdmin(UserAdmin):
       ('Healthcare Professional Information', 
       {
         'fields': (
-          'is_health_care_professional', 'specialization', 'education', 'experience',
+          'is_health_care_professional', 'clinic', 'clinic_loc', 'specialization', 'education', 'experience',
           'board_certifications', 'professional_affiliations', 'hospital_affiliations',
           'areas_of_expertise', 'patient_reviews_and_ratings', 'office_location',
           'accepted_insurance_plans', 'publications_and_research', 'awards_and_recognitions',

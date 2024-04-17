@@ -31,6 +31,8 @@ class CustomUser(AbstractUser):
   is_diabetic = models.CharField(max_length=20, choices=PRESENT_CONDITION_OPTIONS, blank=True, null=True,)  
 
   is_health_care_professional = models.BooleanField(default=False, null=True, blank=True)
+  clinic = models.CharField(max_length=100, null=True, blank=True)
+  clinic_loc = models.CharField(max_length=300, null=True, blank=True)
   specialization = models.CharField(max_length=100, null=True, blank=True)
   education = models.TextField(null=True, blank=True)
   experience = models.PositiveIntegerField(null=True, blank=True)

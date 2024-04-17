@@ -25,8 +25,15 @@
             <hr>
 
             <div class="name-container">
-              <div class="first-name">First Name: <b>{{ doctor.first_name }}</b></div>
-              <div class="last-name">Last Name: <b>{{ doctor.last_name }}</b></div>
+              {% if doctor.clinic and doctor.clinic_loc %}
+                <div>
+                  Clinic:
+                  <a class="clinic-name" href="{{ doctor.clinic_loc }}"><b>{{ doctor.clinic }}</b></a>
+                </div>
+              {% else %}
+                <div class="first-name">First Name: <b>{{ doctor.first_name }}</b></div>
+                <div class="last-name">Last Name: <b>{{ doctor.last_name }}</b></div>
+              {% endif %}
             </div>
           
             <div class="specialization-container">
