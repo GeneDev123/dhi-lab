@@ -15,6 +15,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script> -->
+
   <script>
     var path = window.location.pathname;
     var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
@@ -26,16 +28,29 @@
 
     $(document).ready(function() {
       $("#chatbot-button, #chatbot-cancel-btn").click(function() {
-        $("#chatbot-main-container").toggle();
-        $("#chatbot-button").toggle();
-        $(".classifier-container").toggle();
+        $("#chatbot-main-container").fadeToggle();
+        $("#chatbot-button").fadeToggle();
+        $(".classifier-container").fadeToggle();
       });
 
       $(".done-btn").click(function() {
-        $("#chatbot-button").toggle();
-        $(".classifier-output-container").toggle();
-        $(".classifier-container").toggle();
+        $("#chatbot-button").fadeToggle();
+        $(".classifier-output-container").fadeToggle();
+        $(".classifier-container").fadeToggle();
         $('.classifier-output-container .single-disease-container').remove();
+      });
+
+      $("#chatbot-button-pop-up, #chatbot-cancel-btn-pop-up").click(function() {
+        
+        if(window.location.pathname == "/"){
+          $("#chatbot-main-container").fadeToggle();
+          $("#chatbot-button").fadeToggle();
+          $(".classifier-container").fadeToggle();
+          return;
+        }else{
+          $("#chatbot-main-container-pop-up").slideToggle();
+          $("#chatbot-button-pop-up").slideToggle();
+        }
       });
     });
   </script>
@@ -114,6 +129,77 @@
       {% block page_content %}
         <h1>404</h1>
       {% endblock %}  
+    
+      <div id="chatbot-main-container-pop-up">
+      
+        <button id="chatbot-cancel-btn-pop-up">Close</button>
+        
+        <div class="message-display-container">
+  
+          <div class="chatbot-bubble-container">
+            <div class="chatbot-name">
+              Chatbot
+            </div>
+  
+            <div class="chatbot-message">
+              Hi {% if user.username %} {{ user.username }} {% else %} Guest {% endif %}! Go ahead and send me a message!😄
+            </div>
+  
+          </div>
+  
+        </div>
+        
+        <div class="user-options-container">
+          <form id="user-input-message-form">
+            {% csrf_token %}
+            <input type="text" class="user-input-container" id="user-input" placeholder="Type your message..."></input>
+            <button class="user-message-send-btn" id="user-message-send" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('#user-input-message-form').submit(function(e) {
+            e.preventDefault();
+            var user_input = $('#user-input').val();
+          
+            if(window.location.pathname === "/"){
+              return;
+            }
+
+            $.ajax({
+              type: 'GET',
+              url: "{% url 'chatbot-modal' %}",
+              data: { user_input: user_input },
+              success: function(data) {
+                var response = data.response;
+                let userMessage = '<div class="user-bubble-container"><div class="user-name">' + '{% if user.username %} {{ user.username }} {% else %} Guest {% endif %}' + '</div><div class="user-message">' + user_input + '</div></div>';
+                let chatbotResponse = '<div class="chatbot-bubble-container"><div class="chatbot-name">Chatbot</div><div class="chatbot-message">' + response + '</div></div>';
+                
+                $('.message-display-container').append(userMessage);
+                $('.message-display-container').append(chatbotResponse);
+                $('#user-input').val(''); 
+    
+                const $container = $(".message-display-container");
+                $container.scrollTop($container[0].scrollHeight);
+              }
+            });
+          });
+          
+        });
+      </script>
+    
+      <div id="chatbot-button-pop-up">
+        <div class="popup">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M284 224.8a34.1 34.1 0 1 0 34.3 34.1A34.2 34.2 0 0 0 284 224.8zm-110.5 0a34.1 34.1 0 1 0 34.3 34.1A34.2 34.2 0 0 0 173.6 224.8zm220.9 0a34.1 34.1 0 1 0 34.3 34.1A34.2 34.2 0 0 0 394.5 224.8zm153.8-55.3c-15.5-24.2-37.3-45.6-64.7-63.6-52.9-34.8-122.4-54-195.7-54a406 406 0 0 0 -72 6.4 238.5 238.5 0 0 0 -49.5-36.6C99.7-11.7 40.9 .7 11.1 11.4A14.3 14.3 0 0 0 5.6 34.8C26.5 56.5 61.2 99.3 52.7 138.3c-33.1 33.9-51.1 74.8-51.1 117.3 0 43.4 18 84.2 51.1 118.1 8.5 39-26.2 81.8-47.1 103.5a14.3 14.3 0 0 0 5.6 23.3c29.7 10.7 88.5 23.1 155.3-10.2a238.7 238.7 0 0 0 49.5-36.6A406 406 0 0 0 288 460.1c73.3 0 142.8-19.2 195.7-54 27.4-18 49.1-39.4 64.7-63.6 17.3-26.9 26.1-55.9 26.1-86.1C574.4 225.4 565.6 196.4 548.3 169.5zM285 409.9a345.7 345.7 0 0 1 -89.4-11.5l-20.1 19.4a184.4 184.4 0 0 1 -37.1 27.6 145.8 145.8 0 0 1 -52.5 14.9c1-1.8 1.9-3.6 2.8-5.4q30.3-55.7 16.3-100.1c-33-26-52.8-59.2-52.8-95.4 0-83.1 104.3-150.5 232.8-150.5s232.9 67.4 232.9 150.5C517.9 342.5 413.6 409.9 285 409.9z"/></svg>
+          </div>
+        </div>
+      </div>
+    
     </div>
 
     <footer>

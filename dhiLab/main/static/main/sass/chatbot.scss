@@ -1,11 +1,11 @@
-#chatbot-main-container{
+#chatbot-main-container, #chatbot-main-container-pop-up{
   display: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   padding: 2rem;
   background-color: #e5e5e5;
 
-  #chatbot-cancel-btn{
+  #chatbot-cancel-btn, #chatbot-cancel-btn-pop-up{
     cursor: pointer;
     padding: 5px 15px;
     font-size: 15px;
@@ -54,7 +54,7 @@
 
       .user-name, .user-message{
         text-align: right;
-        color: white;
+        color: #F6F1F1;
       }
 
       .chatbot-name, .user-name{
@@ -100,15 +100,29 @@
   }
 }
 
+#chatbot-main-container-pop-up{
+  width: 80%;
+  margin: auto;  
+
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
-  #chatbot-main-container{
+  #chatbot-main-container, #chatbot-main-container-pop-up{
     width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
-  #chatbot-main-container{
+  #chatbot-main-container, #chatbot-main-container-pop-up{
     width: 100%;
     border: none;
+  }
+
+  #chatbot-main-container-pop-up{
+    width: 100%;
   }
 
 }
