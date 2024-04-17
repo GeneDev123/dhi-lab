@@ -12,6 +12,7 @@ nltk = "*"
 numpy = "*"
 scikit-learn = "*"
 matplotlib = "*"
+pillow = "*"
 
 [dev-packages]
 
