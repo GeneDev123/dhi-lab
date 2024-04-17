@@ -15,7 +15,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script> -->
 
   <script>
     var path = window.location.pathname;
@@ -41,8 +41,16 @@
       });
 
       $("#chatbot-button-pop-up, #chatbot-cancel-btn-pop-up").click(function() {
-        $("#chatbot-main-container-pop-up").slideToggle();
-        $("#chatbot-button-pop-up").slideToggle();
+        
+        if(window.location.pathname == "/"){
+          $("#chatbot-main-container").fadeToggle();
+          $("#chatbot-button").fadeToggle();
+          $(".classifier-container").fadeToggle();
+          return;
+        }else{
+          $("#chatbot-main-container-pop-up").slideToggle();
+          $("#chatbot-button-pop-up").slideToggle();
+        }
       });
     });
   </script>
