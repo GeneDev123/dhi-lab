@@ -5,7 +5,7 @@
   --main-color:#146C94; }
 
 /* line 9, main/static/main/sass/main.scss */
-#chatbot-button .popup {
+#chatbot-button-pop-up .popup {
   cursor: pointer;
   font-size: 15px;
   position: fixed;
@@ -15,7 +15,7 @@
   background-color: #F6F1F1;
   border-radius: 16px; }
   /* line 19, main/static/main/sass/main.scss */
-  #chatbot-button .popup .icon {
+  #chatbot-button-pop-up .popup .icon {
     width: 60px;
     height: 60px;
     border: solid 1px rgba(0, 0, 0, 0.3);
@@ -478,14 +478,14 @@
         font-weight: bolder; } }
 
 /* line 1, main/static/main/sass/chatbot.scss */
-#chatbot-main-container {
+#chatbot-main-container, #chatbot-main-container-pop-up {
   display: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   padding: 2rem;
   background-color: #e5e5e5; }
   /* line 8, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container #chatbot-cancel-btn {
+  #chatbot-main-container #chatbot-cancel-btn, #chatbot-main-container #chatbot-cancel-btn-pop-up, #chatbot-main-container-pop-up #chatbot-cancel-btn, #chatbot-main-container-pop-up #chatbot-cancel-btn-pop-up {
     cursor: pointer;
     padding: 5px 15px;
     font-size: 15px;
@@ -496,7 +496,7 @@
     margin: auto;
     margin-bottom: 10px; }
   /* line 20, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container #classify-symptoms-toggle {
+  #chatbot-main-container #classify-symptoms-toggle, #chatbot-main-container-pop-up #classify-symptoms-toggle {
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 5px 15px;
@@ -508,7 +508,7 @@
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; }
   /* line 33, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container .message-display-container {
+  #chatbot-main-container .message-display-container, #chatbot-main-container-pop-up .message-display-container {
     width: 100%;
     height: 300px;
     margin: auto;
@@ -519,34 +519,34 @@
     color: black;
     overflow-y: auto; }
     /* line 44, main/static/main/sass/chatbot.scss */
-    #chatbot-main-container .message-display-container .chatbot-bubble-container, #chatbot-main-container .message-display-container .user-bubble-container {
+    #chatbot-main-container .message-display-container .chatbot-bubble-container, #chatbot-main-container .message-display-container .user-bubble-container, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container, #chatbot-main-container-pop-up .message-display-container .user-bubble-container {
       padding: 10px;
       background-color: #efefef;
       border-radius: 10px;
       margin: 10px 0px; }
       /* line 50, main/static/main/sass/chatbot.scss */
-      #chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-message, #chatbot-main-container .message-display-container .user-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .user-bubble-container .chatbot-message {
+      #chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-message, #chatbot-main-container .message-display-container .user-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .user-bubble-container .chatbot-message, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container .chatbot-name, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container .chatbot-message, #chatbot-main-container-pop-up .message-display-container .user-bubble-container .chatbot-name, #chatbot-main-container-pop-up .message-display-container .user-bubble-container .chatbot-message {
         text-align: left;
         color: black; }
       /* line 55, main/static/main/sass/chatbot.scss */
-      #chatbot-main-container .message-display-container .chatbot-bubble-container .user-name, #chatbot-main-container .message-display-container .chatbot-bubble-container .user-message, #chatbot-main-container .message-display-container .user-bubble-container .user-name, #chatbot-main-container .message-display-container .user-bubble-container .user-message {
+      #chatbot-main-container .message-display-container .chatbot-bubble-container .user-name, #chatbot-main-container .message-display-container .chatbot-bubble-container .user-message, #chatbot-main-container .message-display-container .user-bubble-container .user-name, #chatbot-main-container .message-display-container .user-bubble-container .user-message, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container .user-name, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container .user-message, #chatbot-main-container-pop-up .message-display-container .user-bubble-container .user-name, #chatbot-main-container-pop-up .message-display-container .user-bubble-container .user-message {
         text-align: right;
         color: #F6F1F1; }
       /* line 60, main/static/main/sass/chatbot.scss */
-      #chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .chatbot-bubble-container .user-name, #chatbot-main-container .message-display-container .user-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .user-bubble-container .user-name {
+      #chatbot-main-container .message-display-container .chatbot-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .chatbot-bubble-container .user-name, #chatbot-main-container .message-display-container .user-bubble-container .chatbot-name, #chatbot-main-container .message-display-container .user-bubble-container .user-name, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container .chatbot-name, #chatbot-main-container-pop-up .message-display-container .chatbot-bubble-container .user-name, #chatbot-main-container-pop-up .message-display-container .user-bubble-container .chatbot-name, #chatbot-main-container-pop-up .message-display-container .user-bubble-container .user-name {
         font-size: 12px;
         text-decoration: underline; }
     /* line 66, main/static/main/sass/chatbot.scss */
-    #chatbot-main-container .message-display-container .user-bubble-container {
+    #chatbot-main-container .message-display-container .user-bubble-container, #chatbot-main-container-pop-up .message-display-container .user-bubble-container {
       background-color: var(--main-color); }
   /* line 73, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container .user-options-container #user-input-message-form {
+  #chatbot-main-container .user-options-container #user-input-message-form, #chatbot-main-container-pop-up .user-options-container #user-input-message-form {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around; }
     /* line 79, main/static/main/sass/chatbot.scss */
-    #chatbot-main-container .user-options-container #user-input-message-form .user-input-container {
+    #chatbot-main-container .user-options-container #user-input-message-form .user-input-container, #chatbot-main-container-pop-up .user-options-container #user-input-message-form .user-input-container {
       width: 100%;
       padding: 5px;
       margin-right: 10px;
@@ -556,7 +556,7 @@
       outline: none;
       transition: border-color 0.3s ease; }
   /* line 90, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container .user-options-container button {
+  #chatbot-main-container .user-options-container button, #chatbot-main-container-pop-up .user-options-container button {
     margin-left: 10px;
     padding: 5px 15px;
     font-size: 15px;
@@ -566,16 +566,28 @@
     border-radius: 5px;
     cursor: pointer; }
 
+/* line 103, main/static/main/sass/chatbot.scss */
+#chatbot-main-container-pop-up {
+  width: 80%;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 @media only screen and (min-width: 601px) and (max-width: 1280px) {
-  /* line 104, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container {
+  /* line 114, main/static/main/sass/chatbot.scss */
+  #chatbot-main-container, #chatbot-main-container-pop-up {
     width: 100%; } }
 
 @media only screen and (max-width: 600px) {
-  /* line 109, main/static/main/sass/chatbot.scss */
-  #chatbot-main-container {
+  /* line 119, main/static/main/sass/chatbot.scss */
+  #chatbot-main-container, #chatbot-main-container-pop-up {
     width: 100%;
-    border: none; } }
+    border: none; }
+  /* line 124, main/static/main/sass/chatbot.scss */
+  #chatbot-main-container-pop-up {
+    width: 100%; } }
 
 /* line 1, main/static/main/sass/classifier.scss */
 :root {
