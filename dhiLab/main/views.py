@@ -107,6 +107,30 @@ def home(request):
   
   return render(request, 'main/home.html', context)
 
+def chatbot_modal(request):
+  # Model and Intents directory
+  chatbot_model_dir = "./main/custom_modules/machine-learning-models/chatbot_2024-01-20_22-36-19.h5"
+  intents_dir = "./main/custom_modules/json/intents3.json"
+  model_data = chatbot_utils.initialize_static_chatbot_requirements(chatbot_model_dir, intents_dir)
+  
+  user_input = request.GET.get('user_input')
+
+  if user_input:
+
+    intents = chatbot_utils.predict_class(user_input, 
+      model_data['model'], 
+      model_data['words'], 
+      model_data['ignore_chars'],
+      model_data['lemmatizer'],  
+      model_data['classes'],
+    )
+    
+    chatbot_reply = chatbot_utils.get_response(intents, model_data['data'])
+  else:
+    chatbot_reply = "Hello there"
+
+  return JsonResponse({'response': chatbot_reply})
+
 def filter_symptoms(request):
   query = request.GET.get("query", "")
   disease = classifier_utils.get_disease_list()

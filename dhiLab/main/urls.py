@@ -6,6 +6,7 @@ urlpatterns = [
     path('profile/is-updating=<int:is_updating_user_data>', views.user_profile, name='user-profile'),
     path('logout/', views.user_logout, name='logout'),
     path('home/', views.home, name='home'),
+    path('chatbot-modal/', views.chatbot_modal, name='chatbot-modal'),
     path('filter-symptoms/', views.filter_symptoms, name='filter-symptoms'),
     path('classify-symptoms/', views.classify_symptoms, name='classify-symptoms'),
     path('chatbot/', views.chatbot_page, name='chatbot-page'),
