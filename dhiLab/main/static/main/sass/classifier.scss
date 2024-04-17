@@ -1,5 +1,5 @@
 :root {
-  --main-color:#05325d;
+  --main-color:#19A7CE;
 }
 
 #classifier-main-container{
@@ -25,7 +25,7 @@
         left: 50%;
         transform: translateX(-50%);
         background-color: var(--main-color);
-        color: white;
+        color: #F6F1F1;
         padding: 5px;
         border-radius: 5px;
       }
@@ -42,7 +42,7 @@
 
         .single-disease-container{
           background-color: var(--main-color);
-          color: white;
+          color: #F6F1F1;
           padding: 10px;
           margin-bottom: 10px;
           border-radius: 10px;
@@ -67,7 +67,7 @@
             div{
               margin: 5px;
               padding: 5px;
-              background-color: white;
+              background-color: #F6F1F1;
               color: black;
               border-radius: 5px;
             }
@@ -78,7 +78,7 @@
 
     .classifier-container, .classifier-output-container{
       height: 500px;
-      background-color: #e5e5e5;
+      background-color: #AFD3E2;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
       position: relative;
@@ -100,8 +100,8 @@
 
         .selected-symptom{
           align-self: flex-start;
-          background-color: #0c5f96;
-          color: white;
+          background-color: #19A7CE;
+          color: #F6F1F1;
           border-radius: 15px;          
           margin: 10px;
           padding: 10px;
@@ -148,8 +148,8 @@
           }
   
           .individual-symptom:hover{
-            background-color: var(--main-color);
-            color: white;
+            background-color: #19A7CE;
+            color: #F6F1F1;
           }
         }
 

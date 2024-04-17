@@ -1,5 +1,6 @@
 #home-page-container{
   margin: 0 10rem;
+  margin-top: 200px;
   
   .classifier-label-container, .chatbot-container{
     margin: auto;
@@ -30,7 +31,7 @@
     }
     
     #chatbot-button{
-      cursor: pointer;;
+      cursor: pointer;
       padding: 5px 15px;
       font-size: 15px;
       background-color: var(--main-color);
@@ -44,6 +45,44 @@
   .display-flex{
     display: flex;
     justify-content: space-between;
+  }
+
+  .card-main-container {
+    .card {
+      min-height: 540px;
+      background: #146C94;
+      border: 1px solid #dd2476;
+      color: rgba(250, 250, 250, 0.8);
+      margin-bottom: 2rem;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .card-subtitle {
+      color: #F6F1F1 !important;
+    }
+
+    .btn {
+      border: 5px solid;
+      border-image-slice: 1;
+      background: var(--gradient) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      border-image-source: var(--gradient) !important;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      -webkit-text-fill-color: #fff !important;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background: var(--gradient) !important;
+      -webkit-background-clip: none !important;
+      -webkit-text-fill-color: #fff !important;
+      border: 5px solid #fff !important;
+      box-shadow: #222 1px 0 10px;
+      text-decoration: underline;
+    }
   }
 }
 
